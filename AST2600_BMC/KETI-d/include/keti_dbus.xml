@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+ <!-- dbus server -->
+<node name="/org/freedesktop/keti/bmc/dbus">
+  <!-- ADC interface -->
+  <interface name="org.freedesktop.keti.bmc.ADC">
+    <method name="lightning_sensor_read">
+      <arg type="y" name="fru" direction="in"/>
+      <arg type="y" name="sensor_num" direction="in"/>
+      <arg type="i" name="value" direction="in"/>
+      <arg type="i" name="ret" direction="out"/>
+    </method>   
+  </interface>
+  <!-- edge interface -->
+  <interface name="org.freedesktop.keti.bmc.edge">
+    <method name="rpc_test">
+      <arg type="s" name="msg" direction="in"/>
+      <arg type="s" name="res" direction="out"/>
+    </method>   
+  </interface>
+  <!-- FAN interface -->
+  <interface name="org.freedesktop.keti.bmc.FAN">
+    <method name="read_fan_value">
+      <arg type="i" name="fanno" direction="in"/>
+      <arg type="i" name="value" direction="in"/>
+      <arg type="i" name="ret" direction="out"/>
+    </method>   
+  </interface>
+  <!-- PSU interface -->
+  <interface name="org.freedesktop.keti.bmc.PSU">
+    <method name="read_psu_value">
+      <arg type="c" name="device" direction="in"/>
+      <arg type="y" name="addr" direction="in"/>
+      <arg type="y" name="type" direction="in"/>
+      <arg type="i" name="value" direction="in"/>
+      <arg type="i" name="ret" direction="out"/>
+    </method>   
+  </interface>
+</node>

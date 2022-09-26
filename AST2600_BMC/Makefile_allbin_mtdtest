@@ -1,0 +1,32 @@
+FLASH_SIZE=16M
+ROOT_DIR=$(shell pwd)
+UBOOT_SPL_IMAGE=u-boot-spl.bin
+UBOOT_IMAGE=u-boot.bin
+FS_IMAGE=rootfs.cramfs
+ALL_IMAGE=all.bin
+FIT_IMAGE=ast2600_evb.itb
+CONF_WWW_IMAGE=var.jffs2
+ETC_IMAGE=etc.jffs2
+CONF_IMAGE=conf.jffs2
+BACKCONF_IMAGE=redfish.jffs2
+UBOOT_ADDR=65536 ## 0x1 0000
+FIT_ADDR=1048576 # 0x10 0000
+UBOOT_SPL_ADDR=0 # 0
+#KERNEL_ADDR = 0x80008000
+KERNEL_ADDR=524288
+#FS_ADDR = 0x8a70f000
+FS_ADDR=6815744
+CONF_ADDR=4194304
+ETC_ADDR=6291456
+CONF_WWW_ADDR=40828928
+BACKUP_CONF_ADDR=41353216
+ALL_SIZE=16
+
+all:
+	@echo "Make images"
+	mkimage -f ast2600a1-ramfs.its ast2600_evb.itb
+	@echo "All Image Combine - all.bin ..."
+	dd if=/dev/zero of=$(ROOT_DIR)/$(ALL_IMAGE) bs=1M count=$(ALL_SIZE)
+	dd if=$(ROOT_DIR)/$(UBOOT_SPL_IMAGE) of=$(ROOT_DIR)/$(ALL_IMAGE) bs=1 seek=$(UBOOT_SPL_ADDR) conv=notrunc
+	dd if=$(ROOT_DIR)/$(UBOOT_IMAGE) of=$(ROOT_DIR)/$(ALL_IMAGE) bs=1 seek=$(UBOOT_ADDR) conv=notrunc
+	dd if=$(ROOT_DIR)/$(FIT_IMAGE) of=$(ROOT_DIR)/$(ALL_IMAGE) bs=1 seek=$(FIT_ADDR) conv=notrunc
