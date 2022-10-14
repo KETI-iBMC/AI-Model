@@ -1,3 +1,4 @@
+//keti dbus ipmb 추가 해야함.
 #include "keti_dbus.hpp"
 #include <dbus-c++-1/dbus-c++/interface.h>
 #include <dbus-c++-1/dbus-c++/message.h>
