@@ -1,0 +1,44 @@
+<?xml version="1.0" ?>
+ <!-- dbus server -->
+<node name="/org/freedesktop/keti/bmc/dbus">
+  <!-- ADC interface -->
+  <interface name="org.freedesktop.keti.bmc.ADC">
+    <method name="lightning_sensor_read">
+      <arg type="y" name="fru" direction="in"/>
+      <arg type="y" name="sensor_num" direction="in"/>
+      <arg type="i" name="value" direction="out"/>
+    </method>   
+    <method name="read_adc_value">
+      <arg type="i" name="pin" direction="in"/>
+      <arg type="s" name="device" direction="in"/>
+      <arg type="i" name="value" direction="out"/>
+    </method>   
+  </interface>
+  <!-- edge interface -->
+  <interface name="org.freedesktop.keti.bmc.edge">
+  </interface>
+  <!-- FAN interface -->
+  <interface name="org.freedesktop.keti.bmc.FAN">
+    <method name="read_fan_value">
+      <arg type="i" name="fanno" direction="in"/>
+      <arg type="i" name="value" direction="out"/>
+    </method>   
+  </interface>
+  <!-- PSU interface -->
+  <interface name="org.freedesktop.keti.bmc.PSU">
+    <!-- TEM interface -->
+    <method name="peci_CPU_TEMP0">
+      <arg type="d" name="ret" direction="out"/>
+    </method>
+    <method name="read_lm75_value">
+      <arg type="i" name="no" direction="in"/>
+      <arg type="d" name="value" direction="out"/>
+    </method>
+  </interface>
+</node>
+
+<!-- 
+    dbusxx-xml2cpp keti_dbus.xml - -proxy=../include/util/Sensor_Proxy.h - -adaptor=keti_dbus_adaptor.h
+    함수 추가 ::  위 명령어를 통해 Sensor_Proxy 및 keti_dbus_adaptor 생성
+    위 명령어 사용시 주의점 : xml 특성상 주석안에 하이픈을 연속해서 사용할 수 없어서 띄어쓰기로 구별시킴. 띄어쓰기 없애야함.
+-->
