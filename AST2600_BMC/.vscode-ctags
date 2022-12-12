@@ -41,8 +41,8 @@ ADC_PIN7	include/ipmi/lightning_sensor.hpp	/^    ADC_PIN7,$/;"	e	enum:adc_pins
 ADC_PIN8	include/ipmi/lightning_sensor.hpp	/^    ADC_PIN8,$/;"	e	enum:adc_pins
 ADC_PIN9	include/ipmi/lightning_sensor.hpp	/^    ADC_PIN9,$/;"	e	enum:adc_pins
 ADC_VALUE	include/ipmi/lightning_sensor.hpp	46;"	d
-ADDR_LOCALHOST	KETI-Edge/lssdp.cpp	/^    const char * ADDR_LOCALHOST;$/;"	m	struct:__anon11	file:
-ADDR_MULTICAST	KETI-Edge/lssdp.cpp	/^    const char * ADDR_MULTICAST;$/;"	m	struct:__anon11	file:
+ADDR_LOCALHOST	KETI-Ibmc/lssdp.cpp	/^    const char * ADDR_LOCALHOST;$/;"	m	struct:__anon11	file:
+ADDR_MULTICAST	KETI-Ibmc/lssdp.cpp	/^    const char * ADDR_MULTICAST;$/;"	m	struct:__anon11	file:
 ADS1015_CHANNEL0	libs/lightning/lightning_sensor.cpp	/^  ADS1015_CHANNEL0 = 0,$/;"	e	enum:ads1015_channels	file:
 ADS1015_CHANNEL1	libs/lightning/lightning_sensor.cpp	/^  ADS1015_CHANNEL1,$/;"	e	enum:ads1015_channels	file:
 ADS1015_CHANNEL2	libs/lightning/lightning_sensor.cpp	/^  ADS1015_CHANNEL2,$/;"	e	enum:ads1015_channels	file:
@@ -289,8 +289,8 @@ AutoMode	kvm/regs-video.h	/^    BYTE    AutoMode;$/;"	m	struct:_INF_DATA
 AutoMode	kvm/video.h	/^	unsigned char	AutoMode;$/;"	m	struct:ast_video_config
 Auto_Mode	kvm/regs-video.h	/^	BYTE      Auto_Mode;$/;"	m	struct:_TRANSFER_HEADER
 Auto_Mode	kvm/video.h	/^	unsigned char		Auto_Mode;		\/\/force 1:auto,  0:capture and compress $/;"	m	struct:video_eng_config
-BACK_ID_LED	KETI-Edge/rest_handler.cpp	46;"	d	file:
-BAUDRATE	KETI-Edge/rest_handler.cpp	5;"	d	file:
+BACK_ID_LED	KETI-Ibmc/rest_handler.cpp	46;"	d	file:
+BAUDRATE	KETI-Ibmc/rest_handler.cpp	5;"	d	file:
 BAUDRATE	KETI-Serial/KETI-Serial.cpp	18;"	d	file:
 BF1_BOOT_TYPE_EFI	include/redfish/resource.hpp	178;"	d
 BF1_BOOT_TYPE_LEGACY	include/redfish/resource.hpp	177;"	d
@@ -327,7 +327,7 @@ BOOT_FLAGS_SIZE	include/ipmi/chassis.hpp	9;"	d
 BOOT_INFO_ACK_SIZE	include/ipmi/chassis.hpp	8;"	d
 BOOT_INIT_INFO_SIZE	include/ipmi/chassis.hpp	10;"	d
 BRIDGE_SLAVE_ADDR	include/ipmi/ipmb.hpp	24;"	d
-BSWAP_32	KETI-Edge/rest_handler.hpp	29;"	d
+BSWAP_32	KETI-Ibmc/rest_handler.hpp	29;"	d
 BUFF_SIZE	include/ipmi/apps.hpp	747;"	d
 BUFF_SIZE	include/ipmi/ipmi.hpp	63;"	d
 BYTE	kvm/regs-video.h	5;"	d
@@ -367,36 +367,36 @@ CHANNEL_SINGLE_SESSION	include/ipmi/channel.hpp	/^  CHANNEL_SINGLE_SESSION = 0x4
 CHASSIS_TYPE	include/redfish/resource.hpp	/^  CHASSIS_TYPE,$/;"	e	enum:RESOURCE_TYPE
 CLEAR_LOG	include/redfish/resource.hpp	/^  CLEAR_LOG,$/;"	e	enum:ACTION_NAME
 CLIENT_NOTIFY_TIMEOUT	include/ipmi/ipmb.hpp	129;"	d
-CMAKE_BINARY_DIR	KETI-Edge/Makefile	/^CMAKE_BINARY_DIR = \/home\/keti\/BMC_SDK\/source\/AST2600_BMC$/;"	m
+CMAKE_BINARY_DIR	KETI-Ibmc/Makefile	/^CMAKE_BINARY_DIR = \/home\/keti\/BMC_SDK\/source\/AST2600_BMC$/;"	m
 CMAKE_BINARY_DIR	KETI-REST/Makefile	/^CMAKE_BINARY_DIR = \/home\/keti\/BMC_SDK\/source\/AST2600_BMC$/;"	m
 CMAKE_BINARY_DIR	KETI-Serial/Makefile	/^CMAKE_BINARY_DIR = \/home\/keti\/BMC_SDK\/source\/AST2600_BMC\/KETI-Serial$/;"	m
 CMAKE_BINARY_DIR	Makefile	/^CMAKE_BINARY_DIR = \/home\/keti\/BMC_SDK\/source\/AST2600_BMC$/;"	m
 CMAKE_BINARY_DIR	WDTBK/Makefile	/^CMAKE_BINARY_DIR = \/home\/keti\/BMC_SDK\/source\/AST2600_BMC$/;"	m
-CMAKE_BINARY_DIR	build/KETI-Edge/Makefile	/^CMAKE_BINARY_DIR = \/home\/keti\/BMC_SDK\/source\/AST2600_BMC\/build$/;"	m
+CMAKE_BINARY_DIR	build/KETI-Ibmc/Makefile	/^CMAKE_BINARY_DIR = \/home\/keti\/BMC_SDK\/source\/AST2600_BMC\/build$/;"	m
 CMAKE_BINARY_DIR	build/KETI-REST/Makefile	/^CMAKE_BINARY_DIR = \/home\/keti\/BMC_SDK\/source\/AST2600_BMC\/build$/;"	m
 CMAKE_BINARY_DIR	build/KETI-WDT/Makefile	/^CMAKE_BINARY_DIR = \/home\/keti\/BMC_SDK\/source\/AST2600_BMC\/build$/;"	m
 CMAKE_BINARY_DIR	build/Makefile	/^CMAKE_BINARY_DIR = \/home\/keti\/BMC_SDK\/source\/AST2600_BMC\/build$/;"	m
 CMAKE_BINARY_DIR	build/libs/Makefile	/^CMAKE_BINARY_DIR = \/home\/keti\/BMC_SDK\/source\/AST2600_BMC\/build$/;"	m
 CMAKE_BINARY_DIR	kvm/Makefile	/^CMAKE_BINARY_DIR = \/home\/keti\/BMC_SDK\/source\/AST2600_BMC\/kvm$/;"	m
 CMAKE_BINARY_DIR	libs/Makefile	/^CMAKE_BINARY_DIR = \/home\/keti\/BMC_SDK\/source\/AST2600_BMC$/;"	m
-CMAKE_COMMAND	KETI-Edge/Makefile	/^CMAKE_COMMAND = \/usr\/bin\/cmake$/;"	m
+CMAKE_COMMAND	KETI-Ibmc/Makefile	/^CMAKE_COMMAND = \/usr\/bin\/cmake$/;"	m
 CMAKE_COMMAND	KETI-REST/Makefile	/^CMAKE_COMMAND = \/usr\/bin\/cmake$/;"	m
 CMAKE_COMMAND	KETI-Serial/Makefile	/^CMAKE_COMMAND = \/usr\/bin\/cmake$/;"	m
 CMAKE_COMMAND	Makefile	/^CMAKE_COMMAND = \/usr\/bin\/cmake$/;"	m
 CMAKE_COMMAND	WDTBK/Makefile	/^CMAKE_COMMAND = \/usr\/bin\/cmake$/;"	m
-CMAKE_COMMAND	build/KETI-Edge/Makefile	/^CMAKE_COMMAND = \/usr\/bin\/cmake$/;"	m
+CMAKE_COMMAND	build/KETI-Ibmc/Makefile	/^CMAKE_COMMAND = \/usr\/bin\/cmake$/;"	m
 CMAKE_COMMAND	build/KETI-REST/Makefile	/^CMAKE_COMMAND = \/usr\/bin\/cmake$/;"	m
 CMAKE_COMMAND	build/KETI-WDT/Makefile	/^CMAKE_COMMAND = \/usr\/bin\/cmake$/;"	m
 CMAKE_COMMAND	build/Makefile	/^CMAKE_COMMAND = \/usr\/bin\/cmake$/;"	m
 CMAKE_COMMAND	build/libs/Makefile	/^CMAKE_COMMAND = \/usr\/bin\/cmake$/;"	m
 CMAKE_COMMAND	kvm/Makefile	/^CMAKE_COMMAND = \/usr\/bin\/cmake$/;"	m
 CMAKE_COMMAND	libs/Makefile	/^CMAKE_COMMAND = \/usr\/bin\/cmake$/;"	m
-CMAKE_SOURCE_DIR	KETI-Edge/Makefile	/^CMAKE_SOURCE_DIR = \/home\/keti\/BMC_SDK\/source\/AST2600_BMC$/;"	m
+CMAKE_SOURCE_DIR	KETI-Ibmc/Makefile	/^CMAKE_SOURCE_DIR = \/home\/keti\/BMC_SDK\/source\/AST2600_BMC$/;"	m
 CMAKE_SOURCE_DIR	KETI-REST/Makefile	/^CMAKE_SOURCE_DIR = \/home\/keti\/BMC_SDK\/source\/AST2600_BMC$/;"	m
 CMAKE_SOURCE_DIR	KETI-Serial/Makefile	/^CMAKE_SOURCE_DIR = \/home\/keti\/BMC_SDK\/source\/AST2600_BMC\/KETI-Serial$/;"	m
 CMAKE_SOURCE_DIR	Makefile	/^CMAKE_SOURCE_DIR = \/home\/keti\/BMC_SDK\/source\/AST2600_BMC$/;"	m
 CMAKE_SOURCE_DIR	WDTBK/Makefile	/^CMAKE_SOURCE_DIR = \/home\/keti\/BMC_SDK\/source\/AST2600_BMC$/;"	m
-CMAKE_SOURCE_DIR	build/KETI-Edge/Makefile	/^CMAKE_SOURCE_DIR = \/home\/keti\/BMC_SDK\/source\/AST2600_BMC$/;"	m
+CMAKE_SOURCE_DIR	build/KETI-Ibmc/Makefile	/^CMAKE_SOURCE_DIR = \/home\/keti\/BMC_SDK\/source\/AST2600_BMC$/;"	m
 CMAKE_SOURCE_DIR	build/KETI-REST/Makefile	/^CMAKE_SOURCE_DIR = \/home\/keti\/BMC_SDK\/source\/AST2600_BMC$/;"	m
 CMAKE_SOURCE_DIR	build/KETI-WDT/Makefile	/^CMAKE_SOURCE_DIR = \/home\/keti\/BMC_SDK\/source\/AST2600_BMC$/;"	m
 CMAKE_SOURCE_DIR	build/Makefile	/^CMAKE_SOURCE_DIR = \/home\/keti\/BMC_SDK\/source\/AST2600_BMC$/;"	m
@@ -595,7 +595,7 @@ CMD_TRANSPORT_GET_SOL_CONFIG_PARAMETERS	include/ipmi/apps.hpp	/^  CMD_TRANSPORT_
 CMD_TRANSPORT_SET_LAN_CONFIG	include/ipmi/apps.hpp	/^  CMD_TRANSPORT_SET_LAN_CONFIG = 0x01,$/;"	e	enum:__anon38
 CMD_TRANSPORT_SET_SOL_CONFIG_PARAMETERS	include/ipmi/apps.hpp	/^  CMD_TRANSPORT_SET_SOL_CONFIG_PARAMETERS = 0x21,$/;"	e	enum:__anon38
 CMD_TRY_LOGIN	include/ipmi/ipmi.hpp	407;"	d
-CMM_ADDRESS	KETI-Edge/handler.hpp	16;"	d
+CMM_ADDRESS	KETI-Ibmc/handler.hpp	16;"	d
 COLLECTION_TYPE	include/redfish/resource.hpp	/^  COLLECTION_TYPE,$/;"	e	enum:RESOURCE_TYPE
 COMPILER_ID	CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	101;"	d	file:
 COMPILER_ID	CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	108;"	d	file:
@@ -1531,7 +1531,7 @@ CONRTOL_PEF_ALERT_STARTUP_DELAY	include/ipmi/efte.hpp	11;"	d
 CONTROL_PEF_ENABLE	include/ipmi/efte.hpp	8;"	d
 CONTROL_PEF_EVENT_MSG	include/ipmi/efte.hpp	9;"	d
 CONTROL_PEF_STARTUP_DELAY	include/ipmi/efte.hpp	10;"	d
-CPLD_PWR_BTN	KETI-Edge/rest_handler.cpp	43;"	d	file:
+CPLD_PWR_BTN	KETI-Ibmc/rest_handler.cpp	43;"	d	file:
 CPU1_TEMP	include/ipmi/apps.hpp	27;"	d
 CPU2_TEMP	include/ipmi/apps.hpp	28;"	d
 CPU_CONTEXT	include/redfish/resource.hpp	/^enum SENSOR_CONTEXT { INTAKE_CONTEXT, CPU_CONTEXT };$/;"	e	enum:SENSOR_CONTEXT
@@ -1603,8 +1603,8 @@ Create	include/ipmi/sol.hpp	/^  static void Create() {$/;"	f	class:SerialOverLan
 CriticalInterrupt	include/ipmi/ipmi.hpp	/^  CriticalInterrupt,$/;"	m	class:Sensor_tpye
 Current	include/ipmi/ipmi.hpp	/^  Current,$/;"	m	class:Sensor_tpye
 DATA_MAX	KETI-Serial/KETI-Serial.cpp	26;"	d	file:
-DAY_1	KETI-Edge/psu_server.hpp	42;"	d
-DAY_2	KETI-Edge/psu_server.hpp	43;"	d
+DAY_1	KETI-Ibmc/psu_server.hpp	42;"	d
+DAY_2	KETI-Ibmc/psu_server.hpp	43;"	d
 DCMI_ASSET_MNGCTRL_PATH	KETI-REST/rhandler.hpp	18;"	d
 DCMI_ASSET_MNGCTRL_PATH	include/ipmi/setting_service.hpp	22;"	d
 DCMI_CAPA_PATH	KETI-REST/rhandler.hpp	16;"	d
@@ -1669,7 +1669,7 @@ DEFAULT_VIRTUAL_MEDIA_PORT	include/redfish/stdafx.hpp	53;"	d
 DELETE	include/redfish/stdafx.hpp	/^enum { POST = 0, GET, PATCH, DELETE };$/;"	e	enum:__anon66
 DESTINATION_TYPE	include/redfish/resource.hpp	/^  DESTINATION_TYPE,$/;"	e	enum:RESOURCE_TYPE
 DEVICE_STR_LEN	include/redfish/hwcontrol.hpp	15;"	d
-DEVNAME	KETI-Edge/rest_handler.cpp	6;"	d	file:
+DEVNAME	KETI-Ibmc/rest_handler.cpp	6;"	d	file:
 DEVNAME	include/ipmi/sol.hpp	/^  string DEVNAME;$/;"	m	class:SerialOverLan
 DEV_NAME_DEDI	include/ipmi/ipmi.hpp	65;"	d
 DEV_NAME_SHARED	include/ipmi/ipmi.hpp	64;"	d
@@ -1710,7 +1710,7 @@ DirectMode	kvm/regs-video.h	/^    BYTE    DirectMode;		\/\/0: force sync mode 1:
 Direct_Mode	kvm/regs-video.h	/^	BYTE      Direct_Mode;$/;"	m	struct:_TRANSFER_HEADER
 Direct_Mode	kvm/video.h	/^	unsigned char		Direct_Mode;	\/\/no use : auto switch by driver detection --> TODO Sync_Mode 0: Auto direct 1:Force sync$/;"	m	struct:video_eng_config
 Disable_VGA	kvm/regs-video.h	/^	BYTE      Disable_VGA;$/;"	m	struct:_TRANSFER_HEADER
-DoStuff	KETI-Edge/psu_server.cpp	/^void DoStuff(void) {$/;"	f
+DoStuff	KETI-Ibmc/psu_server.cpp	/^void DoStuff(void) {$/;"	f
 DownScalingEnable	kvm/regs-video.h	/^    BYTE    DownScalingEnable;$/;"	m	struct:_INF_DATA
 Drive	include/redfish/resource.hpp	/^  Drive(const string _odata_id)$/;"	f	class:Drive
 Drive	include/redfish/resource.hpp	/^  Drive(const string _odata_id, string _id) : Drive(_odata_id) {$/;"	f	class:Drive
@@ -1722,28 +1722,28 @@ EFT_PEF_ACT_GLB_CTRL_OFFSET	include/ipmi/pef_policy.hpp	8;"	d
 EFT_PEF_CTRL_OFFSET	include/ipmi/pef_policy.hpp	7;"	d
 EFT_PEF_CTRL_OFFSET	include/ipmi/pef_policy.hpp	9;"	d
 EJECT_MEDIA	include/redfish/resource.hpp	/^  EJECT_MEDIA$/;"	e	enum:ACTION_NAME
-EQUALS	KETI-Edge/Makefile	/^EQUALS = =$/;"	m
+EQUALS	KETI-Ibmc/Makefile	/^EQUALS = =$/;"	m
 EQUALS	KETI-REST/Makefile	/^EQUALS = =$/;"	m
 EQUALS	KETI-Serial/Makefile	/^EQUALS = =$/;"	m
 EQUALS	Makefile	/^EQUALS = =$/;"	m
 EQUALS	WDTBK/Makefile	/^EQUALS = =$/;"	m
-EQUALS	build/KETI-Edge/Makefile	/^EQUALS = =$/;"	m
+EQUALS	build/KETI-Ibmc/Makefile	/^EQUALS = =$/;"	m
 EQUALS	build/KETI-REST/Makefile	/^EQUALS = =$/;"	m
 EQUALS	build/KETI-WDT/Makefile	/^EQUALS = =$/;"	m
 EQUALS	build/Makefile	/^EQUALS = =$/;"	m
 EQUALS	build/libs/Makefile	/^EQUALS = =$/;"	m
 EQUALS	kvm/Makefile	/^EQUALS = =$/;"	m
 EQUALS	libs/Makefile	/^EQUALS = =$/;"	m
-ERROR	KETI-Edge/rest_handler.cpp	12;"	d	file:
-ERROR_CASE_1	KETI-Edge/khandler.cpp	/^uint8_t ERROR_CASE_1[24] = {6, 0, 255, 7, 6,  0,  0,   0,   0, 0,  0, 0,$/;"	v
-ERROR_CASE_2	KETI-Edge/khandler.cpp	/^uint8_t ERROR_CASE_2[48] = {6, 0, 255, 7, 6, 16, 0, 0, 0,   0,   0,   0,$/;"	v
+ERROR	KETI-Ibmc/rest_handler.cpp	12;"	d	file:
+ERROR_CASE_1	KETI-Ibmc/khandler.cpp	/^uint8_t ERROR_CASE_1[24] = {6, 0, 255, 7, 6,  0,  0,   0,   0, 0,  0, 0,$/;"	v
+ERROR_CASE_2	KETI-Ibmc/khandler.cpp	/^uint8_t ERROR_CASE_2[48] = {6, 0, 255, 7, 6, 16, 0, 0, 0,   0,   0,   0,$/;"	v
 ERR_NOT_READY	include/ipmi/lightning_sensor.hpp	77;"	d
 ETH0_PATH	include/ipmi/network.hpp	10;"	d
 ETH1_PATH	include/ipmi/network.hpp	11;"	d
 ETH2_PATH	include/ipmi/network.hpp	12;"	d
 ETH3_PATH	include/ipmi/network.hpp	13;"	d
 ETHERNET_INTERFACE_TYPE	include/redfish/resource.hpp	/^  ETHERNET_INTERFACE_TYPE,$/;"	e	enum:RESOURCE_TYPE
-ETH_COUNT	KETI-Edge/khandler.cpp	23;"	d	file:
+ETH_COUNT	KETI-Ibmc/khandler.cpp	23;"	d	file:
 ETH_COUNT	libs/apps/apps.cpp	42;"	d	file:
 ETH_PRIORITY_CONFIG	libs/network/network.cpp	4;"	d	file:
 EVENT_DESTINATION_TYPE	include/redfish/resource.hpp	/^  EVENT_DESTINATION_TYPE,$/;"	e	enum:RESOURCE_TYPE
@@ -1789,7 +1789,7 @@ EventService	include/redfish/resource.hpp	/^  EventService()$/;"	f	class:EventSe
 EventService	include/redfish/resource.hpp	/^class EventService : public Resource {$/;"	c
 Event_Info	include/redfish/resource.hpp	/^} Event_Info;$/;"	t	typeref:struct:_Event_Info
 FAIL	include/ipmi/setting_service.hpp	58;"	d
-FALSE	KETI-Edge/rest_handler.cpp	9;"	d	file:
+FALSE	KETI-Ibmc/rest_handler.cpp	9;"	d	file:
 FALSE	KETI-Serial/KETI-Serial.cpp	22;"	d	file:
 FANS	include/ipmi/apps.hpp	31;"	d
 FAN_FAULT_LED0	include/ipmi/gpio.hpp	319;"	d
@@ -1806,7 +1806,7 @@ FC_XONXOFF	KETI-Serial/source/Serial.hpp	8;"	d
 FIRST_BOOT_FILE	include/ipmi/setting_service.hpp	11;"	d
 FIXED_ID	include/ipmi/user.hpp	10;"	d
 FRAME_HEADER	kvm/regs-video.h	/^} FRAME_HEADER, *PFRAME_HEADER;$/;"	t	typeref:struct:_FRAME_HEADER
-FRONT_ID_BTN	KETI-Edge/rest_handler.cpp	44;"	d	file:
+FRONT_ID_BTN	KETI-Ibmc/rest_handler.cpp	44;"	d	file:
 FRONT_ID_LED	include/ipmi/gpio.hpp	305;"	d
 FRUState	include/ipmi/ipmi.hpp	/^  FRUState,$/;"	m	class:Sensor_tpye
 FRU_ALL	include/ipmi/common.hpp	/^  FRU_ALL = 0,$/;"	e	enum:__anon53
@@ -1823,7 +1823,7 @@ FRU_PEB	include/ipmi/common.hpp	/^  FRU_PEB = 1,$/;"	e	enum:__anon53
 FRU_PRODUCT_HEADER_LENGTH	include/ipmi/fru.hpp	/^  FRU_PRODUCT_HEADER_LENGTH = 3,$/;"	e	enum:__anon64
 FRU_UNIQUE_NAME_HERE	include/ipmi/fru.hpp	9;"	d
 FT_LED_AMBER	include/ipmi/gpio.hpp	304;"	d
-FT_LED_DEBUG	KETI-Edge/rest_handler.cpp	11;"	d	file:
+FT_LED_DEBUG	KETI-Ibmc/rest_handler.cpp	11;"	d	file:
 FT_LED_GREEN	include/ipmi/gpio.hpp	303;"	d
 Fan	include/ipmi/ipmi.hpp	/^  Fan,$/;"	m	class:Sensor_tpye
 Fan	include/redfish/resource.hpp	/^  Fan(const string _odata_id) : Resource(FAN_TYPE, _odata_id) {$/;"	f	class:Fan
@@ -1866,10 +1866,10 @@ GPIO_CMD_LPC	include/ipmi/gpio.hpp	72;"	d
 GPIO_DEBOUNCE_TIMER0	include/ipmi/gpio.hpp	67;"	d
 GPIO_DEBOUNCE_TIMER1	include/ipmi/gpio.hpp	68;"	d
 GPIO_DEBOUNCE_TIMER2	include/ipmi/gpio.hpp	69;"	d
-GPIO_DUAL_EDGE_MODE	include/ipmi/gpio.hpp	64;"	d
-GPIO_EDGE_LEVEL_MODE	include/ipmi/gpio.hpp	63;"	d
-GPIO_EDGE_MODE	include/ipmi/gpio.hpp	60;"	d
-GPIO_FALLING_EDGE	include/ipmi/gpio.hpp	55;"	d
+GPIO_DUAL_Ibmc_MODE	include/ipmi/gpio.hpp	64;"	d
+GPIO_Ibmc_LEVEL_MODE	include/ipmi/gpio.hpp	63;"	d
+GPIO_Ibmc_MODE	include/ipmi/gpio.hpp	60;"	d
+GPIO_FALLING_Ibmc	include/ipmi/gpio.hpp	55;"	d
 GPIO_GA_DELAY	include/ipmi/ipmb.hpp	195;"	d
 GPIO_INPUT_MODE	include/ipmi/gpio.hpp	51;"	d
 GPIO_LEVEL_HIGH	include/ipmi/gpio.hpp	57;"	d
@@ -1905,7 +1905,7 @@ GPIO_PORTW	include/ipmi/gpio.hpp	43;"	d
 GPIO_PORTX	include/ipmi/gpio.hpp	44;"	d
 GPIO_PORTY	include/ipmi/gpio.hpp	45;"	d
 GPIO_PORTZ	include/ipmi/gpio.hpp	46;"	d
-GPIO_RISING_EDGE	include/ipmi/gpio.hpp	54;"	d
+GPIO_RISING_Ibmc	include/ipmi/gpio.hpp	54;"	d
 GPIO_UNIQUE_NAME_HERE	include/ipmi/gpio.hpp	3;"	d
 GROUNDED	include/ipmi/ipmb.hpp	/^typedef enum { GROUNDED = 0, POWERED, UNCONNECTED } GA_Pin_state;$/;"	e	enum:__anon47
 GenerateCSR	libs/redfish/resource.cpp	/^json::value CertificateService::GenerateCSR(json::value body) {$/;"	f	class:CertificateService
@@ -1913,11 +1913,11 @@ Get	include/util/iniparser.hpp	/^        template<class T> T Get() const { retur
 Get	include/util/iniparser.hpp	/^    template<> inline Array Value::Get<Array>() const$/;"	f	class:INI::Value
 Get	include/util/iniparser.hpp	/^    template<> inline Map Value::Get<Map>() const$/;"	f	class:INI::Value
 GetComment	include/util/iniparser.hpp	/^        std::string GetComment(const std::string& key) const$/;"	f	class:INI::Section
-GetCpuIdle	KETI-Edge/hwcontrol.cpp	/^cpu_usage JSms::GetCpuIdle()$/;"	f	class:JSms
-GetDf	KETI-Edge/hwcontrol.cpp	/^vector<df> JSms::GetDf()$/;"	f	class:JSms
+GetCpuIdle	KETI-Ibmc/hwcontrol.cpp	/^cpu_usage JSms::GetCpuIdle()$/;"	f	class:JSms
+GetDf	KETI-Ibmc/hwcontrol.cpp	/^vector<df> JSms::GetDf()$/;"	f	class:JSms
 GetErrorDesc	include/util/iniparser.hpp	/^            std::string GetErrorDesc() const$/;"	f	struct:INI::File::PResult
 GetINFData	kvm/ast-video.c	/^static int GetINFData(PVIDEO_ENGINE_INFO VideoEngineInfo)$/;"	f	file:
-GetMem	KETI-Edge/hwcontrol.cpp	/^mem_data JSms::GetMem()$/;"	f	class:JSms
+GetMem	KETI-Ibmc/hwcontrol.cpp	/^mem_data JSms::GetMem()$/;"	f	class:JSms
 GetParent	include/util/iniparser.hpp	/^    inline Section* Section::GetParent() {return _file->GetParentSection(this);}$/;"	f	class:INI::Section
 GetParentSection	include/util/iniparser.hpp	/^        Section* GetParentSection(const Section* sect)$/;"	f	class:INI::File
 GetSection	include/util/iniparser.hpp	/^        Section* GetSection(const std::string& name)$/;"	f	class:INI::File
@@ -1930,13 +1930,13 @@ GetValue	include/util/iniparser.hpp	/^        Value GetValue(const std::string& 
 GetValue	include/util/iniparser.hpp	/^        Value GetValue(const std::string& name, const Value& def_val = Value())$/;"	f	class:INI::File
 GetValue	include/util/iniparser.hpp	/^        Value GetValue(size_t pos, const Value& def_val = Value()) const$/;"	f	class:INI::Array
 Get_sol_activator	include/ipmi/session.hpp	/^  u_int8_t Get_sol_activator() { return this->sol_activator; }$/;"	f	class:Ipmisession
-Global	KETI-Edge/lssdp.cpp	/^} Global = {$/;"	v	typeref:struct:__anon11	file:
-HA_ADDRESS	KETI-Edge/handler.hpp	17;"	d
+Global	KETI-Ibmc/lssdp.cpp	/^} Global = {$/;"	v	typeref:struct:__anon11	file:
+HA_ADDRESS	KETI-Ibmc/handler.hpp	17;"	d
 HBackPorch	kvm/regs-video.h	/^    USHORT    HBackPorch;$/;"	m	struct:__anon1
 HDebug	kvm/regs-video.h	/^    ULONG   HDebug;$/;"	m	struct:_COMPRESS_DATA
-HEADER_MSEARCH	KETI-Edge/lssdp.cpp	/^    const char * HEADER_MSEARCH;$/;"	m	struct:__anon11	file:
-HEADER_NOTIFY	KETI-Edge/lssdp.cpp	/^    const char * HEADER_NOTIFY;$/;"	m	struct:__anon11	file:
-HEADER_RESPONSE	KETI-Edge/lssdp.cpp	/^    const char * HEADER_RESPONSE;$/;"	m	struct:__anon11	file:
+HEADER_MSEARCH	KETI-Ibmc/lssdp.cpp	/^    const char * HEADER_MSEARCH;$/;"	m	struct:__anon11	file:
+HEADER_NOTIFY	KETI-Ibmc/lssdp.cpp	/^    const char * HEADER_NOTIFY;$/;"	m	struct:__anon11	file:
+HEADER_RESPONSE	KETI-Ibmc/lssdp.cpp	/^    const char * HEADER_RESPONSE;$/;"	m	struct:__anon11	file:
 HELPER_H__	KETI-REST/helper.hpp	2;"	d
 HEX	CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	468;"	d	file:
 HEX	KETI-Serial/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	483;"	d	file:
@@ -1948,12 +1948,12 @@ HEX	kvm/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	483;"	d	file:
 HEX	kvm/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	468;"	d	file:
 HLeftBorder	kvm/regs-video.h	/^    USHORT    HLeftBorder;$/;"	m	struct:__anon1
 HOSTNAME_FILE	include/ipmi/setting_service.hpp	56;"	d
-HOST_POWER_BTN	KETI-Edge/rest_handler.cpp	40;"	d	file:
+HOST_POWER_BTN	KETI-Ibmc/rest_handler.cpp	40;"	d	file:
 HOST_POWER_BTN	include/ipmi/setting_service.hpp	3;"	d
-HOST_RESET_BTN	KETI-Edge/rest_handler.cpp	41;"	d	file:
+HOST_RESET_BTN	KETI-Ibmc/rest_handler.cpp	41;"	d	file:
 HOST_RESET_BTN	include/ipmi/setting_service.hpp	4;"	d
-HOUR_1	KETI-Edge/psu_server.hpp	40;"	d
-HOUR_2	KETI-Edge/psu_server.hpp	41;"	d
+HOUR_1	KETI-Ibmc/psu_server.hpp	40;"	d
+HOUR_2	KETI-Ibmc/psu_server.hpp	41;"	d
 HRightBorder	kvm/regs-video.h	/^    USHORT    HRightBorder;$/;"	m	struct:__anon1
 HSC_ADM1276	libs/lightning/lightning_sensor.cpp	/^  HSC_ADM1276 = 0,$/;"	e	enum:hsc_controllers	file:
 HSC_ADM1278	libs/lightning/lightning_sensor.cpp	/^  HSC_ADM1278,$/;"	e	enum:hsc_controllers	file:
@@ -1966,9 +1966,9 @@ HSyncTime	kvm/regs-video.h	/^    USHORT    HSyncTime;$/;"	m	struct:__anon1
 HTTPS_INDEX	include/redfish/resource.hpp	/^  HTTPS_INDEX,$/;"	e	enum:NETWORK_PROTOCOL_IPTABLE_INDEX
 HTTP_INDEX	include/redfish/resource.hpp	/^  HTTP_INDEX = 1,$/;"	e	enum:NETWORK_PROTOCOL_IPTABLE_INDEX
 HUFFMAN_TABLE	kvm/regs-video.h	/^} HUFFMAN_TABLE, *PHUFFMAN_TABLE;$/;"	t	typeref:struct:_HUFFMAN_TABLE
-Handler	KETI-Edge/handler.cpp	/^Handler::Handler(utility::string_t _url, http_listener_config _config)$/;"	f	class:Handler
-Handler	KETI-Edge/handler.hpp	/^    Handler(){};$/;"	f	class:Handler
-Handler	KETI-Edge/handler.hpp	/^class Handler$/;"	c
+Handler	KETI-Ibmc/handler.cpp	/^Handler::Handler(utility::string_t _url, http_listener_config _config)$/;"	f	class:Handler
+Handler	KETI-Ibmc/handler.hpp	/^    Handler(){};$/;"	f	class:Handler
+Handler	KETI-Ibmc/handler.hpp	/^class Handler$/;"	c
 HorizontalActive	kvm/regs-video.h	/^    USHORT    HorizontalActive;$/;"	m	struct:__anon1
 HorizontalActive	kvm/regs-video.h	/^    USHORT    HorizontalActive;$/;"	m	struct:__anon2
 HorizontalActive	kvm/regs-video.h	/^    USHORT    HorizontalActive;$/;"	m	struct:__anon3
@@ -1990,7 +1990,7 @@ I2C_DEV_PDPB	include/ipmi/lightning_sensor.hpp	24;"	d
 I2C_DEV_PEB	include/ipmi/lightning_sensor.hpp	23;"	d
 I2C_DEV_TEM	include/ipmi/lightning_sensor.hpp	25;"	d
 I2C_FUNC_SMBUS_PEC	libs/util/smbus.cpp	38;"	d	file:
-I2C_PSU_DEV_NVA	KETI-Edge/psu_server.hpp	33;"	d
+I2C_PSU_DEV_NVA	KETI-Ibmc/psu_server.hpp	33;"	d
 I2C_PSU_DEV_NVA	include/ipmi/lightning_sensor.hpp	28;"	d
 I2C_RETRIES_MAX	libs/ipmb/ipmb.cpp	11;"	d	file:
 I2C_SLAVE_RD	include/ipmi/ipmb.hpp	54;"	d
@@ -2038,7 +2038,7 @@ INT	kvm/regs-video.h	6;"	d
 INTAKE_CONTEXT	include/redfish/resource.hpp	/^enum SENSOR_CONTEXT { INTAKE_CONTEXT, CPU_CONTEXT };$/;"	e	enum:SENSOR_CONTEXT
 INTERFACE_FILE	include/ipmi/setting_service.hpp	53;"	d
 INTERNAL_MODE	kvm/regs-video.h	/^} INTERNAL_MODE;$/;"	t	typeref:struct:__anon3
-INTERVAL	KETI-Edge/psu_server.hpp	32;"	d
+INTERVAL	KETI-Ibmc/psu_server.hpp	32;"	d
 INTF_NAME_ETH0	include/redfish/rmcp.hpp	43;"	d
 INTF_NAME_ETH1	include/redfish/rmcp.hpp	44;"	d
 INTF_NAME_ETH2	include/redfish/rmcp.hpp	45;"	d
@@ -2358,11 +2358,11 @@ LAN_PARAM_SET_IN_PROG	include/ipmi/network.hpp	/^  LAN_PARAM_SET_IN_PROG,$/;"	e	
 LAN_PARAM_VLAN_ID	include/ipmi/network.hpp	/^  LAN_PARAM_VLAN_ID,$/;"	e	enum:__anon16
 LAN_PARAM_VLAN_PRIORITY	include/ipmi/network.hpp	/^  LAN_PARAM_VLAN_PRIORITY,$/;"	e	enum:__anon16
 LARGEST_DEVICE_NAME	include/ipmi/lightning_sensor.hpp	20;"	d
-LAST_DAY_COUNT_DB	KETI-Edge/psu_server.hpp	36;"	d
+LAST_DAY_COUNT_DB	KETI-Ibmc/psu_server.hpp	36;"	d
 LAST_DAY_COUNT_DB	include/ipmi/apps.hpp	757;"	d
-LAST_HOUR_COUNT_DB	KETI-Edge/psu_server.hpp	35;"	d
+LAST_HOUR_COUNT_DB	KETI-Ibmc/psu_server.hpp	35;"	d
 LAST_HOUR_COUNT_DB	include/ipmi/apps.hpp	756;"	d
-LAST_MIN_COUNT_DB	KETI-Edge/psu_server.hpp	34;"	d
+LAST_MIN_COUNT_DB	KETI-Ibmc/psu_server.hpp	34;"	d
 LAST_MIN_COUNT_DB	include/ipmi/apps.hpp	755;"	d
 LAST_REC_ID	include/ipmi/lightning_sensor.hpp	58;"	d
 LCR_THRESH	include/ipmi/common.hpp	/^  LCR_THRESH,$/;"	e	enum:__anon54
@@ -2403,17 +2403,17 @@ LOGlogging	libs/ipmi/ipmi.cpp	/^int LOGlogging(char log_type, const char *src_fi
 LOGsetInfo	libs/ipmi/ipmi.cpp	/^int LOGsetInfo(const char *dir, const char *prefix) {$/;"	f
 LOWER_TRAY	include/ipmi/lightning_sensor.hpp	80;"	d
 LOWER_TRAY_DONE	include/ipmi/lightning_sensor.hpp	82;"	d
-LSSDP_BUFFER_LEN	KETI-Edge/lssdp.cpp	22;"	d	file:
-LSSDP_FIELD_LEN	KETI-Edge/lssdp.hpp	42;"	d
-LSSDP_INTERFACE_LIST_SIZE	KETI-Edge/lssdp.hpp	58;"	d
-LSSDP_INTERFACE_NAME_LEN	KETI-Edge/lssdp.hpp	57;"	d
-LSSDP_IP_LEN	KETI-Edge/lssdp.hpp	59;"	d
-LSSDP_LOCATION_LEN	KETI-Edge/lssdp.hpp	43;"	d
-LSSDP_LOG	KETI-Edge/lssdp.hpp	/^enum LSSDP_LOG {$/;"	g
-LSSDP_LOG_DEBUG	KETI-Edge/lssdp.hpp	/^    LSSDP_LOG_DEBUG = 1 << 0,$/;"	e	enum:LSSDP_LOG
-LSSDP_LOG_ERROR	KETI-Edge/lssdp.hpp	/^    LSSDP_LOG_ERROR = 1 << 3$/;"	e	enum:LSSDP_LOG
-LSSDP_LOG_INFO	KETI-Edge/lssdp.hpp	/^    LSSDP_LOG_INFO  = 1 << 1,$/;"	e	enum:LSSDP_LOG
-LSSDP_LOG_WARN	KETI-Edge/lssdp.hpp	/^    LSSDP_LOG_WARN  = 1 << 2,$/;"	e	enum:LSSDP_LOG
+LSSDP_BUFFER_LEN	KETI-Ibmc/lssdp.cpp	22;"	d	file:
+LSSDP_FIELD_LEN	KETI-Ibmc/lssdp.hpp	42;"	d
+LSSDP_INTERFACE_LIST_SIZE	KETI-Ibmc/lssdp.hpp	58;"	d
+LSSDP_INTERFACE_NAME_LEN	KETI-Ibmc/lssdp.hpp	57;"	d
+LSSDP_IP_LEN	KETI-Ibmc/lssdp.hpp	59;"	d
+LSSDP_LOCATION_LEN	KETI-Ibmc/lssdp.hpp	43;"	d
+LSSDP_LOG	KETI-Ibmc/lssdp.hpp	/^enum LSSDP_LOG {$/;"	g
+LSSDP_LOG_DEBUG	KETI-Ibmc/lssdp.hpp	/^    LSSDP_LOG_DEBUG = 1 << 0,$/;"	e	enum:LSSDP_LOG
+LSSDP_LOG_ERROR	KETI-Ibmc/lssdp.hpp	/^    LSSDP_LOG_ERROR = 1 << 3$/;"	e	enum:LSSDP_LOG
+LSSDP_LOG_INFO	KETI-Ibmc/lssdp.hpp	/^    LSSDP_LOG_INFO  = 1 << 1,$/;"	e	enum:LSSDP_LOG
+LSSDP_LOG_WARN	KETI-Ibmc/lssdp.hpp	/^    LSSDP_LOG_WARN  = 1 << 2,$/;"	e	enum:LSSDP_LOG
 LastResult	include/util/iniparser.hpp	/^        const PResult& LastResult() {return _result;}$/;"	f	class:INI::File
 LineType	include/util/iniparser.hpp	/^        enum LineType$/;"	g	class:INI::File
 List	include/redfish/resource.hpp	/^  List(const string _odata_id)$/;"	f	class:List
@@ -2438,14 +2438,14 @@ MAX_CPU	libs/apps/apps.cpp	2296;"	d	file:
 MAX_CPU0_MEM	libs/apps/apps.cpp	2298;"	d	file:
 MAX_CPU1_MEM	libs/apps/apps.cpp	2299;"	d	file:
 MAX_CPU_NUM	include/redfish/hwcontrol.hpp	16;"	d
-MAX_DVNAME_LEN	KETI-Edge/rest_handler.cpp	36;"	d	file:
+MAX_DVNAME_LEN	KETI-Ibmc/rest_handler.cpp	36;"	d	file:
 MAX_DVNAME_LEN	include/ipmi/lightning_sensor.hpp	21;"	d
 MAX_FAN	libs/apps/apps.cpp	2300;"	d	file:
 MAX_ID	include/ipmi/ipmi.hpp	77;"	d
 MAX_ID	include/ipmi/user.hpp	9;"	d
 MAX_IPMB_RES_LEN	include/ipmi/ipmb.hpp	44;"	d
-MAX_IPMI_MSG_SIZE	KETI-Edge/khandler.hpp	5;"	d
-MAX_IPMI_MSG_SIZE	KETI-Edge/rest_handler.cpp	35;"	d	file:
+MAX_IPMI_MSG_SIZE	KETI-Ibmc/khandler.hpp	5;"	d
+MAX_IPMI_MSG_SIZE	KETI-Ibmc/rest_handler.cpp	35;"	d	file:
 MAX_LAST_DAY_COUNT	include/ipmi/apps.hpp	760;"	d
 MAX_LAST_HOUR_COUNT	include/ipmi/apps.hpp	759;"	d
 MAX_LAST_MIN_COUNT	include/ipmi/apps.hpp	758;"	d
@@ -2461,7 +2461,7 @@ MAX_SENSOR_NUM	include/ipmi/lightning_sensor.hpp	56;"	d
 MAX_SENSOR_NUM	include/ipmi/lightning_sensor.hpp	73;"	d
 MAX_SENSOR_THRESHOLD	include/ipmi/lightning_sensor.hpp	74;"	d
 MAX_SESSION	include/ipmi/common.hpp	22;"	d
-MAX_THREADS	KETI-Edge/rest_handler.cpp	113;"	d	file:
+MAX_THREADS	KETI-Ibmc/rest_handler.cpp	113;"	d	file:
 MAX_USER	include/ipmi/ipmi.hpp	74;"	d
 MAX_USERNAME	include/ipmi/common.hpp	20;"	d
 MAX_USERNAME	include/ipmi/ipmi.hpp	76;"	d
@@ -2481,16 +2481,16 @@ MEDIUM_USB_2X	include/ipmi/channel.hpp	/^  MEDIUM_USB_2X = 0x0B,$/;"	e	enum:__an
 MEMORY_TYPE	include/redfish/resource.hpp	/^  MEMORY_TYPE,$/;"	e	enum:RESOURCE_TYPE
 MESSAGE_REGISTRY_TYPE	include/redfish/resource.hpp	/^  MESSAGE_REGISTRY_TYPE,$/;"	e	enum:RESOURCE_TYPE
 MG_PORT	KETI-REST/rhandler.hpp	64;"	d
-MIN	KETI-Edge/rest_handler.hpp	28;"	d
-MIN_1	KETI-Edge/psu_server.hpp	38;"	d
-MIN_2	KETI-Edge/psu_server.hpp	39;"	d
+MIN	KETI-Ibmc/rest_handler.hpp	28;"	d
+MIN_1	KETI-Ibmc/psu_server.hpp	38;"	d
+MIN_2	KETI-Ibmc/psu_server.hpp	39;"	d
 MIN_READ_SIZE	include/ipmi/fru.hpp	/^  MIN_READ_SIZE = 0x1d,$/;"	e	enum:__anon64
-MODEMDEVICE	KETI-Edge/rest_handler.cpp	7;"	d	file:
+MODEMDEVICE	KETI-Ibmc/rest_handler.cpp	7;"	d	file:
 MODEMDEVICE	KETI-Serial/KETI-Serial.cpp	19;"	d	file:
-MODULE_NAME	KETI-Edge/handler.hpp	14;"	d
-MODULE_TYPE	KETI-Edge/handler.hpp	15;"	d
+MODULE_NAME	KETI-Ibmc/handler.hpp	14;"	d
+MODULE_TYPE	KETI-Ibmc/handler.hpp	15;"	d
 MOUNT_STR_LEN	include/redfish/hwcontrol.hpp	14;"	d
-MSEARCH	KETI-Edge/lssdp.cpp	/^    const char * MSEARCH;$/;"	m	struct:__anon11	file:
+MSEARCH	KETI-Ibmc/lssdp.cpp	/^    const char * MSEARCH;$/;"	m	struct:__anon11	file:
 MU_ACCOUNT	include/ipmi/ipmi.hpp	56;"	d
 MU_CHASSIS	include/ipmi/ipmi.hpp	57;"	d
 MU_MANAGER	include/ipmi/ipmi.hpp	59;"	d
@@ -2588,7 +2588,7 @@ NETWORK_PRIORITY	KETI-REST/rhandler.hpp	27;"	d
 NETWORK_PRIORITY	include/ipmi/setting_service.hpp	31;"	d
 NETWORK_PROTOCOL_IPTABLE_INDEX	include/redfish/resource.hpp	/^enum NETWORK_PROTOCOL_IPTABLE_INDEX {$/;"	g
 NETWORK_PROTOCOL_TYPE	include/redfish/resource.hpp	/^  NETWORK_PROTOCOL_TYPE,$/;"	e	enum:RESOURCE_TYPE
-NOTIFY	KETI-Edge/lssdp.cpp	/^    const char * NOTIFY;$/;"	m	struct:__anon11	file:
+NOTIFY	KETI-Ibmc/lssdp.cpp	/^    const char * NOTIFY;$/;"	m	struct:__anon11	file:
 NO_DATA_TYPE	include/redfish/resource.hpp	163;"	d
 NSLCD_FILE	include/ipmi/setting_service.hpp	47;"	d
 NTPFILE	include/ipmi/ipmi.hpp	68;"	d
@@ -2765,7 +2765,7 @@ PARAM_SVC_PART_SCAN	include/ipmi/chassis.hpp	/^  PARAM_SVC_PART_SCAN,$/;"	e	enum
 PARAM_SVC_PART_SELECT	include/ipmi/chassis.hpp	/^  PARAM_SVC_PART_SELECT,$/;"	e	enum:__anon61
 PATCH	include/redfish/stdafx.hpp	/^enum { POST = 0, GET, PATCH, DELETE };$/;"	e	enum:__anon66
 PAYLOAD_TYPE_LENGTH	include/redfish/rmcp.hpp	20;"	d
-PCH_PWR_GOOD	KETI-Edge/psu_server.hpp	37;"	d
+PCH_PWR_GOOD	KETI-Ibmc/psu_server.hpp	37;"	d
 PCH_PWR_GOOD	include/ipmi/gpio.hpp	306;"	d
 PCOMPRESS_DATA	kvm/regs-video.h	/^} COMPRESS_DATA, *PCOMPRESS_DATA;$/;"	t	typeref:struct:_COMPRESS_DATA
 PDPB_COMMON_LCR_THRESHOLD	include/ipmi/sensor_define.hpp	135;"	d
@@ -3467,12 +3467,12 @@ POLICY_FILE	include/ipmi/setting_service.hpp	12;"	d
 PORT	kvm/ast-video.c	482;"	d	file:
 POST	include/redfish/stdafx.hpp	/^enum { POST = 0, GET, PATCH, DELETE };$/;"	e	enum:__anon66
 POSTMemoryResize	include/ipmi/ipmi.hpp	/^  POSTMemoryResize,$/;"	m	class:Sensor_tpye
-POST_FINISHED	KETI-Edge/rest_handler.cpp	38;"	d	file:
+POST_FINISHED	KETI-Ibmc/rest_handler.cpp	38;"	d	file:
 POS_HYST	include/ipmi/common.hpp	/^  POS_HYST,$/;"	e	enum:__anon54
 POWER	include/ipmi/apps.hpp	30;"	d
 POWERED	include/ipmi/ipmb.hpp	/^typedef enum { GROUNDED = 0, POWERED, UNCONNECTED } GA_Pin_state;$/;"	e	enum:__anon47
-POWER_BTN_EN	KETI-Edge/rest_handler.cpp	/^uint8_t POWER_BTN_EN = 1;$/;"	v
-POWER_BTN_INPUT	KETI-Edge/rest_handler.cpp	42;"	d	file:
+POWER_BTN_EN	KETI-Ibmc/rest_handler.cpp	/^uint8_t POWER_BTN_EN = 1;$/;"	v
+POWER_BTN_INPUT	KETI-Ibmc/rest_handler.cpp	42;"	d	file:
 POWER_CONTROL_TYPE	include/redfish/resource.hpp	/^  POWER_CONTROL_TYPE,$/;"	e	enum:RESOURCE_TYPE
 POWER_STATE_OFF	include/redfish/resource.hpp	217;"	d
 POWER_STATE_ON	include/redfish/resource.hpp	218;"	d
@@ -3480,7 +3480,7 @@ POWER_STATE_POWERING_OFF	include/redfish/resource.hpp	219;"	d
 POWER_STATE_POWERING_ON	include/redfish/resource.hpp	220;"	d
 POWER_SUPPLY_TYPE	include/redfish/resource.hpp	/^  POWER_SUPPLY_TYPE,$/;"	e	enum:RESOURCE_TYPE
 POWER_TYPE	include/redfish/resource.hpp	/^  POWER_TYPE,$/;"	e	enum:RESOURCE_TYPE
-POWER_USAGE_DB	KETI-Edge/psu_server.hpp	30;"	d
+POWER_USAGE_DB	KETI-Ibmc/psu_server.hpp	30;"	d
 POWER_USAGE_DB	include/ipmi/setting_service.hpp	52;"	d
 PROCESSOR_SUMMARY_TYPE	include/redfish/resource.hpp	/^  PROCESSOR_SUMMARY_TYPE,$/;"	e	enum:RESOURCE_TYPE
 PROCESSOR_TYPE	include/redfish/resource.hpp	/^  PROCESSOR_TYPE,$/;"	e	enum:RESOURCE_TYPE
@@ -3569,7 +3569,7 @@ Processors	include/redfish/resource.hpp	/^  Processors(const string _odata_id)$/
 Processors	include/redfish/resource.hpp	/^  Processors(const string _odata_id, const string _processor_id)$/;"	f	class:Processors
 Processors	include/redfish/resource.hpp	/^class Processors : public Resource {$/;"	c
 PushBack	include/util/iniparser.hpp	/^        Array& PushBack(const Value& val) $/;"	f	class:INI::Array
-QSIZE	KETI-Edge/rest_handler.cpp	91;"	d	file:
+QSIZE	KETI-Ibmc/rest_handler.cpp	91;"	d	file:
 QSIZE	KETI-REST/helper.hpp	6;"	d
 QSIZE	KETI-REST/rhandler.cpp	4;"	d	file:
 RADFILE	include/ipmi/apps.hpp	708;"	d
@@ -3600,15 +3600,15 @@ RESET_MANAGER	include/redfish/resource.hpp	/^  RESET_MANAGER,$/;"	e	enum:ACTION_
 RESET_SYSTEM	include/redfish/resource.hpp	/^  RESET_SYSTEM,$/;"	e	enum:ACTION_NAME
 RESOURCE_H	include/redfish/resource.hpp	4;"	d
 RESOURCE_TYPE	include/redfish/resource.hpp	/^enum RESOURCE_TYPE {$/;"	g
-RESPONSE	KETI-Edge/lssdp.cpp	/^    const char * RESPONSE;$/;"	m	struct:__anon11	file:
+RESPONSE	KETI-Ibmc/lssdp.cpp	/^    const char * RESPONSE;$/;"	m	struct:__anon11	file:
 RE_KEY	include/redfish/resource.hpp	/^  RE_KEY,$/;"	e	enum:ACTION_NAME
 RE_NEW	include/redfish/resource.hpp	/^  RE_NEW,$/;"	e	enum:ACTION_NAME
-RM	KETI-Edge/Makefile	/^RM = \/usr\/bin\/cmake -E remove -f$/;"	m
+RM	KETI-Ibmc/Makefile	/^RM = \/usr\/bin\/cmake -E remove -f$/;"	m
 RM	KETI-REST/Makefile	/^RM = \/usr\/bin\/cmake -E remove -f$/;"	m
 RM	KETI-Serial/Makefile	/^RM = \/usr\/bin\/cmake -E remove -f$/;"	m
 RM	Makefile	/^RM = \/usr\/bin\/cmake -E remove -f$/;"	m
 RM	WDTBK/Makefile	/^RM = \/usr\/bin\/cmake -E remove -f$/;"	m
-RM	build/KETI-Edge/Makefile	/^RM = \/usr\/bin\/cmake -E remove -f$/;"	m
+RM	build/KETI-Ibmc/Makefile	/^RM = \/usr\/bin\/cmake -E remove -f$/;"	m
 RM	build/KETI-REST/Makefile	/^RM = \/usr\/bin\/cmake -E remove -f$/;"	m
 RM	build/KETI-WDT/Makefile	/^RM = \/usr\/bin\/cmake -E remove -f$/;"	m
 RM	build/Makefile	/^RM = \/usr\/bin\/cmake -E remove -f$/;"	m
@@ -3632,7 +3632,7 @@ RMCP_HPP	include/redfish/rmcp.hpp	3;"	d
 RMCP_OPENSESSION_REQUEST	include/redfish/rmcp.hpp	29;"	d
 RMCP_OPENSESSION_RESPONSE	include/redfish/rmcp.hpp	30;"	d
 RMCP_PACKET_OFFSET_TYPE	include/redfish/rmcp.hpp	27;"	d
-RMCP_UDP_PORT	KETI-Edge/keti-edge.cpp	25;"	d	file:
+RMCP_UDP_PORT	KETI-Ibmc/keti-Ibmc.cpp	25;"	d	file:
 ROLE_TYPE	include/redfish/resource.hpp	/^  ROLE_TYPE,$/;"	e	enum:RESOURCE_TYPE
 R_ADMINISTRATOR	include/redfish/stdafx.hpp	/^  R_ADMINISTRATOR,$/;"	e	enum:__anon67
 R_NOACCESS	include/redfish/stdafx.hpp	/^{ R_NOACCESS = 1,$/;"	e	enum:__anon67
@@ -3663,14 +3663,14 @@ Resource	include/redfish/resource.hpp	/^  Resource(const string _odata_id) {$/;"
 Resource	include/redfish/resource.hpp	/^  Resource(const uint8_t _type, const string _odata_id) {$/;"	f	class:Resource
 Resource	include/redfish/resource.hpp	/^  Resource(const uint8_t _type, const string _odata_id,$/;"	f	class:Resource
 Resource	include/redfish/resource.hpp	/^class Resource {$/;"	c
-Rmcppacket	KETI-Edge/rmcp.cpp	/^Rmcppacket::Rmcppacket(struct sockaddr_in _cliAddress, std::vector<uint8_t> _packetIn)$/;"	f	class:Rmcppacket
+Rmcppacket	KETI-Ibmc/rmcp.cpp	/^Rmcppacket::Rmcppacket(struct sockaddr_in _cliAddress, std::vector<uint8_t> _packetIn)$/;"	f	class:Rmcppacket
 Rmcppacket	include/redfish/rmcp.hpp	/^        Rmcppacket()$/;"	f	class:Rmcppacket
 Rmcppacket	include/redfish/rmcp.hpp	/^class Rmcppacket$/;"	c
 Rmcppacket	rmcp.cpp	/^Rmcppacket::Rmcppacket(struct sockaddr_in _cliAddress,$/;"	f	class:Rmcppacket
 Role	include/redfish/resource.hpp	/^  Role(const string _odata_id)$/;"	f	class:Role
 Role	include/redfish/resource.hpp	/^  Role(const string _odata_id, const string _role_id) : Role(_odata_id) {$/;"	f	class:Role
 Role	include/redfish/resource.hpp	/^class Role : public Resource {$/;"	c
-SAFE_FREE	KETI-Edge/rest_handler.cpp	107;"	d	file:
+SAFE_FREE	KETI-Ibmc/rest_handler.cpp	107;"	d	file:
 SDR_FRU_TYPE	include/ipmi/ipmi.hpp	743;"	d
 SDR_FULL_LEN	include/ipmi/ipmi.hpp	747;"	d
 SDR_FULL_TYPE	include/ipmi/ipmi.hpp	742;"	d
@@ -3763,23 +3763,23 @@ SENSOR_UNIT_VOLTS	include/ipmi/sensor_define.hpp	31;"	d
 SENSOR_UNIT_WATTS	include/ipmi/sensor_define.hpp	33;"	d
 SENSOR_VALID	include/ipmi/common.hpp	/^  SENSOR_VALID = 0x0,$/;"	e	enum:__anon54
 SEQ_NUM_MAX	libs/ipmb/ipmb.cpp	9;"	d	file:
-SERVER_CERTIFICATE_CHAIN_PATH	KETI-Edge/handler.hpp	5;"	d
-SERVER_ENTRY_POINT	KETI-Edge/handler.hpp	12;"	d
-SERVER_ENTRY_PORT	KETI-Edge/handler.hpp	10;"	d
-SERVER_PRIVATE_KEY_PATH	KETI-Edge/handler.hpp	6;"	d
-SERVER_REQUEST_TIMEOUT	KETI-Edge/handler.hpp	9;"	d
-SERVER_TMP_DH_PATH	KETI-Edge/handler.hpp	7;"	d
+SERVER_CERTIFICATE_CHAIN_PATH	KETI-Ibmc/handler.hpp	5;"	d
+SERVER_ENTRY_POINT	KETI-Ibmc/handler.hpp	12;"	d
+SERVER_ENTRY_PORT	KETI-Ibmc/handler.hpp	10;"	d
+SERVER_PRIVATE_KEY_PATH	KETI-Ibmc/handler.hpp	6;"	d
+SERVER_REQUEST_TIMEOUT	KETI-Ibmc/handler.hpp	9;"	d
+SERVER_TMP_DH_PATH	KETI-Ibmc/handler.hpp	7;"	d
 SERVICE_ROOT_TYPE	include/redfish/resource.hpp	/^  SERVICE_ROOT_TYPE,$/;"	e	enum:RESOURCE_TYPE
 SESSION_SERVICE_TYPE	include/redfish/resource.hpp	/^  SESSION_SERVICE_TYPE,$/;"	e	enum:RESOURCE_TYPE
 SESSION_TYPE	include/redfish/resource.hpp	/^  SESSION_TYPE,$/;"	e	enum:RESOURCE_TYPE
 SET_FILE	KETI-REST/rhandler.hpp	12;"	d
 SET_FILE	include/ipmi/setting_service.hpp	16;"	d
-SHELL	KETI-Edge/Makefile	/^SHELL = \/bin\/sh$/;"	m
+SHELL	KETI-Ibmc/Makefile	/^SHELL = \/bin\/sh$/;"	m
 SHELL	KETI-REST/Makefile	/^SHELL = \/bin\/sh$/;"	m
 SHELL	KETI-Serial/Makefile	/^SHELL = \/bin\/sh$/;"	m
 SHELL	Makefile	/^SHELL = \/bin\/sh$/;"	m
 SHELL	WDTBK/Makefile	/^SHELL = \/bin\/sh$/;"	m
-SHELL	build/KETI-Edge/Makefile	/^SHELL = \/bin\/sh$/;"	m
+SHELL	build/KETI-Ibmc/Makefile	/^SHELL = \/bin\/sh$/;"	m
 SHELL	build/KETI-REST/Makefile	/^SHELL = \/bin\/sh$/;"	m
 SHELL	build/KETI-WDT/Makefile	/^SHELL = \/bin\/sh$/;"	m
 SHELL	build/Makefile	/^SHELL = \/bin\/sh$/;"	m
@@ -3894,8 +3894,8 @@ SNMP_INDEX	include/redfish/resource.hpp	/^  SNMP_INDEX,$/;"	e	enum:NETWORK_PROTO
 SOCK_PATH_IPMB	include/ipmi/ipmb.hpp	21;"	d
 SOCK_PATH_IPMI	include/ipmi/setting_service.hpp	15;"	d
 SOFTWARE_INVENTORY_TYPE	include/redfish/resource.hpp	/^  SOFTWARE_INVENTORY_TYPE,$/;"	e	enum:RESOURCE_TYPE
-SOL	KETI-Edge/khandler.cpp	/^namespace SOL {$/;"	n	file:
-SOL	KETI-Edge/khandler.hpp	/^namespace SOL {$/;"	n
+SOL	KETI-Ibmc/khandler.cpp	/^namespace SOL {$/;"	n	file:
+SOL	KETI-Ibmc/khandler.hpp	/^namespace SOL {$/;"	n
 SOL_CONFIG_PATH	KETI-REST/rhandler.hpp	29;"	d
 SOL_CONFIG_PATH	include/ipmi/setting_service.hpp	33;"	d
 SOL_CONFIG_PATH	include/ipmi/sol.hpp	2;"	d
@@ -3920,7 +3920,7 @@ STATUS_STATE_DISABLED	include/redfish/resource.hpp	200;"	d
 STATUS_STATE_ENABLED	include/redfish/resource.hpp	199;"	d
 STATUS_STATE_STAND_BY_OFFLINE	include/redfish/resource.hpp	201;"	d
 STATUS_STATE_STARTING	include/redfish/resource.hpp	202;"	d
-STOP	KETI-Edge/rest_handler.cpp	/^volatile int STOP = FALSE;$/;"	v
+STOP	KETI-Ibmc/rest_handler.cpp	/^volatile int STOP = FALSE;$/;"	v
 STORAGE_CONTROLLER_TYPE	include/redfish/resource.hpp	/^  STORAGE_CONTROLLER_TYPE,$/;"	e	enum:RESOURCE_TYPE
 STORAGE_TYPE	include/redfish/resource.hpp	/^  STORAGE_TYPE,$/;"	e	enum:RESOURCE_TYPE
 STRINGIFY	CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	294;"	d	file:
@@ -3940,12 +3940,12 @@ STRINGIFY_HELPER	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	29
 STRINGIFY_HELPER	kvm/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	308;"	d	file:
 STRINGIFY_HELPER	kvm/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	293;"	d	file:
 SUBMIT_TEST_EVENT	include/redfish/resource.hpp	/^  SUBMIT_TEST_EVENT,$/;"	e	enum:ACTION_NAME
-SUFFIXES	KETI-Edge/Makefile	/^SUFFIXES =$/;"	m
+SUFFIXES	KETI-Ibmc/Makefile	/^SUFFIXES =$/;"	m
 SUFFIXES	KETI-REST/Makefile	/^SUFFIXES =$/;"	m
 SUFFIXES	KETI-Serial/Makefile	/^SUFFIXES =$/;"	m
 SUFFIXES	Makefile	/^SUFFIXES =$/;"	m
 SUFFIXES	WDTBK/Makefile	/^SUFFIXES =$/;"	m
-SUFFIXES	build/KETI-Edge/Makefile	/^SUFFIXES =$/;"	m
+SUFFIXES	build/KETI-Ibmc/Makefile	/^SUFFIXES =$/;"	m
 SUFFIXES	build/KETI-REST/Makefile	/^SUFFIXES =$/;"	m
 SUFFIXES	build/KETI-WDT/Makefile	/^SUFFIXES =$/;"	m
 SUFFIXES	build/Makefile	/^SUFFIXES =$/;"	m
@@ -4067,45 +4067,45 @@ THERMAL_CONSTANT	include/ipmi/lightning_sensor.hpp	76;"	d
 THERMAL_TYPE	include/redfish/resource.hpp	/^  THERMAL_TYPE,$/;"	e	enum:RESOURCE_TYPE
 THRESH_NOT_AVAILABLE	include/ipmi/ipmi.hpp	84;"	d
 TIMEOUT_IPMB	include/ipmi/ipmb.hpp	43;"	d
-TIMER_100MS	KETI-Edge/rest_handler.hpp	18;"	d
-TIMER_100MS_ID	KETI-Edge/khandler.cpp	176;"	d	file:
-TIMER_100MS_ID	KETI-Edge/rest_handler.cpp	18;"	d	file:
-TIMER_100MS_SECONDS	KETI-Edge/khandler.cpp	177;"	d	file:
-TIMER_100MS_SECONDS	KETI-Edge/rest_handler.cpp	19;"	d	file:
-TIMER_1SECS	KETI-Edge/rest_handler.hpp	19;"	d
-TIMER_1SEC_ID	KETI-Edge/khandler.cpp	183;"	d	file:
-TIMER_1SEC_ID	KETI-Edge/rest_handler.cpp	25;"	d	file:
-TIMER_1SEC_SECONDS	KETI-Edge/khandler.cpp	184;"	d	file:
-TIMER_1SEC_SECONDS	KETI-Edge/rest_handler.cpp	26;"	d	file:
-TIMER_250MS	KETI-Edge/rest_handler.hpp	17;"	d
-TIMER_250MS_ID	KETI-Edge/khandler.cpp	179;"	d	file:
-TIMER_250MS_ID	KETI-Edge/rest_handler.cpp	21;"	d	file:
-TIMER_250MS_SECONDS	KETI-Edge/khandler.cpp	178;"	d	file:
-TIMER_250MS_SECONDS	KETI-Edge/khandler.cpp	180;"	d	file:
-TIMER_250MS_SECONDS	KETI-Edge/rest_handler.cpp	20;"	d	file:
-TIMER_250MS_SECONDS	KETI-Edge/rest_handler.cpp	22;"	d	file:
-TIMER_3SECS	KETI-Edge/rest_handler.hpp	20;"	d
-TIMER_3SEC_ID	KETI-Edge/khandler.cpp	188;"	d	file:
-TIMER_3SEC_ID	KETI-Edge/rest_handler.cpp	30;"	d	file:
-TIMER_3SEC_SECONDS	KETI-Edge/khandler.cpp	189;"	d	file:
-TIMER_3SEC_SECONDS	KETI-Edge/rest_handler.cpp	31;"	d	file:
-TIMER_500MS	KETI-Edge/rest_handler.hpp	16;"	d
-TIMER_500MS_ID	KETI-Edge/khandler.cpp	181;"	d	file:
-TIMER_500MS_ID	KETI-Edge/rest_handler.cpp	23;"	d	file:
-TIMER_500MS_SECONDS	KETI-Edge/khandler.cpp	182;"	d	file:
-TIMER_500MS_SECONDS	KETI-Edge/rest_handler.cpp	24;"	d	file:
-TIMER_5SECS	KETI-Edge/rest_handler.hpp	21;"	d
-TIMER_5SEC_ID	KETI-Edge/khandler.cpp	190;"	d	file:
-TIMER_5SEC_ID	KETI-Edge/rest_handler.cpp	32;"	d	file:
-TIMER_5SEC_SECONDS	KETI-Edge/khandler.cpp	191;"	d	file:
-TIMER_5SEC_SECONDS	KETI-Edge/rest_handler.cpp	33;"	d	file:
-TIMER_60SEC_ID	KETI-Edge/khandler.cpp	185;"	d	file:
-TIMER_60SEC_ID	KETI-Edge/rest_handler.cpp	27;"	d	file:
-TIMER_60SEC_SECONDS	KETI-Edge/khandler.cpp	186;"	d	file:
-TIMER_60SEC_SECONDS	KETI-Edge/rest_handler.cpp	28;"	d	file:
+TIMER_100MS	KETI-Ibmc/rest_handler.hpp	18;"	d
+TIMER_100MS_ID	KETI-Ibmc/khandler.cpp	176;"	d	file:
+TIMER_100MS_ID	KETI-Ibmc/rest_handler.cpp	18;"	d	file:
+TIMER_100MS_SECONDS	KETI-Ibmc/khandler.cpp	177;"	d	file:
+TIMER_100MS_SECONDS	KETI-Ibmc/rest_handler.cpp	19;"	d	file:
+TIMER_1SECS	KETI-Ibmc/rest_handler.hpp	19;"	d
+TIMER_1SEC_ID	KETI-Ibmc/khandler.cpp	183;"	d	file:
+TIMER_1SEC_ID	KETI-Ibmc/rest_handler.cpp	25;"	d	file:
+TIMER_1SEC_SECONDS	KETI-Ibmc/khandler.cpp	184;"	d	file:
+TIMER_1SEC_SECONDS	KETI-Ibmc/rest_handler.cpp	26;"	d	file:
+TIMER_250MS	KETI-Ibmc/rest_handler.hpp	17;"	d
+TIMER_250MS_ID	KETI-Ibmc/khandler.cpp	179;"	d	file:
+TIMER_250MS_ID	KETI-Ibmc/rest_handler.cpp	21;"	d	file:
+TIMER_250MS_SECONDS	KETI-Ibmc/khandler.cpp	178;"	d	file:
+TIMER_250MS_SECONDS	KETI-Ibmc/khandler.cpp	180;"	d	file:
+TIMER_250MS_SECONDS	KETI-Ibmc/rest_handler.cpp	20;"	d	file:
+TIMER_250MS_SECONDS	KETI-Ibmc/rest_handler.cpp	22;"	d	file:
+TIMER_3SECS	KETI-Ibmc/rest_handler.hpp	20;"	d
+TIMER_3SEC_ID	KETI-Ibmc/khandler.cpp	188;"	d	file:
+TIMER_3SEC_ID	KETI-Ibmc/rest_handler.cpp	30;"	d	file:
+TIMER_3SEC_SECONDS	KETI-Ibmc/khandler.cpp	189;"	d	file:
+TIMER_3SEC_SECONDS	KETI-Ibmc/rest_handler.cpp	31;"	d	file:
+TIMER_500MS	KETI-Ibmc/rest_handler.hpp	16;"	d
+TIMER_500MS_ID	KETI-Ibmc/khandler.cpp	181;"	d	file:
+TIMER_500MS_ID	KETI-Ibmc/rest_handler.cpp	23;"	d	file:
+TIMER_500MS_SECONDS	KETI-Ibmc/khandler.cpp	182;"	d	file:
+TIMER_500MS_SECONDS	KETI-Ibmc/rest_handler.cpp	24;"	d	file:
+TIMER_5SECS	KETI-Ibmc/rest_handler.hpp	21;"	d
+TIMER_5SEC_ID	KETI-Ibmc/khandler.cpp	190;"	d	file:
+TIMER_5SEC_ID	KETI-Ibmc/rest_handler.cpp	32;"	d	file:
+TIMER_5SEC_SECONDS	KETI-Ibmc/khandler.cpp	191;"	d	file:
+TIMER_5SEC_SECONDS	KETI-Ibmc/rest_handler.cpp	33;"	d	file:
+TIMER_60SEC_ID	KETI-Ibmc/khandler.cpp	185;"	d	file:
+TIMER_60SEC_ID	KETI-Ibmc/rest_handler.cpp	27;"	d	file:
+TIMER_60SEC_SECONDS	KETI-Ibmc/khandler.cpp	186;"	d	file:
+TIMER_60SEC_SECONDS	KETI-Ibmc/rest_handler.cpp	28;"	d	file:
 TPM75_TEMP_RESOLUTION	include/ipmi/lightning_sensor.hpp	54;"	d
 TRANSFER_HEADER	kvm/regs-video.h	/^} TRANSFER_HEADER, *PTRANSFER_HEADER;$/;"	t	typeref:struct:_TRANSFER_HEADER
-TRUE	KETI-Edge/rest_handler.cpp	10;"	d	file:
+TRUE	KETI-Ibmc/rest_handler.cpp	10;"	d	file:
 TRUE	KETI-Serial/KETI-Serial.cpp	23;"	d	file:
 Task	include/redfish/resource.hpp	/^  Task(const string _odata_id)$/;"	f	class:Task
 Task	include/redfish/resource.hpp	/^  Task(const string _odata_id, const string _task_id) : Task(_odata_id) {$/;"	f	class:Task
@@ -4269,7 +4269,7 @@ _MemoryLocation	include/redfish/resource.hpp	/^typedef struct _MemoryLocation {$
 _Message	include/redfish/resource.hpp	/^typedef struct _Message {$/;"	s
 _Messages	include/redfish/resource.hpp	/^typedef struct _Messages {$/;"	s
 _OData	include/redfish/resource.hpp	/^typedef struct _OData {$/;"	s
-_POSIX_SOURCE	KETI-Edge/rest_handler.cpp	8;"	d	file:
+_POSIX_SOURCE	KETI-Ibmc/rest_handler.cpp	8;"	d	file:
 _POSIX_SOURCE	KETI-Serial/KETI-Serial.cpp	20;"	d	file:
 _Part_Location	include/redfish/resource.hpp	/^typedef struct _Part_Location {$/;"	s
 _Payload	include/redfish/resource.hpp	/^typedef struct _Payload {$/;"	s
@@ -4279,7 +4279,7 @@ _PostalAddress	include/redfish/resource.hpp	/^typedef struct _PostalAddress {$/;
 _PowerLimit	include/redfish/resource.hpp	/^typedef struct _PowerLimit {$/;"	s
 _PowerMetrics	include/redfish/resource.hpp	/^typedef struct _PowerMetrics {$/;"	s
 _ProcessorId	include/redfish/resource.hpp	/^typedef struct _ProcessorId {$/;"	s
-_SIZEOF_ADDR_IFREQ	KETI-Edge/lssdp.cpp	18;"	d	file:
+_SIZEOF_ADDR_IFREQ	KETI-Ibmc/lssdp.cpp	18;"	d	file:
 _SMTP	include/redfish/resource.hpp	/^typedef struct _SMTP {$/;"	s
 _SSE_Filter_Properties_Supported	include/redfish/resource.hpp	/^typedef struct _SSE_Filter_Properties_Supported {$/;"	s
 _STRUCTURE_INFO	kvm/regs-video.h	18;"	d
@@ -4301,7 +4301,7 @@ __DCMI_HPP__	include/ipmi/dcmi.hpp	2;"	d
 __EFTE_H__	include/ipmi/efte.hpp	3;"	d
 __IPMB_H__	include/ipmi/ipmb.hpp	2;"	d
 __LIGHTNING_SENSOR_H__	include/ipmi/lightning_sensor.hpp	2;"	d
-__LSSDP_H	KETI-Edge/lssdp.hpp	27;"	d
+__LSSDP_H	KETI-Ibmc/lssdp.hpp	27;"	d
 __MSG_SESSION_HPP__	include/redfish/msg_session.hpp	4;"	d
 __NETWORK_HPP__	include/ipmi/network.hpp	2;"	d
 __PEF_POLICY_H__	include/ipmi/pef_policy.hpp	2;"	d
@@ -4317,7 +4317,7 @@ __in_isspace	include/util/iniparser.hpp	139;"	d
 __reserved1	include/ipmi/apps.hpp	/^  uint8_t __reserved1 : 1;$/;"	m	struct:__anon35
 __reserved2	include/ipmi/apps.hpp	/^  uint8_t __reserved2 : 2;$/;"	m	struct:__anon35
 __reserved3	include/ipmi/apps.hpp	/^  uint8_t __reserved3 : 6;$/;"	m	struct:__anon35
-_checksum	KETI-Edge/msg_session.cpp	/^uint8_t _checksum(void *buf, unsigned int buflen, uint8_t checksum_initial)$/;"	f
+_checksum	KETI-Ibmc/msg_session.cpp	/^uint8_t _checksum(void *buf, unsigned int buflen, uint8_t checksum_initial)$/;"	f
 _comment	include/util/iniparser.hpp	/^        std::string _comment;              \/\/ comment to the section$/;"	m	class:INI::Section
 _comments	include/util/iniparser.hpp	/^        CommentMap  _comments;             \/\/ all comments, associated with values in the section$/;"	m	class:INI::Section
 _entries	include/util/iniparser.hpp	/^        EntryMap    _entries;              \/\/ all entries in the section$/;"	m	class:INI::Section
@@ -4325,7 +4325,7 @@ _file	include/util/iniparser.hpp	/^        File*       _file;                   
 _ipmb_req_t	include/ipmi/ipmb.hpp	/^typedef struct _ipmb_req_t {$/;"	s
 _ipmb_res_t	include/ipmi/ipmb.hpp	/^typedef struct _ipmb_res_t {$/;"	s
 _ipmb_sbuf_t	libs/ipmb/ipmb.cpp	/^typedef struct _ipmb_sbuf_t {$/;"	s	file:
-_lssdp_interface	KETI-Edge/lssdp.hpp	/^typedef struct _lssdp_interface {$/;"	s
+_lssdp_interface	KETI-Ibmc/lssdp.hpp	/^typedef struct _lssdp_interface {$/;"	s
 _name	include/util/iniparser.hpp	/^        std::string _name;                 \/\/ name of the section$/;"	m	class:INI::Section
 _ptr	include/util/iniparser.hpp	/^        refcont* _ptr;$/;"	m	class:INI::RefCountPtr
 _remain_expires_time	include/redfish/resource.hpp	/^  unsigned int _remain_expires_time;$/;"	m	class:Session
@@ -4336,7 +4336,7 @@ _seq_buf_t	libs/ipmb/ipmb.cpp	/^typedef struct _seq_buf_t {$/;"	s	file:
 _val	include/util/iniparser.hpp	/^        RefCountPtr<std::map<Value,Value> > _val;$/;"	m	class:INI::Map
 _val	include/util/iniparser.hpp	/^        RefCountPtr<std::string> _val;$/;"	m	class:INI::Value
 _val	include/util/iniparser.hpp	/^        RefCountPtr<std::vector<Value> > _val;$/;"	m	class:INI::Array
-a_mutex	KETI-Edge/rest_handler.cpp	/^pthread_mutex_t a_mutex = PTHREAD_MUTEX_INITIALIZER;$/;"	v
+a_mutex	KETI-Ibmc/rest_handler.cpp	/^pthread_mutex_t a_mutex = PTHREAD_MUTEX_INITIALIZER;$/;"	v
 access_capabilities	include/redfish/resource.hpp	/^  vector<string> access_capabilities;$/;"	m	class:Volume
 access_mode	include/ipmi/channel.hpp	/^  uint8_t access_mode;$/;"	m	class:Ipmichannel
 account	include/redfish/resource.hpp	/^  Account *account;$/;"	m	class:Session
@@ -4354,12 +4354,12 @@ accuracy	include/redfish/resource.hpp	/^  double accuracy;  \/\/ 오차율(%)$/;
 accuracy	include/redfish/resource.hpp	/^  double accuracy;$/;"	m	struct:_SensorMake
 accuracy_dir	include/ipmi/ipmi.hpp	/^  unsigned char accuracy_dir;$/;"	m	struct:__anon20
 accuracy_dir	include/ipmi/lightning_sensor.hpp	/^  unsigned char accuracy_dir;$/;"	m	struct:__anon48
-act_certificate	KETI-Edge/handler.cpp	/^void act_certificate(json::value _jv, string _resource, string _what,$/;"	f
-act_certificate_service	KETI-Edge/handler.cpp	/^void act_certificate_service(json::value _jv, string _resource, string _what,$/;"	f
-act_eventservice	KETI-Edge/handler.cpp	/^void act_eventservice(json::value _jv, string _resource, string _what,$/;"	f
-act_logservice	KETI-Edge/handler.cpp	/^void act_logservice(json::value _jv, string _resource, string _what,$/;"	f
-act_system	KETI-Edge/handler.cpp	/^void act_system(json::value _jv, string _resource, string _what,$/;"	f
-act_virtualmedia	KETI-Edge/handler.cpp	/^void act_virtualmedia(json::value _jv, string _resource, string _what,$/;"	f
+act_certificate	KETI-Ibmc/handler.cpp	/^void act_certificate(json::value _jv, string _resource, string _what,$/;"	f
+act_certificate_service	KETI-Ibmc/handler.cpp	/^void act_certificate_service(json::value _jv, string _resource, string _what,$/;"	f
+act_eventservice	KETI-Ibmc/handler.cpp	/^void act_eventservice(json::value _jv, string _resource, string _what,$/;"	f
+act_logservice	KETI-Ibmc/handler.cpp	/^void act_logservice(json::value _jv, string _resource, string _what,$/;"	f
+act_system	KETI-Ibmc/handler.cpp	/^void act_system(json::value _jv, string _resource, string _what,$/;"	f
+act_virtualmedia	KETI-Ibmc/handler.cpp	/^void act_virtualmedia(json::value _jv, string _resource, string _what,$/;"	f
 action	include/ipmi/ipmi.hpp	/^  uint8_t action;$/;"	m	struct:__anon30
 actions	include/redfish/resource.hpp	/^  unordered_map<string, Actions> actions;$/;"	m	class:Bios
 actions	include/redfish/resource.hpp	/^  unordered_map<string, Actions> actions;$/;"	m	class:Certificate
@@ -4372,7 +4372,7 @@ actions	include/redfish/resource.hpp	/^  unordered_map<string, Actions> actions;
 actions	include/redfish/resource.hpp	/^  unordered_map<string, Actions> actions;$/;"	m	class:VirtualMedia
 activation	include/redfish/resource.hpp	/^  string activation;$/;"	m	struct:_Info_Threshold
 active_directory	include/redfish/resource.hpp	/^  ActiveDirectory active_directory;$/;"	m	class:AccountService
-active_threads	KETI-Edge/rest_handler.cpp	/^int active_threads = 0;$/;"	v
+active_threads	KETI-Ibmc/rest_handler.cpp	/^int active_threads = 0;$/;"	v
 ad_config_t	include/ipmi/apps.hpp	/^} ad_config_t;$/;"	t	typeref:struct:__anon44
 adc_pins	include/ipmi/lightning_sensor.hpp	/^enum adc_pins {$/;"	g
 add_member	libs/redfish/resource.cpp	/^void Collection::add_member(Resource *_resource) {$/;"	f	class:Collection
@@ -4380,7 +4380,7 @@ add_member	libs/redfish/resource.cpp	/^void List::add_member(Resource *_resource
 add_message_args	libs/redfish/resource.cpp	/^void LogEntry::add_message_args(string _val) {$/;"	f	class:LogEntry
 add_to_sel_full	libs/sel/sel.cpp	/^int add_to_sel_full()$/;"	f
 add_ts	libs/sdr/sdr.cpp	/^std::time_t add_ts = std::time(nullptr);$/;"	v
-addr	KETI-Edge/lssdp.hpp	/^    uint32_t    addr;                                   \/\/ address in network byte order$/;"	m	struct:_lssdp_interface
+addr	KETI-Ibmc/lssdp.hpp	/^    uint32_t    addr;                                   \/\/ address in network byte order$/;"	m	struct:_lssdp_interface
 addr_timing	libs/lightning/lightning_sensor.cpp	/^  u8 addr_timing;$/;"	m	struct:timing_negotiation	file:
 address	include/redfish/resource.hpp	/^  string address;$/;"	m	struct:_IPv4_Address
 address	include/redfish/resource.hpp	/^  string address;$/;"	m	struct:_IPv6_Address
@@ -4501,7 +4501,7 @@ autoneg	include/redfish/resource.hpp	/^  bool autoneg;$/;"	m	class:EthernetInter
 avail	include/redfish/hwcontrol.hpp	/^    int avail; \/\/사용할 수있는 블럭$/;"	m	struct:df
 avg_consumed_watts	include/redfish/resource.hpp	/^  double avg_consumed_watts;$/;"	m	struct:_PowerMetrics
 avg_power	libs/ipmi/ipmi.cpp	/^uint16_t min_power, max_power, avg_power;$/;"	v
-bPowerGD	KETI-Edge/khandler.cpp	/^int bPowerGD = 1; \/\/ temporary$/;"	v
+bPowerGD	KETI-Ibmc/khandler.cpp	/^int bPowerGD = 1; \/\/ temporary$/;"	v
 b_accuracy	include/ipmi/ipmi.hpp	/^  unsigned char b_accuracy;$/;"	m	struct:__anon20
 b_accuracy	include/ipmi/lightning_sensor.hpp	/^  unsigned char b_accuracy;$/;"	m	struct:__anon48
 b_val	include/ipmi/ipmi.hpp	/^  unsigned char b_val;$/;"	m	struct:__anon20
@@ -4514,7 +4514,7 @@ basedn	include/ipmi/apps.hpp	/^  char basedn[32];$/;"	m	struct:__anon45
 begin	include/ipmi/ipmi.hpp	/^  int begin;             \/\/\/ index to the begining of the log$/;"	m	struct:__anon31
 begin	include/ipmi/ipmi.hpp	/^  int begin;             \/\/\/ index to the first SDR entry$/;"	m	struct:sdr_hdr_t
 begin	include/ipmi/ipmi.hpp	/^  int begin;            \/\/\/ index to the begining of the log$/;"	m	struct:sel_hdr
-bic_up_flag	KETI-Edge/rest_handler.cpp	/^static int bic_up_flag = 0;$/;"	v	file:
+bic_up_flag	KETI-Ibmc/rest_handler.cpp	/^static int bic_up_flag = 0;$/;"	v	file:
 binddn	include/ipmi/apps.hpp	/^  char binddn[64];$/;"	m	struct:__anon45
 bindpw	include/ipmi/apps.hpp	/^  char bindpw[32];$/;"	m	struct:__anon45
 bios	include/redfish/resource.hpp	/^  Bios *bios; \/\/ resource Bios$/;"	m	class:Systems
@@ -4550,10 +4550,10 @@ buildHmacRAKP3	libs/session/session.cpp	/^std::vector<uint8_t> Ipmisession::buil
 buildHmacRAKP4	libs/session/session.cpp	/^std::vector<uint8_t> Ipmisession::buildHmacRAKP4() {$/;"	f	class:Ipmisession
 buildHmacSikData	libs/session/session.cpp	/^std::vector<uint8_t> Ipmisession::buildHmacSikData() {$/;"	f	class:Ipmisession
 bus_width_bits	include/redfish/resource.hpp	/^  unsigned int bus_width_bits;$/;"	m	class:Memory
-bytes_recved	KETI-Edge/khandler.cpp	/^int bytes_recved;$/;"	m	namespace:SOL	file:
-bytes_recved	KETI-Edge/rest_handler.cpp	/^int bytes_recved;$/;"	v
-bytes_sent	KETI-Edge/khandler.cpp	/^int bytes_sent;$/;"	m	namespace:SOL	file:
-bytes_sent	KETI-Edge/rest_handler.cpp	/^int bytes_sent;$/;"	v
+bytes_recved	KETI-Ibmc/khandler.cpp	/^int bytes_recved;$/;"	m	namespace:SOL	file:
+bytes_recved	KETI-Ibmc/rest_handler.cpp	/^int bytes_recved;$/;"	v
+bytes_sent	KETI-Ibmc/khandler.cpp	/^int bytes_sent;$/;"	m	namespace:SOL	file:
+bytes_sent	KETI-Ibmc/rest_handler.cpp	/^int bytes_sent;$/;"	v
 bytes_words	include/ipmi/ipmi.hpp	/^  uint8_t bytes_words;$/;"	m	struct:ipmi_fruid_info_t
 bytes_written	KETI-REST/rhandler.cpp	/^  size_t bytes_written;$/;"	m	struct:file_writer_data	file:
 c_code	include/ipmi/ipmi.hpp	/^  uint8_t c_code;$/;"	m	class:IpmiInterface
@@ -4605,9 +4605,9 @@ chassis_total	include/ipmi/fru.hpp	/^  int chassis_total, board_total, product_t
 chassis_type	include/redfish/resource.hpp	/^  string chassis_type;$/;"	m	class:Chassis
 chassis_type_desc	KETI-REST/rhandler.hpp	/^static uint8_t chassis_type_desc[30][50] = {"Unspecified",$/;"	v
 chassis_type_desc_fru	libs/fru/fru.cpp	/^string chassis_type_desc_fru[100]={$/;"	v
-check_db	KETI-Edge/psu_server.cpp	/^void check_db() {$/;"	f
-check_db_callback	KETI-Edge/psu_server.cpp	/^int check_db_callback(void *NotUsed, int argc, char **argv, char **azColName) {$/;"	f
-check_fan_status	KETI-Edge/khandler.cpp	/^int check_fan_status(int i) {$/;"	f
+check_db	KETI-Ibmc/psu_server.cpp	/^void check_db() {$/;"	f
+check_db_callback	KETI-Ibmc/psu_server.cpp	/^int check_db_callback(void *NotUsed, int argc, char **argv, char **azColName) {$/;"	f
+check_fan_status	KETI-Ibmc/khandler.cpp	/^int check_fan_status(int i) {$/;"	f
 check_pef_table_sensor	libs/sel/efte.cpp	/^uint8_t check_pef_table_sensor(uint8_t sType, uint8_t sNum, uint8_t severity) {$/;"	f
 check_role_privileges	libs/redfish/util.cpp	/^bool check_role_privileges(string _pri)$/;"	f
 checksum	include/ipmi/ipmi.hpp	/^  uint8_t checksum;$/;"	m	struct:fru_header_t
@@ -4624,7 +4624,7 @@ clear_faults	libs/util/pmbus.cpp	/^void clear_faults(int addr) {$/;"	f
 clear_gc	libs/redfish/record.cpp	/^void clear_gc() {$/;"	f
 clientAddr	include/redfish/rmcp.hpp	/^        struct sockaddr_in clientAddr;$/;"	m	class:Rmcppacket	typeref:struct:Rmcppacket::sockaddr_in
 clntSessionId	include/ipmi/session.hpp	/^    std::vector<uint8_t> clntSessionId; \/\/ Size 4$/;"	m	struct:Ipmisession::__anon15
-close	KETI-Edge/handler.hpp	/^    pplx::task<void> close() { return m_listener.close(); }$/;"	f	class:Handler
+close	KETI-Ibmc/handler.hpp	/^    pplx::task<void> close() { return m_listener.close(); }$/;"	f	class:Handler
 closeSession	libs/session/session.cpp	/^bool Ipmisession::closeSession() {$/;"	f	class:Ipmisession
 cmd	include/ipmi/ipmb.hpp	/^  uint8_t cmd;             \/**< Command$/;"	m	struct:ipmi_msg
 cmd	include/ipmi/ipmb.hpp	/^  uint8_t cmd;$/;"	m	struct:_ipmb_req_t
@@ -4645,7 +4645,7 @@ common	include/ipmi/apps.hpp	/^  unsigned char common[16];$/;"	m	struct:__anon43
 commonName	include/redfish/resource.hpp	/^  string commonName;$/;"	m	struct:_CertContent
 community_str	include/ipmi/network.hpp	/^  std::string community_str;                        \/\/alert$/;"	m	class:Ipminetwork
 comp	libs/redfish/util.cpp	/^bool comp(const string &_firt_string, const string &_second_string)$/;"	f
-complete_task_resource	KETI-Edge/handler.cpp	/^void complete_task_resource(unsigned int _num) {$/;"	f
+complete_task_resource	KETI-Ibmc/handler.cpp	/^void complete_task_resource(unsigned int _num) {$/;"	f
 completion_code	include/ipmi/ipmb.hpp	/^  uint8_t completion_code; \/**< Completion Code$/;"	m	struct:ipmi_msg
 compression_format	kvm/video.h	/^	unsigned char	compression_format;		\/\/0:ASPEED 1:JPEG	$/;"	m	struct:ast_video_config
 compression_mode	kvm/video.h	/^	unsigned char	compression_mode; 		\/\/0:DCT, 1:DCT_VQ mix VQ-2 color, 2:DCT_VQ mix VQ-4 color		9:$/;"	m	struct:ast_video_config
@@ -4668,11 +4668,11 @@ convert_power_to_g_power	libs/apps/apps.cpp	/^void convert_power_to_g_power(powe
 convstream	include/util/iniparser.hpp	/^        convstream() {*this << std::setprecision(17) << std::boolalpha;}$/;"	f	class:INI::convstream
 convstream	include/util/iniparser.hpp	/^    class convstream: public std::stringstream$/;"	c	namespace:INI
 correction_in_ms	include/redfish/resource.hpp	/^  int correction_in_ms;$/;"	m	struct:_PowerLimit
-count	KETI-Edge/khandler.cpp	/^      count : 3, \/\/ count for successive reading fail$/;"	m	struct:__anon9	file:
+count	KETI-Ibmc/khandler.cpp	/^      count : 3, \/\/ count for successive reading fail$/;"	m	struct:__anon9	file:
 count	include/util/iniparser.hpp	/^            size_t count;$/;"	m	struct:INI::RefCountPtr::refcont
-count_d	KETI-Edge/psu_server.cpp	/^int count_m, count_h, count_d = 0;$/;"	v
-count_h	KETI-Edge/psu_server.cpp	/^int count_m, count_h, count_d = 0;$/;"	v
-count_m	KETI-Edge/psu_server.cpp	/^int count_m, count_h, count_d = 0;$/;"	v
+count_d	KETI-Ibmc/psu_server.cpp	/^int count_m, count_h, count_d = 0;$/;"	v
+count_h	KETI-Ibmc/psu_server.cpp	/^int count_m, count_h, count_d = 0;$/;"	v
+count_m	KETI-Ibmc/psu_server.cpp	/^int count_m, count_h, count_d = 0;$/;"	v
 countcpu	include/redfish/hwcontrol.hpp	/^    int countcpu ; \/\/등록된 씨피유수$/;"	m	struct:cpu_usage
 country	include/ipmi/apps.hpp	/^  unsigned char country[3];$/;"	m	struct:__anon43
 country	include/redfish/resource.hpp	/^  string country;$/;"	m	struct:_CertContent
@@ -4684,18 +4684,18 @@ crc8	libs/util/pmbus.cpp	/^static unsigned char crc8(unsigned char x) {$/;"	f	fi
 create_socket	libs/network/network.cpp	/^int create_socket() {$/;"	f
 create_time	include/redfish/resource.hpp	/^  string create_time;$/;"	m	class:VirtualMedia
 created	include/redfish/resource.hpp	/^  string created;$/;"	m	class:LogEntry
-crnl_mapping	KETI-Edge/khandler.cpp	/^int crnl_mapping = 0;$/;"	m	namespace:SOL	file:
-crnl_mapping	KETI-Edge/rest_handler.cpp	/^int crnl_mapping = 0;$/;"	v
+crnl_mapping	KETI-Ibmc/khandler.cpp	/^int crnl_mapping = 0;$/;"	m	namespace:SOL	file:
+crnl_mapping	KETI-Ibmc/rest_handler.cpp	/^int crnl_mapping = 0;$/;"	v
 cts	include/redfish/resource.hpp	/^  pplx::cancellation_token_source cts;$/;"	m	class:Session
 curr_seq	libs/ipmb/ipmb.cpp	/^  uint8_t curr_seq;           \/\/ currently used seq#$/;"	m	struct:_ipmb_sbuf_t	file:
 currentDateTime	include/ipmi/ipmi.hpp	/^  const std::string currentDateTime(void) {$/;"	f	class:IpmiLogEvent
 currentDateTime	libs/redfish/resource.cpp	/^const std::string currentDateTime() {$/;"	f
 current_sensor_name	libs/sel/efte.cpp	/^struct bit_desc_map current_sensor_name = {$/;"	v	typeref:struct:bit_desc_map
 cv	libs/network/network.cpp	/^static std::condition_variable cv;$/;"	v	file:
-d_count	KETI-Edge/rest_handler.cpp	/^int m_min, h_min, d_min, m_max, h_max, d_max, m_count, d_count, h_count = 0;$/;"	v
-d_max	KETI-Edge/rest_handler.cpp	/^int m_min, h_min, d_min, m_max, h_max, d_max, m_count, d_count, h_count = 0;$/;"	v
-d_min	KETI-Edge/rest_handler.cpp	/^int m_min, h_min, d_min, m_max, h_max, d_max, m_count, d_count, h_count = 0;$/;"	v
-data	KETI-Edge/rest_handler.hpp	/^  unsigned char *data; \/\/ array with the data-bytes$/;"	m	struct:__anon10
+d_count	KETI-Ibmc/rest_handler.cpp	/^int m_min, h_min, d_min, m_max, h_max, d_max, m_count, d_count, h_count = 0;$/;"	v
+d_max	KETI-Ibmc/rest_handler.cpp	/^int m_min, h_min, d_min, m_max, h_max, d_max, m_count, d_count, h_count = 0;$/;"	v
+d_min	KETI-Ibmc/rest_handler.cpp	/^int m_min, h_min, d_min, m_max, h_max, d_max, m_count, d_count, h_count = 0;$/;"	v
+data	KETI-Ibmc/rest_handler.hpp	/^  unsigned char *data; \/\/ array with the data-bytes$/;"	m	struct:__anon10
 data	WDTBK/watchdog.hpp	/^  unsigned char data[35000];$/;"	m	struct:__anon8
 data	include/ipmi/event_string.hpp	/^	uint8_t   data;$/;"	m	struct:ipmi_event_sensor_types
 data	include/ipmi/ipmb.hpp	/^  uint8_t data[IPMI_MSG_MAX_LENGTH]; \/**< Data buffer <br>$/;"	m	struct:ipmi_msg
@@ -4724,7 +4724,7 @@ datetime	include/redfish/resource.hpp	/^  string datetime;$/;"	m	class:Manager
 datetime	include/redfish/resource.hpp	/^  string datetime;$/;"	m	class:TaskService
 datetime_local_offset	include/redfish/resource.hpp	/^  string datetime_local_offset;$/;"	m	class:LogService
 datetime_offset	include/redfish/resource.hpp	/^  string datetime_offset;$/;"	m	class:Manager
-day_cursor	KETI-Edge/psu_server.cpp	/^int min_cursor[2], hour_cursor[2], day_cursor[2] = {0};$/;"	v
+day_cursor	KETI-Ibmc/psu_server.cpp	/^int min_cursor[2], hour_cursor[2], day_cursor[2] = {0};$/;"	v
 dc_ip	include/ipmi/apps.hpp	/^  char dc_ip[32]; \/\/ domain controller ip (server ip)$/;"	m	struct:__anon44
 dcmiConfiguration	libs/dcmi/dcmi.cpp	/^Dcmiconfiguration dcmiConfiguration;$/;"	v
 dcmi_asset_tag	include/ipmi/dcmi.hpp	/^        std::vector<uint8_t> dcmi_asset_tag;$/;"	m	class:Dcmiconfiguration
@@ -4741,15 +4741,15 @@ dcmi_mngctrl	include/ipmi/dcmi.hpp	/^        std::vector<uint8_t> dcmi_mngctrl;$
 dcmi_optional_capa	include/ipmi/dcmi.hpp	/^        std::vector<uint8_t> dcmi_optional_capa;$/;"	m	class:Dcmiconfiguration
 dcmi_power_activate	libs/dcmi/dcmi.cpp	/^void Dcmiconfiguration::dcmi_power_activate(unsigned char *request,$/;"	f	class:Dcmiconfiguration
 dcmi_power_get_limit	libs/dcmi/dcmi.cpp	/^void Dcmiconfiguration::dcmi_power_get_limit(uint8_t *request,$/;"	f	class:Dcmiconfiguration
-dcmi_power_handler	KETI-Edge/khandler.cpp	/^void *dcmi_power_handler(void *data) {$/;"	f
-dcmi_power_limit_function	KETI-Edge/khandler.cpp	/^void dcmi_power_limit_function() {$/;"	f
+dcmi_power_handler	KETI-Ibmc/khandler.cpp	/^void *dcmi_power_handler(void *data) {$/;"	f
+dcmi_power_limit_function	KETI-Ibmc/khandler.cpp	/^void dcmi_power_limit_function() {$/;"	f
 dcmi_power_lmt	include/ipmi/dcmi.hpp	/^        std::vector<uint8_t> dcmi_power_lmt;$/;"	m	class:Dcmiconfiguration
 dcmi_power_rd	include/ipmi/dcmi.hpp	/^        std::vector<uint8_t> dcmi_power_rd;$/;"	m	class:Dcmiconfiguration
 dcmi_sample_time	libs/ipmi/ipmi.cpp	/^uint16_t dcmi_sample_time;$/;"	v
 dcmi_set_power_limit	libs/dcmi/dcmi.cpp	/^void Dcmiconfiguration::dcmi_set_power_limit(uint8_t *request,$/;"	f	class:Dcmiconfiguration
-dcmi_state	KETI-Edge/khandler.cpp	/^host_status_t dcmi_state[4];$/;"	v
+dcmi_state	KETI-Ibmc/khandler.cpp	/^host_status_t dcmi_state[4];$/;"	v
 debounce_offset	libs/gpio/gpio.cpp	/^  unsigned int debounce_offset;$/;"	m	struct:ast_gpio_bank	file:
-debug	KETI-Edge/lssdp.hpp	/^    bool            debug;                                  \/\/ show debug log$/;"	m	struct:lssdp_ctx
+debug	KETI-Ibmc/lssdp.hpp	/^    bool            debug;                                  \/\/ show debug log$/;"	m	struct:lssdp_ctx
 del_pef_policy	KETI-REST/req.cpp	/^int del_pef_policy(u_int8_t index) {$/;"	f
 delay	libs/ipmi/ipmi.cpp	/^void delay(int millisec) {$/;"	f
 deleteUser	libs/user/user.cpp	/^void Ipmiuser::deleteUser(uint8_t index)$/;"	f	class:Ipmiuser
@@ -4787,9 +4787,9 @@ destination	include/redfish/resource.hpp	/^  string destination;$/;"	m	class:Eve
 destroyed	include/ipmi/sol.hpp	/^  static bool destroyed;$/;"	m	class:SerialOverLan
 destroyed	libs/sol/sol.cpp	/^bool SerialOverLan::destroyed = false;$/;"	m	class:SerialOverLan	file:
 device	include/redfish/hwcontrol.hpp	/^    char device[DEVICE_STR_LEN]; \/\/장치명$/;"	m	struct:df
-device_type	KETI-Edge/lssdp.cpp	/^    char            device_type [LSSDP_FIELD_LEN];$/;"	m	struct:lssdp_packet	file:
-device_type	KETI-Edge/lssdp.hpp	/^        char        device_type [LSSDP_FIELD_LEN];$/;"	m	struct:lssdp_ctx::__anon12
-device_type	KETI-Edge/lssdp.hpp	/^    char            device_type [LSSDP_FIELD_LEN];$/;"	m	struct:lssdp_nbr
+device_type	KETI-Ibmc/lssdp.cpp	/^    char            device_type [LSSDP_FIELD_LEN];$/;"	m	struct:lssdp_packet	file:
+device_type	KETI-Ibmc/lssdp.hpp	/^        char        device_type [LSSDP_FIELD_LEN];$/;"	m	struct:lssdp_ctx::__anon12
+device_type	KETI-Ibmc/lssdp.hpp	/^    char            device_type [LSSDP_FIELD_LEN];$/;"	m	struct:lssdp_nbr
 devices	include/redfish/resource.hpp	/^  vector<Device_Info> devices;$/;"	m	class:SimpleStorage
 df	include/redfish/hwcontrol.hpp	/^struct df$/;"	s
 df_gw_ip_addr	include/ipmi/network.hpp	/^  std::vector<uint8_t> df_gw_ip_addr;$/;"	m	class:Ipminetwork
@@ -4806,8 +4806,8 @@ display_name	include/redfish/resource.hpp	/^  string display_name;$/;"	m	class:V
 diversion	libs/util/updatevoltage.cpp	/^  double diversion;$/;"	m	struct:pm_list	file:
 dns_alt_ip	include/ipmi/network.hpp	/^  std::vector<uint8_t> dns_alt_ip;$/;"	m	class:Ipminetwork
 dns_pre_ip	include/ipmi/network.hpp	/^  std::vector<uint8_t> dns_pre_ip;$/;"	m	class:Ipminetwork
-do_actions	KETI-Edge/handler.cpp	/^void do_actions(http_request _request, json::value _jv,$/;"	f
-domain	KETI-Edge/lssdp.hpp	/^            char    domain              [LSSDP_FIELD_LEN];  \/\/ if domain is empty, using Interface IP as default$/;"	m	struct:lssdp_ctx::__anon12::__anon13
+do_actions	KETI-Ibmc/handler.cpp	/^void do_actions(http_request _request, json::value _jv,$/;"	f
+domain	KETI-Ibmc/lssdp.hpp	/^            char    domain              [LSSDP_FIELD_LEN];  \/\/ if domain is empty, using Interface IP as default$/;"	m	struct:lssdp_ctx::__anon12::__anon13
 domain	include/ipmi/apps.hpp	/^  char domain[32];$/;"	m	struct:__anon44
 dprintf	KETI-REST/req.hpp	128;"	d
 drives	include/redfish/resource.hpp	/^  Collection *drives;  \/\/ physical$/;"	m	class:Storage
@@ -4815,7 +4815,7 @@ dt	include/ipmi/ipmi.hpp	/^  unsigned char dt[100];$/;"	m	struct:__anon27
 dumpval	libs/util/updatevoltage.cpp	/^static void dumpval(int pmbus_addr, struct pm_list *p) {$/;"	f	file:
 durable_name	include/redfish/resource.hpp	/^  string durable_name;$/;"	m	struct:_Identifier
 durable_name_format	include/redfish/resource.hpp	/^  string durable_name_format;$/;"	m	struct:_Identifier
-edgetimer_stop_flag	KETI-Edge/khandler.cpp	/^bool edgetimer_stop_flag = false;$/;"	v
+Ibmctimer_stop_flag	KETI-Ibmc/khandler.cpp	/^bool Ibmctimer_stop_flag = false;$/;"	v
 edit_flag	include/ipmi/fru.hpp	/^  unsigned char edit_flag = 0;$/;"	m	class:Ipmifru
 effective_family	include/redfish/resource.hpp	/^  string effective_family;$/;"	m	struct:_ProcessorId
 effective_model	include/redfish/resource.hpp	/^  string effective_model;$/;"	m	struct:_ProcessorId
@@ -4859,14 +4859,14 @@ error_code	include/util/iniparser.hpp	/^            int error_code;         \/\/
 error_correction	include/redfish/resource.hpp	/^  string error_correction;$/;"	m	class:Memory
 error_line	include/util/iniparser.hpp	/^            std::string error_line; \/\/ line with error$/;"	m	struct:INI::File::PResult
 error_line_num	include/util/iniparser.hpp	/^            int error_line_num;     \/\/ number of line with the error$/;"	m	struct:INI::File::PResult
-error_reply	KETI-Edge/handler.cpp	/^void error_reply(json::value _jv, status_code _status,$/;"	f
+error_reply	KETI-Ibmc/handler.cpp	/^void error_reply(json::value _jv, status_code _status,$/;"	f
 etable	libs/apps/apps.cpp	/^const char *etable[] = {"Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul",$/;"	v
 etf_init	libs/sel/efte.cpp	/^int etf_init(void) {$/;"	f
 ethernet	include/redfish/resource.hpp	/^  Collection *ethernet;       \/\/ resource EthernetInterfaces$/;"	m	class:Systems
 ethernet	include/redfish/resource.hpp	/^  Collection *ethernet;$/;"	m	class:Manager
 ethmember	include/redfish/resource.hpp	/^  int ethmember;$/;"	m	class:Manager
 ev_handler	KETI-REST/rhandler.cpp	/^static void ev_handler(struct mg_connection *nc, int ev, void *ev_data) {$/;"	f	file:
-event	KETI-Edge/khandler.cpp	/^      event : 1, rsvd : 1;$/;"	m	struct:__anon9	file:
+event	KETI-Ibmc/khandler.cpp	/^      event : 1, rsvd : 1;$/;"	m	struct:__anon9	file:
 event_data	include/ipmi/ipmi.hpp	/^  uint8_t event_data[3];$/;"	m	struct:event_msg_t
 event_data_1_AND_mask	include/ipmi/ipmi.hpp	/^  uint8_t event_data_1_AND_mask;$/;"	m	struct:__anon30
 event_data_1_compare_1	include/ipmi/ipmi.hpp	/^  uint8_t event_data_1_compare_1;$/;"	m	struct:__anon30
@@ -4896,16 +4896,16 @@ event_type	include/redfish/resource.hpp	/^  string event_type;$/;"	m	struct:_Eve
 event_types_for_subscription	include/redfish/resource.hpp	/^  vector<string> event_types_for_subscription;$/;"	m	class:EventService
 events	include/redfish/resource.hpp	/^  vector<Event_Info> events;$/;"	m	class:Event
 evm_rev	include/ipmi/ipmi.hpp	/^  uint8_t evm_rev;$/;"	m	struct:event_msg_t
-evp_md	KETI-Edge/rmcp.cpp	/^const EVP_MD *evp_md = NULL;$/;"	v
+evp_md	KETI-Ibmc/rmcp.cpp	/^const EVP_MD *evp_md = NULL;$/;"	v
 evp_md	rmcp.cpp	/^const EVP_MD *evp_md = NULL;$/;"	v
 evt_read_type	include/ipmi/ipmi.hpp	/^  unsigned char evt_read_type;$/;"	m	struct:__anon20
 evt_read_type	include/ipmi/lightning_sensor.hpp	/^  unsigned char evt_read_type;$/;"	m	struct:__anon48
 execute_iptables	libs/redfish/resource.cpp	/^void execute_iptables(NetworkProtocol *_net, int _index, string _op) {$/;"	f
-exit_cleanup	KETI-Edge/keti-edge.cpp	/^void exit_cleanup(int signo) {$/;"	f
-exit_cleanup	KETI-Edge/psu_server.cpp	/^void exit_cleanup() { exit(0); }$/;"	f
-f_fan_error	KETI-Edge/khandler.cpp	/^unsigned int f_fan_error;$/;"	v
+exit_cleanup	KETI-Ibmc/keti-Ibmc.cpp	/^void exit_cleanup(int signo) {$/;"	f
+exit_cleanup	KETI-Ibmc/psu_server.cpp	/^void exit_cleanup() { exit(0); }$/;"	f
+f_fan_error	KETI-Ibmc/khandler.cpp	/^unsigned int f_fan_error;$/;"	v
 failure_predicted	include/redfish/resource.hpp	/^  bool failure_predicted;$/;"	m	class:Drive
-fan_count	KETI-Edge/rest_handler.cpp	/^static int fan_count = 0;$/;"	v	file:
+fan_count	KETI-Ibmc/rest_handler.cpp	/^static int fan_count = 0;$/;"	v	file:
 fan_sensor_name	libs/sel/efte.cpp	/^struct bit_desc_map fan_sensor_name = {$/;"	v	typeref:struct:bit_desc_map
 fans	include/redfish/resource.hpp	/^  List *fans;$/;"	m	class:Thermal
 fbfd	kvm/ast-video.c	/^int fbfd = 0;$/;"	v
@@ -4940,8 +4940,8 @@ file_store_sel_hdr	libs/sel/sel.cpp	/^int file_store_sel_hdr(void)$/;"	f
 file_system	include/redfish/resource.hpp	/^  string file_system;$/;"	m	struct:_Device_Info
 file_writer_data	KETI-REST/rhandler.cpp	/^struct file_writer_data {$/;"	s	file:
 filesystem	include/redfish/hwcontrol.hpp	/^    char filesystem[DEVICE_STR_LEN];$/;"	m	struct:df
-find_first_index	KETI-Edge/psu_server.cpp	/^int find_first_index(int flag, sqlite3_stmt *statement, sqlite3 *db) {$/;"	f
-find_interface_in_LAN	KETI-Edge/lssdp.cpp	/^static lssdp_interface * find_interface_in_LAN(lssdp_ctx * lssdp, uint32_t address) {$/;"	f	file:
+find_first_index	KETI-Ibmc/psu_server.cpp	/^int find_first_index(int flag, sqlite3_stmt *statement, sqlite3 *db) {$/;"	f
+find_interface_in_LAN	KETI-Ibmc/lssdp.cpp	/^static lssdp_interface * find_interface_in_LAN(lssdp_ctx * lssdp, uint32_t address) {$/;"	f	file:
 find_msg_str	libs/sel/efte.cpp	/^int find_msg_str(struct bit_desc_map sList, uint8_t num) {$/;"	f
 find_sensor_name	libs/apps/apps.cpp	/^int find_sensor_name(uint8_t sType, uint8_t sNum, string &msg) {$/;"	f
 find_sensor_name	libs/sel/efte.cpp	/^int find_sensor_name(uint8_t sType, uint8_t sNum, char *msg) {$/;"	f
@@ -4959,7 +4959,7 @@ fqdn	include/redfish/resource.hpp	/^  string fqdn;$/;"	m	class:EthernetInterface
 fqdn	include/redfish/resource.hpp	/^  string fqdn;$/;"	m	class:NetworkProtocol
 framecount	kvm/ast-video.c	/^unsigned long framecount = 0;$/;"	v
 free_ph	include/redfish/hwcontrol.hpp	/^    ulong free_ph; \/\/PM 남은 크기$/;"	m	struct:mem_data
-front_LED_blink	KETI-Edge/khandler.cpp	/^void front_LED_blink(int id_interval) {$/;"	f
+front_LED_blink	KETI-Ibmc/khandler.cpp	/^void front_LED_blink(int id_interval) {$/;"	f
 fru	include/ipmi/fru.hpp	/^  fru_info_t fru;$/;"	m	class:Ipmifru
 fru_board	include/ipmi/fru.hpp	/^  fru_board_info_t fru_board;$/;"	m	class:Ipmifru
 fru_board_buf	include/ipmi/fru.hpp	/^  char fru_board_buf[256] = {0};$/;"	m	class:Ipmifru
@@ -4984,10 +4984,10 @@ fw_name	KETI-REST/rhandler.cpp	/^uint8_t fw_name[100] = {0};$/;"	v
 g_Tmax	libs/lightning/lightning_sensor.cpp	/^int g_Tmax = 90;$/;"	v
 g_alert_service	libs/apps/setting_service.cpp	/^alert_servce_t g_alert_service;$/;"	v
 g_authrsp	include/ipmi/apps.hpp	/^  channel_auth_cap_t g_authrsp[4];$/;"	m	class:Ipmiapplication
-g_bus_id	KETI-Edge/rest_handler.cpp	/^static int g_bus_id = 0; \/\/ store the i2c bus ID for debug print$/;"	v	file:
+g_bus_id	KETI-Ibmc/rest_handler.cpp	/^static int g_bus_id = 0; \/\/ store the i2c bus ID for debug print$/;"	v	file:
 g_bus_id	libs/ipmb/ipmb.cpp	/^static int g_bus_id = 0; \/\/ store the i2c bus ID for debug print$/;"	v	file:
 g_chassis_bootp	include/ipmi/chassis.hpp	/^  chassis_bootparam_t g_chassis_bootp;$/;"	m	class:Ipmichassis
-g_count	KETI-Edge/handler.cpp	/^unsigned int g_count = 0;$/;"	v
+g_count	KETI-Ibmc/handler.cpp	/^unsigned int g_count = 0;$/;"	v
 g_day_power_1	libs/apps/apps.cpp	/^power_usage_t g_day_power_1[MAX_LAST_DAY_COUNT] = {0};$/;"	v
 g_day_power_2	libs/apps/apps.cpp	/^power_usage_t g_day_power_2[MAX_LAST_DAY_COUNT] = {0};$/;"	v
 g_eft_data	libs/ipmi/ipmi.cpp	/^pef_table_entry_t g_eft_data[EVENT_FILTER_TABLE_ELEMS_MAX];$/;"	v
@@ -4997,11 +4997,11 @@ g_hour_power_1	libs/apps/apps.cpp	/^power_usage_t g_hour_power_1[MAX_LAST_HOUR_C
 g_hour_power_2	libs/apps/apps.cpp	/^power_usage_t g_hour_power_2[MAX_LAST_HOUR_COUNT] = {0};$/;"	v
 g_kernel_version	include/ipmi/apps.hpp	/^  string g_kernel_version;$/;"	m	class:Ipmiapplication
 g_kvm_service	libs/apps/setting_service.cpp	/^kvm_service_t g_kvm_service;$/;"	v
-g_logger	KETI-Edge/khandler.cpp	/^src::severity_logger<severity_level> g_logger;$/;"	v
+g_logger	KETI-Ibmc/khandler.cpp	/^src::severity_logger<severity_level> g_logger;$/;"	v
 g_mc_device	include/ipmi/apps.hpp	/^  mc_device_t g_mc_device;$/;"	m	class:Ipmiapplication
 g_min_power_1	libs/apps/apps.cpp	/^power_usage_t g_min_power_1[MAX_LAST_MIN_COUNT] = {0};$/;"	v
 g_min_power_2	libs/apps/apps.cpp	/^power_usage_t g_min_power_2[MAX_LAST_MIN_COUNT] = {0};$/;"	v
-g_record	KETI-Edge/khandler.cpp	/^unordered_map<string, Resource *> g_record;$/;"	v
+g_record	KETI-Ibmc/khandler.cpp	/^unordered_map<string, Resource *> g_record;$/;"	v
 g_rsv_id	libs/fru/fru.cpp	/^static int g_rsv_id = 0x1;$/;"	v	file:
 g_rsv_id	libs/sdr/sdr.cpp	/^static int g_rsv_id = 0x1;$/;"	v	file:
 g_rsv_id	libs/sel/sel.cpp	/^int g_rsv_id = 0x01;$/;"	v
@@ -5010,7 +5010,7 @@ g_sdr_hdr	libs/sdr/sdr.cpp	/^sdr_hdr_t g_sdr_hdr;$/;"	v
 g_sel_data	libs/ipmi/ipmi.cpp	/^sel_msg_t g_sel_data[SEL_ELEMS_MAX];$/;"	v
 g_sel_hdr	libs/ipmi/ipmi.cpp	/^sel_hdr_t g_sel_hdr;$/;"	v
 g_seq	libs/ipmb/ipmb.cpp	/^ipmb_sbuf_t g_seq;$/;"	v
-g_service_root	KETI-Edge/khandler.cpp	/^ServiceRoot *g_service_root;$/;"	v
+g_service_root	KETI-Ibmc/khandler.cpp	/^ServiceRoot *g_service_root;$/;"	v
 g_setting	libs/apps/setting_service.cpp	/^ss_t g_setting;$/;"	v
 g_sol_config	include/ipmi/sol.hpp	/^  sol_config_parameter g_sol_config;$/;"	m	class:SerialOverLan
 g_ssh_service	libs/apps/setting_service.cpp	/^ssh_service_t g_ssh_service;$/;"	v
@@ -5025,7 +5025,7 @@ gen_id	include/ipmi/ipmi.hpp	/^  uint8_t gen_id;$/;"	m	struct:event_msg_t
 generate_CSR_return_result	libs/redfish/resource.cpp	/^json::value generate_CSR_return_result(fs::path conf, fs::path key,$/;"	f
 generate_logentry	libs/redfish/resource.cpp	/^LogEntry *generate_logentry(IpmiLogEvent _ev) {$/;"	f
 generate_ssl_private_key	libs/redfish/resource.cpp	/^void generate_ssl_private_key(fs::path key, string key_length) {$/;"	f
-generate_task_resource	KETI-Edge/handler.cpp	/^unsigned int generate_task_resource(string _method, string _uri,$/;"	f
+generate_task_resource	KETI-Ibmc/handler.cpp	/^unsigned int generate_task_resource(string _method, string _uri,$/;"	f
 generate_token	libs/redfish/util.cpp	/^string generate_token(const int _length)$/;"	f
 generate_uuid	libs/redfish/util.cpp	/^string generate_uuid(void)$/;"	f
 generator_ID_addr	include/ipmi/ipmi.hpp	/^  uint8_t generator_ID_addr;$/;"	m	struct:__anon30
@@ -5037,20 +5037,20 @@ getChannelAccessMode	libs/channel/channel.cpp	/^uint8_t Ipmichannel::getChannelA
 getChannelInfo	libs/channel/channel.cpp	/^void Ipmichannel::getChannelInfo(ipmi_res_t *response, uint8_t *res_len, uint8_t _ch_num)$/;"	f	class:Ipmichannel
 getChannelMaxPriv	libs/channel/channel.cpp	/^uint8_t Ipmichannel::getChannelMaxPriv(uint8_t chan)$/;"	f	class:Ipmichannel
 getChannelParams	libs/channel/channel.cpp	/^void Ipmichannel::getChannelParams(uint8_t ch_num, int type_idx, uint8_t *data)$/;"	f	class:Ipmichannel
-getClientIpAddress	KETI-Edge/rmcp.cpp	/^uint32_t Rmcppacket::getClientIpAddress()$/;"	f	class:Rmcppacket
+getClientIpAddress	KETI-Ibmc/rmcp.cpp	/^uint32_t Rmcppacket::getClientIpAddress()$/;"	f	class:Rmcppacket
 getClientIpAddress	rmcp.cpp	/^uint32_t Rmcppacket::getClientIpAddress() {$/;"	f	class:Rmcppacket
-getClientMacAddress	KETI-Edge/rmcp.cpp	/^std::vector<uint8_t> Rmcppacket::getClientMacAddress()$/;"	f	class:Rmcppacket
+getClientMacAddress	KETI-Ibmc/rmcp.cpp	/^std::vector<uint8_t> Rmcppacket::getClientMacAddress()$/;"	f	class:Rmcppacket
 getClientMacAddress	rmcp.cpp	/^std::vector<uint8_t> Rmcppacket::getClientMacAddress() {$/;"	f	class:Rmcppacket
-getClientPort	KETI-Edge/rmcp.cpp	/^uint16_t Rmcppacket::getClientPort()$/;"	f	class:Rmcppacket
+getClientPort	KETI-Ibmc/rmcp.cpp	/^uint16_t Rmcppacket::getClientPort()$/;"	f	class:Rmcppacket
 getClientPort	rmcp.cpp	/^uint16_t Rmcppacket::getClientPort() { return this->clientAddr.sin_port; }$/;"	f	class:Rmcppacket
-getClientSessionId	KETI-Edge/rmcp.cpp	/^std::vector<uint8_t> Rmcppacket::getClientSessionId()$/;"	f	class:Rmcppacket
+getClientSessionId	KETI-Ibmc/rmcp.cpp	/^std::vector<uint8_t> Rmcppacket::getClientSessionId()$/;"	f	class:Rmcppacket
 getClientSessionId	rmcp.cpp	/^std::vector<uint8_t> Rmcppacket::getClientSessionId() {$/;"	f	class:Rmcppacket
 getEthernetStatus	libs/network/network.cpp	/^uint8_t getEthernetStatus(uint8_t chan) {$/;"	f
-getMgmtSessionId	KETI-Edge/rmcp.cpp	/^std::vector<uint8_t> Rmcppacket::getMgmtSessionId()$/;"	f	class:Rmcppacket
+getMgmtSessionId	KETI-Ibmc/rmcp.cpp	/^std::vector<uint8_t> Rmcppacket::getMgmtSessionId()$/;"	f	class:Rmcppacket
 getMgmtSessionId	rmcp.cpp	/^std::vector<uint8_t> Rmcppacket::getMgmtSessionId() {$/;"	f	class:Rmcppacket
-getRmcpAuthentication	KETI-Edge/rmcp.cpp	/^uint8_t Rmcppacket::getRmcpAuthentication(uint8_t flag)$/;"	f	class:Rmcppacket
+getRmcpAuthentication	KETI-Ibmc/rmcp.cpp	/^uint8_t Rmcppacket::getRmcpAuthentication(uint8_t flag)$/;"	f	class:Rmcppacket
 getRmcpAuthentication	rmcp.cpp	/^uint8_t Rmcppacket::getRmcpAuthentication(uint8_t flag) {$/;"	f	class:Rmcppacket
-getRmcpClientAddr	KETI-Edge/rmcp.cpp	/^void Rmcppacket::getRmcpClientAddr()$/;"	f	class:Rmcppacket
+getRmcpClientAddr	KETI-Ibmc/rmcp.cpp	/^void Rmcppacket::getRmcpClientAddr()$/;"	f	class:Rmcppacket
 getRmcpClientAddr	rmcp.cpp	/^void Rmcppacket::getRmcpClientAddr() {$/;"	f	class:Rmcppacket
 getRmcpMacAddr	libs/network/network.cpp	/^bool getRmcpMacAddr(struct sockaddr_in cliInfo) {$/;"	f
 getSessionAesKey	libs/session/session.cpp	/^std::vector<uint8_t> Ipmisession::getSessionAesKey() {$/;"	f	class:Ipmisession
@@ -5083,10 +5083,10 @@ get_build_time	libs/apps/apps.cpp	/^void get_build_time(unsigned char *build_tim
 get_chan_dest	libs/sel/pef_policy.cpp	/^uint8_t get_chan_dest(uint8_t i) {$/;"	f
 get_cmdline_ipaddr	KETI-REST/req.cpp	/^int get_cmdline_ipaddr(char * arg, uint8_t * buf) {$/;"	f
 get_cmdline_macaddr	KETI-REST/req.cpp	/^int get_cmdline_macaddr(char *arg, uint8_t *buf) {$/;"	f
-get_colon_index	KETI-Edge/lssdp.cpp	/^static int get_colon_index(const char * string, size_t start, size_t end) {$/;"	f	file:
+get_colon_index	KETI-Ibmc/lssdp.cpp	/^static int get_colon_index(const char * string, size_t start, size_t end) {$/;"	f	file:
 get_current_object_name	libs/redfish/util.cpp	/^string get_current_object_name(string _uri, string delimiter)$/;"	f
-get_current_time	KETI-Edge/khandler.cpp	/^long long get_current_time() {$/;"	f
-get_current_time	KETI-Edge/lssdp.cpp	/^static long long get_current_time() {$/;"	f	file:
+get_current_time	KETI-Ibmc/khandler.cpp	/^long long get_current_time() {$/;"	f
+get_current_time	KETI-Ibmc/lssdp.cpp	/^static long long get_current_time() {$/;"	f	file:
 get_data	KETI-Serial/KETI-Serial.cpp	/^int get_data() {$/;"	f
 get_data1	libs/sel/pef_policy.cpp	/^uint8_t get_data1(uint8_t i) {$/;"	f
 get_day_power_graph	libs/apps/apps.cpp	/^void get_day_power_graph(char *ret, int index) {$/;"	f
@@ -5099,7 +5099,7 @@ get_eft_entry_from_file	libs/sel/efte.cpp	/^int get_eft_entry_from_file(unsigned
 get_eft_entry_num	libs/sel/efte.cpp	/^int get_eft_entry_num(unsigned char *size) {$/;"	f
 get_eft_entry_num_from_file	libs/sel/efte.cpp	/^int get_eft_entry_num_from_file(unsigned char *size) {$/;"	f
 get_entry_by_policy_set	libs/sel/pef_policy.cpp	/^int get_entry_by_policy_set(uint8_t policy_set, struct pef_policy_entry* matching_entries) {$/;"	f
-get_error_json	KETI-Edge/handler.cpp	/^json::value get_error_json(string _message) {$/;"	f
+get_error_json	KETI-Ibmc/handler.cpp	/^json::value get_error_json(string _message) {$/;"	f
 get_eth_priority	libs/network/network.cpp	/^unsigned char get_eth_priority() {$/;"	f
 get_event_param_select	KETI-REST/req.cpp	/^int get_event_param_select(int select, char *input, int *res_len) {$/;"	f
 get_expire_day	libs/apps/apps.cpp	/^void get_expire_day(int days, char *today, char *expire_day) {$/;"	f
@@ -5217,33 +5217,33 @@ get_value_from_json_key	libs/redfish/util.cpp	/^bool get_value_from_json_key(jso
 get_voltage_fan_power	libs/apps/apps.cpp	/^void get_voltage_fan_power(json::value &JPOWER) {$/;"	f
 global_enabler	include/ipmi/KETI_stdx.hpp	/^  static int global_enabler;$/;"	m	class:KETI_define
 global_enabler	libs/util/KETI_stdx.cpp	/^int KETI_define::global_enabler = 0;$/;"	m	class:KETI_define	file:
-global_kcs_fd	KETI-Edge/rest_handler.cpp	/^int global_kcs_fd = 0;$/;"	v
-global_sockfd	KETI-Edge/rest_handler.cpp	/^int global_sockfd = 0;$/;"	v
+global_kcs_fd	KETI-Ibmc/rest_handler.cpp	/^int global_kcs_fd = 0;$/;"	v
+global_sockfd	KETI-Ibmc/rest_handler.cpp	/^int global_sockfd = 0;$/;"	v
 gpio_reg_base	libs/gpio/gpio.cpp	/^static unsigned int gpio_reg_base;$/;"	v	file:
 group_name_attribute	include/redfish/resource.hpp	/^  string group_name_attribute;$/;"	m	struct:_SearchSetting
 groups_attribute	include/redfish/resource.hpp	/^  string groups_attribute;$/;"	m	struct:_SearchSetting
 gseq	libs/ipmb/ipmb.cpp	/^static int gseq = 0;$/;"	v	file:
-h_count	KETI-Edge/rest_handler.cpp	/^int m_min, h_min, d_min, m_max, h_max, d_max, m_count, d_count, h_count = 0;$/;"	v
-h_max	KETI-Edge/rest_handler.cpp	/^int m_min, h_min, d_min, m_max, h_max, d_max, m_count, d_count, h_count = 0;$/;"	v
-h_min	KETI-Edge/rest_handler.cpp	/^int m_min, h_min, d_min, m_max, h_max, d_max, m_count, d_count, h_count = 0;$/;"	v
+h_count	KETI-Ibmc/rest_handler.cpp	/^int m_min, h_min, d_min, m_max, h_max, d_max, m_count, d_count, h_count = 0;$/;"	v
+h_max	KETI-Ibmc/rest_handler.cpp	/^int m_min, h_min, d_min, m_max, h_max, d_max, m_count, d_count, h_count = 0;$/;"	v
+h_min	KETI-Ibmc/rest_handler.cpp	/^int m_min, h_min, d_min, m_max, h_max, d_max, m_count, d_count, h_count = 0;$/;"	v
 handle_ad_call	KETI-REST/rhandler.cpp	/^static void handle_ad_call(struct mg_connection *nc, int ev, void *ev_data) {$/;"	f	file:
 handle_bmc_reset_call	KETI-REST/rhandler.cpp	/^static void handle_bmc_reset_call(struct mg_connection *nc, int ev,$/;"	f	file:
 handle_ddns_call	KETI-REST/rhandler.cpp	/^static void handle_ddns_call(struct mg_connection *nc, int ev, void *ev_data) {$/;"	f	file:
-handle_delete	KETI-Edge/handler.cpp	/^void Handler::handle_delete(http_request _request) {$/;"	f	class:Handler
+handle_delete	KETI-Ibmc/handler.cpp	/^void Handler::handle_delete(http_request _request) {$/;"	f	class:Handler
 handle_eventlog_call	KETI-REST/rhandler.cpp	/^static void handle_eventlog_call(struct mg_connection *nc, int ev,$/;"	f	file:
 handle_fru_call	KETI-REST/rhandler.cpp	/^static void handle_fru_call(struct mg_connection *nc, int ev, void *ev_data) {$/;"	f	file:
-handle_get	KETI-Edge/handler.cpp	/^void Handler::handle_get(http_request _request) {$/;"	f	class:Handler
+handle_get	KETI-Ibmc/handler.cpp	/^void Handler::handle_get(http_request _request) {$/;"	f	class:Handler
 handle_kvm_call	KETI-REST/rhandler.cpp	/^static void handle_kvm_call(struct mg_connection *nc, int ev, void *ev_data) {$/;"	f	file:
 handle_ldap_call	KETI-REST/rhandler.cpp	/^static void handle_ldap_call(struct mg_connection *nc, int ev, void *ev_data) {$/;"	f	file:
 handle_login_call	KETI-REST/rhandler.cpp	/^static void handle_login_call(struct mg_connection *nc, int ev, void *ev_data) {$/;"	f	file:
 handle_main_call	KETI-REST/rhandler.cpp	/^static void handle_main_call(struct mg_connection *nc, int ev,$/;"	f	file:
 handle_network_call	KETI-REST/rhandler.cpp	/^static void handle_network_call(struct mg_connection *nc, int ev,$/;"	f	file:
 handle_ntp_call	KETI-REST/rhandler.cpp	/^static void handle_ntp_call(struct mg_connection *nc, int ev, void *ev_data) {$/;"	f	file:
-handle_options	KETI-Edge/handler.cpp	/^void Handler::handle_options(http_request _request) {$/;"	f	class:Handler
-handle_patch	KETI-Edge/handler.cpp	/^void Handler::handle_patch(http_request _request) {$/;"	f	class:Handler
-handle_post	KETI-Edge/handler.cpp	/^void Handler::handle_post(http_request _request) {$/;"	f	class:Handler
+handle_options	KETI-Ibmc/handler.cpp	/^void Handler::handle_options(http_request _request) {$/;"	f	class:Handler
+handle_patch	KETI-Ibmc/handler.cpp	/^void Handler::handle_patch(http_request _request) {$/;"	f	class:Handler
+handle_post	KETI-Ibmc/handler.cpp	/^void Handler::handle_post(http_request _request) {$/;"	f	class:Handler
 handle_power_call	KETI-REST/rhandler.cpp	/^static void handle_power_call(struct mg_connection *nc, int ev, void *ev_data) {$/;"	f	file:
-handle_put	KETI-Edge/handler.cpp	/^void Handler::handle_put(http_request _request) {$/;"	f	class:Handler
+handle_put	KETI-Ibmc/handler.cpp	/^void Handler::handle_put(http_request _request) {$/;"	f	class:Handler
 handle_radius_call	KETI-REST/rhandler.cpp	/^static void handle_radius_call(struct mg_connection *nc, int ev,$/;"	f	file:
 handle_sensor_call	KETI-REST/rhandler.cpp	/^static void handle_sensor_call(struct mg_connection *nc, int ev,$/;"	f	file:
 handle_setting_call	KETI-REST/rhandler.cpp	/^static void handle_setting_call(struct mg_connection *nc, int ev,$/;"	f	file:
@@ -5259,7 +5259,7 @@ handle_watt_call	KETI-REST/rhandler.cpp	/^static void handle_watt_call(struct mg
 hdr_chksum	include/ipmi/ipmb.hpp	/^  uint8_t hdr_chksum;      \/**< Connection Header Checksum *\/$/;"	m	struct:ipmi_msg
 hdr_cksum	include/ipmi/ipmb.hpp	/^  uint8_t hdr_cksum;$/;"	m	struct:_ipmb_req_t
 hdr_cksum	include/ipmi/ipmb.hpp	/^  uint8_t hdr_cksum;$/;"	m	struct:_ipmb_res_t
-header	KETI-Edge/lssdp.hpp	/^    } header;$/;"	m	struct:lssdp_ctx	typeref:struct:lssdp_ctx::__anon12
+header	KETI-Ibmc/lssdp.hpp	/^    } header;$/;"	m	struct:lssdp_ctx	typeref:struct:lssdp_ctx::__anon12
 header_flag	include/ipmi/fru.hpp	/^  unsigned char header_flag = 0;$/;"	m	class:Ipmifru
 health	include/redfish/resource.hpp	/^  string health;$/;"	m	struct:_Status
 high_index_1	libs/apps/apps.cpp	/^int high_index_1[4], low_index_1[4], high_index_2[4], low_index_2[4] = {0};$/;"	v
@@ -5268,12 +5268,12 @@ hmac_aeskey	include/ipmi/session.hpp	/^    std::vector<uint8_t> hmac_aeskey;   \
 hmac_k1	include/ipmi/session.hpp	/^    std::vector<uint8_t> hmac_k1;       \/\/ Size 32$/;"	m	struct:Ipmisession::__anon15
 hmac_rc	include/ipmi/session.hpp	/^    std::vector<uint8_t> hmac_rc;       \/\/ Size 16$/;"	m	struct:Ipmisession::__anon15
 hmac_rm	include/ipmi/session.hpp	/^    std::vector<uint8_t> hmac_rm;       \/\/ Size 16$/;"	m	struct:Ipmisession::__anon15
-host_status_t	KETI-Edge/khandler.cpp	/^} host_status_t;$/;"	t	typeref:struct:__anon9	file:
+host_status_t	KETI-Ibmc/khandler.cpp	/^} host_status_t;$/;"	t	typeref:struct:__anon9	file:
 hostname	include/redfish/resource.hpp	/^  string hostname;$/;"	m	class:EthernetInterfaces
 hostname	include/redfish/resource.hpp	/^  string hostname;$/;"	m	class:NetworkProtocol
 hostname	include/redfish/resource.hpp	/^  string hostname;$/;"	m	class:Systems
 hotspare_type	include/redfish/resource.hpp	/^  string hotspare_type;      \/\/ One of ("None", "Global")$/;"	m	class:Drive
-hour_cursor	KETI-Edge/psu_server.cpp	/^int min_cursor[2], hour_cursor[2], day_cursor[2] = {0};$/;"	v
+hour_cursor	KETI-Ibmc/psu_server.cpp	/^int min_cursor[2], hour_cursor[2], day_cursor[2] = {0};$/;"	v
 hour_total_peak	libs/apps/apps.cpp	/^int min_total_peak, hour_total_peak = 0;$/;"	v
 house_number	include/redfish/resource.hpp	/^  string house_number;$/;"	m	struct:_PostalAddress
 hsc_commands	libs/lightning/lightning_sensor.cpp	/^enum hsc_commands {$/;"	g	file:
@@ -5352,7 +5352,7 @@ id	include/redfish/resource.hpp	/^  string id;$/;"	m	struct:_OData
 id	include/redfish/resource.hpp	/^  string id;$/;"	m	struct:_SensorMake
 id1	include/ipmi/apps.hpp	/^  char id1[20];$/;"	m	struct:__anon42
 id2	include/ipmi/apps.hpp	/^  char id2[20];$/;"	m	struct:__anon42
-id_enable	KETI-Edge/khandler.cpp	/^int id_enable = 0;$/;"	v
+id_enable	KETI-Ibmc/khandler.cpp	/^int id_enable = 0;$/;"	v
 id_interval	include/ipmi/chassis.hpp	/^  uint8_t id_interval;$/;"	m	class:Ipmichassis
 identification_registers	include/redfish/resource.hpp	/^  string identification_registers;$/;"	m	struct:_ProcessorId
 identifier	include/redfish/resource.hpp	/^  Identifier identifier;$/;"	m	class:StorageControllers
@@ -5441,76 +5441,76 @@ info_version_internal	WDTBK/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.c
 info_version_internal	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const info_version_internal[] = {$/;"	v
 info_version_internal	kvm/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	/^char const info_version_internal[] = {$/;"	v
 info_version_internal	kvm/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const info_version_internal[] = {$/;"	v
-init_account_service	KETI-Edge/init.cpp	/^void init_account_service(AccountService *account_service) {$/;"	f
+init_account_service	KETI-Ibmc/init.cpp	/^void init_account_service(AccountService *account_service) {$/;"	f
 init_alert_service	libs/apps/setting_service.cpp	/^int init_alert_service(){$/;"	f
-init_bios	KETI-Edge/init.cpp	/^void init_bios(Bios *bios) {$/;"	f
-init_chassis	KETI-Edge/init.cpp	/^void init_chassis(Chassis *chassis, string _id) {$/;"	f
-init_comm	KETI-Edge/khandler.cpp	/^void init_comm(struct termios *pts) {$/;"	f	namespace:SOL
-init_drive	KETI-Edge/init.cpp	/^void init_drive(Collection *drive_collection, string _id) {$/;"	f
+init_bios	KETI-Ibmc/init.cpp	/^void init_bios(Bios *bios) {$/;"	f
+init_chassis	KETI-Ibmc/init.cpp	/^void init_chassis(Chassis *chassis, string _id) {$/;"	f
+init_comm	KETI-Ibmc/khandler.cpp	/^void init_comm(struct termios *pts) {$/;"	f	namespace:SOL
+init_drive	KETI-Ibmc/init.cpp	/^void init_drive(Collection *drive_collection, string _id) {$/;"	f
 init_eth_priority	libs/network/network.cpp	/^unsigned char init_eth_priority() {$/;"	f
-init_ethernet	KETI-Edge/init.cpp	/^void init_ethernet(Collection *ethernet_collection, string _id) {$/;"	f
-init_event_destination	KETI-Edge/init.cpp	/^void init_event_destination(Collection *event_destination_collection,$/;"	f
-init_event_service	KETI-Edge/init.cpp	/^void init_event_service(EventService *event_service) {$/;"	f
-init_fan	KETI-Edge/init.cpp	/^void init_fan(List *fans_list, string _id) {$/;"	f
+init_ethernet	KETI-Ibmc/init.cpp	/^void init_ethernet(Collection *ethernet_collection, string _id) {$/;"	f
+init_event_destination	KETI-Ibmc/init.cpp	/^void init_event_destination(Collection *event_destination_collection,$/;"	f
+init_event_service	KETI-Ibmc/init.cpp	/^void init_event_service(EventService *event_service) {$/;"	f
+init_fan	KETI-Ibmc/init.cpp	/^void init_fan(List *fans_list, string _id) {$/;"	f
 init_iptable	libs/redfish/resource.cpp	/^void init_iptable(NetworkProtocol *_net) {$/;"	f
 init_kvm_service	libs/apps/setting_service.cpp	/^int init_kvm_service(){$/;"	f
-init_log_entry	KETI-Edge/init.cpp	/^void init_log_entry(Collection *log_entry_collection, string _id) {$/;"	f
-init_log_service	KETI-Edge/init.cpp	/^void init_log_service(Collection *log_service_collection, string _id) {$/;"	f
-init_manager	KETI-Edge/init.cpp	/^void init_manager(Manager *manager, string _id) {$/;"	f
-init_memory	KETI-Edge/init.cpp	/^void init_memory(Collection *memory_collection, string _id) {$/;"	f
-init_message_registry	KETI-Edge/init.cpp	/^void init_message_registry(void) {$/;"	f
-init_numset	KETI-Edge/init.cpp	/^void init_numset(void) {$/;"	f
+init_log_entry	KETI-Ibmc/init.cpp	/^void init_log_entry(Collection *log_entry_collection, string _id) {$/;"	f
+init_log_service	KETI-Ibmc/init.cpp	/^void init_log_service(Collection *log_service_collection, string _id) {$/;"	f
+init_manager	KETI-Ibmc/init.cpp	/^void init_manager(Manager *manager, string _id) {$/;"	f
+init_memory	KETI-Ibmc/init.cpp	/^void init_memory(Collection *memory_collection, string _id) {$/;"	f
+init_message_registry	KETI-Ibmc/init.cpp	/^void init_message_registry(void) {$/;"	f
+init_numset	KETI-Ibmc/init.cpp	/^void init_numset(void) {$/;"	f
 init_policy_table	libs/sel/pef_policy.cpp	/^void init_policy_table() {$/;"	f
-init_power	KETI-Edge/init.cpp	/^void init_power(Power *power) {$/;"	f
-init_power_control	KETI-Edge/init.cpp	/^void init_power_control(List *power_control_list, string _id) {$/;"	f
-init_power_supply	KETI-Edge/init.cpp	/^void init_power_supply(List *power_supplies_list, string _id) {$/;"	f
-init_processor	KETI-Edge/init.cpp	/^void init_processor(Collection *processor_collection, string _id) {$/;"	f
-init_radius	KETI-Edge/init.cpp	/^void init_radius(Radius *radius) {$/;"	f
+init_power	KETI-Ibmc/init.cpp	/^void init_power(Power *power) {$/;"	f
+init_power_control	KETI-Ibmc/init.cpp	/^void init_power_control(List *power_control_list, string _id) {$/;"	f
+init_power_supply	KETI-Ibmc/init.cpp	/^void init_power_supply(List *power_supplies_list, string _id) {$/;"	f
+init_processor	KETI-Ibmc/init.cpp	/^void init_processor(Collection *processor_collection, string _id) {$/;"	f
+init_radius	KETI-Ibmc/init.cpp	/^void init_radius(Radius *radius) {$/;"	f
 init_record	libs/redfish/record.cpp	/^bool init_record() {$/;"	f
-init_resource	KETI-Edge/init.cpp	/^bool init_resource(void) {$/;"	f
-init_sensor	KETI-Edge/init.cpp	/^void init_sensor(Collection *sensor_collection, string _id) {$/;"	f
-init_session_service	KETI-Edge/init.cpp	/^void init_session_service(SessionService *session_service) {$/;"	f
+init_resource	KETI-Ibmc/init.cpp	/^bool init_resource(void) {$/;"	f
+init_sensor	KETI-Ibmc/init.cpp	/^void init_sensor(Collection *sensor_collection, string _id) {$/;"	f
+init_session_service	KETI-Ibmc/init.cpp	/^void init_session_service(SessionService *session_service) {$/;"	f
 init_setting_service	libs/apps/setting_service.cpp	/^int init_setting_service(){$/;"	f
-init_simple_storage	KETI-Edge/init.cpp	/^void init_simple_storage(Collection *simple_storage_collection, string _id) {$/;"	f
-init_software_inventory	KETI-Edge/init.cpp	/^init_software_inventory(Collection *software_inventory_collection, string _id) {$/;"	f
+init_simple_storage	KETI-Ibmc/init.cpp	/^void init_simple_storage(Collection *simple_storage_collection, string _id) {$/;"	f
+init_software_inventory	KETI-Ibmc/init.cpp	/^init_software_inventory(Collection *software_inventory_collection, string _id) {$/;"	f
 init_ssh_service	libs/apps/setting_service.cpp	/^int init_ssh_service(){$/;"	f
-init_storage	KETI-Edge/init.cpp	/^void init_storage(Storage *storage) {$/;"	f
-init_storage_collection	KETI-Edge/init.cpp	/^void init_storage_collection(Collection *storage_collection, string _id) {$/;"	f
-init_storage_controller	KETI-Edge/init.cpp	/^void init_storage_controller(List *storage_controllers_list, string _id) {$/;"	f
-init_system	KETI-Edge/init.cpp	/^void init_system(Systems *system, string _id) {$/;"	f
-init_task_service	KETI-Edge/init.cpp	/^void init_task_service(TaskService *task_service) {$/;"	f
-init_temperature	KETI-Edge/init.cpp	/^void init_temperature(List *temperatures_list, string _id) {$/;"	f
-init_thermal	KETI-Edge/init.cpp	/^void init_thermal(Thermal *thermal) {$/;"	f
-init_update_service	KETI-Edge/init.cpp	/^void init_update_service(UpdateService *update_service) {$/;"	f
-init_voltage	KETI-Edge/init.cpp	/^void init_voltage(List *voltages_list, string _id) {$/;"	f
-init_volume	KETI-Edge/init.cpp	/^void init_volume(Collection *volume_collection, string _id) {$/;"	f
+init_storage	KETI-Ibmc/init.cpp	/^void init_storage(Storage *storage) {$/;"	f
+init_storage_collection	KETI-Ibmc/init.cpp	/^void init_storage_collection(Collection *storage_collection, string _id) {$/;"	f
+init_storage_controller	KETI-Ibmc/init.cpp	/^void init_storage_controller(List *storage_controllers_list, string _id) {$/;"	f
+init_system	KETI-Ibmc/init.cpp	/^void init_system(Systems *system, string _id) {$/;"	f
+init_task_service	KETI-Ibmc/init.cpp	/^void init_task_service(TaskService *task_service) {$/;"	f
+init_temperature	KETI-Ibmc/init.cpp	/^void init_temperature(List *temperatures_list, string _id) {$/;"	f
+init_thermal	KETI-Ibmc/init.cpp	/^void init_thermal(Thermal *thermal) {$/;"	f
+init_update_service	KETI-Ibmc/init.cpp	/^void init_update_service(UpdateService *update_service) {$/;"	f
+init_voltage	KETI-Ibmc/init.cpp	/^void init_voltage(List *voltages_list, string _id) {$/;"	f
+init_volume	KETI-Ibmc/init.cpp	/^void init_volume(Collection *volume_collection, string _id) {$/;"	f
 init_web_service	libs/apps/setting_service.cpp	/^int init_web_service(){$/;"	f
 initial_countdown_lsb	WDTBK/watchdog.hpp	/^  unsigned char initial_countdown_lsb;$/;"	m	struct:__anon7
 initial_countdown_lsb	include/ipmi/ipmi.hpp	/^  unsigned char initial_countdown_lsb;$/;"	m	struct:__anon29
 initial_countdown_msb	WDTBK/watchdog.hpp	/^  unsigned char initial_countdown_msb;$/;"	m	struct:__anon7
 initial_countdown_msb	include/ipmi/ipmi.hpp	/^  unsigned char initial_countdown_msb;$/;"	m	struct:__anon29
-initial_speed	KETI-Edge/khandler.cpp	/^int initial_speed = 115200;$/;"	m	namespace:SOL	file:
-initial_speed	KETI-Edge/rest_handler.cpp	/^int initial_speed = 115200;$/;"	v
+initial_speed	KETI-Ibmc/khandler.cpp	/^int initial_speed = 115200;$/;"	m	namespace:SOL	file:
+initial_speed	KETI-Ibmc/rest_handler.cpp	/^int initial_speed = 115200;$/;"	v
 input_ranges	include/redfish/resource.hpp	/^  vector<InputRange> input_ranges;$/;"	m	class:PowerSupply
 input_source	kvm/video.h	/^	video_source		input_source;$/;"	m	struct:video_eng_config
 input_type	include/redfish/resource.hpp	/^  string input_type;$/;"	m	struct:_InputRange
 input_volt	libs/sdr/sensor_define.cpp	/^const float input_volt[]={1.348, 1.355, 1.0, 1.05, 1.348, 1.35, 0.998, 1.276, 1.276, 1.2, 1.2, 1.2, 1.2, 1.0, 1.0};$/;"	v
 ins_KETI_Watchdog	WDTBK/watchdog.hpp	/^  static KETI_Watchdog *ins_KETI_Watchdog;$/;"	m	class:KETI_Watchdog
 insert_numset_num	libs/redfish/util.cpp	/^void insert_numset_num(int _index, unsigned int num)$/;"	f
-insert_virtual_media	KETI-Edge/init.cpp	/^void insert_virtual_media(Collection *virtual_media_collection, string _id) {$/;"	f
+insert_virtual_media	KETI-Ibmc/init.cpp	/^void insert_virtual_media(Collection *virtual_media_collection, string _id) {$/;"	f
 inserted	include/redfish/resource.hpp	/^  bool inserted;$/;"	m	class:VirtualMedia
 instruction_set	include/redfish/resource.hpp	/^  string instruction_set;$/;"	m	class:Processors
 int_en_offset	libs/gpio/gpio.cpp	/^  unsigned int int_en_offset;$/;"	m	struct:ast_gpio_bank	file:
 int_sts_offset	libs/gpio/gpio.cpp	/^  unsigned int int_sts_offset;$/;"	m	struct:ast_gpio_bank	file:
 int_type_offset	libs/gpio/gpio.cpp	/^  unsigned int int_type_offset;$/;"	m	struct:ast_gpio_bank	file:
 integrity_type	include/redfish/rmcp.hpp	/^        uint8_t integrity_type;$/;"	m	class:Rmcppacket
-interface	KETI-Edge/lssdp.hpp	/^    lssdp_interface interface[LSSDP_INTERFACE_LIST_SIZE];                 \/\/ interface[16]$/;"	m	struct:lssdp_ctx
+interface	KETI-Ibmc/lssdp.hpp	/^    lssdp_interface interface[LSSDP_INTERFACE_LIST_SIZE];                 \/\/ interface[16]$/;"	m	struct:lssdp_ctx
 interfaceEnabled	include/redfish/resource.hpp	/^  bool interfaceEnabled;$/;"	m	class:EthernetInterfaces
-interface_num	KETI-Edge/lssdp.hpp	/^    size_t          interface_num;                          \/\/ interface number$/;"	m	struct:lssdp_ctx
+interface_num	KETI-Ibmc/lssdp.hpp	/^    size_t          interface_num;                          \/\/ interface number$/;"	m	struct:lssdp_ctx
 internal	include/ipmi/ipmi.hpp	/^  uint8_t internal;$/;"	m	struct:fru_header_t
 interval	include/ipmi/ipmi.hpp	/^  int *interval;$/;"	m	struct:__anon29
 interval_in_min	include/redfish/resource.hpp	/^  int interval_in_min;$/;"	m	struct:_PowerMetrics
-ip	KETI-Edge/lssdp.hpp	/^    char        ip          [LSSDP_IP_LEN];             \/\/ ip[16] = "xxx.xxx.xxx.xxx"$/;"	m	struct:_lssdp_interface
+ip	KETI-Ibmc/lssdp.hpp	/^    char        ip          [LSSDP_IP_LEN];             \/\/ ip[16] = "xxx.xxx.xxx.xxx"$/;"	m	struct:_lssdp_interface
 ip	include/ipmi/apps.hpp	/^  char ip[17];$/;"	m	struct:__anon45
 ip	include/ipmi/apps.hpp	/^  unsigned char ip[16];$/;"	m	struct:__anon46
 ip_addr	include/ipmi/network.hpp	/^  std::vector<uint8_t> ip_addr;$/;"	m	class:Ipminetwork
@@ -5518,8 +5518,8 @@ ip_addr_v6	include/ipmi/network.hpp	/^  std::vector<uint8_t> ip_addr_v6;$/;"	m	c
 ip_hdr	include/ipmi/network.hpp	/^  std::vector<uint8_t> ip_hdr;        \/\/ 3$/;"	m	class:Ipminetwork
 ip_src	include/ipmi/network.hpp	/^  uint8_t ip_src;$/;"	m	class:Ipminetwork
 ip_src_v6	include/ipmi/network.hpp	/^  uint8_t ip_src_v6;$/;"	m	class:Ipminetwork
-ip_str	KETI-Edge/khandler.cpp	/^static char ip_str[128];$/;"	v	file:
-ipaddr	KETI-Edge/khandler.cpp	/^char ipaddr[255] = {$/;"	v
+ip_str	KETI-Ibmc/khandler.cpp	/^static char ip_str[128];$/;"	v	file:
+ipaddr	KETI-Ibmc/khandler.cpp	/^char ipaddr[255] = {$/;"	v
 ipmb_encode	libs/ipmb/ipmb.cpp	/^static int ipmb_encode(uint8_t *buffer, ipmi_msg *msg) {$/;"	f	file:
 ipmb_error	include/ipmi/ipmb.hpp	/^typedef enum ipmb_error {$/;"	g
 ipmb_error	include/ipmi/ipmb.hpp	/^} ipmb_error;$/;"	t	typeref:enum:ipmb_error
@@ -5534,7 +5534,7 @@ ipmb_error_unknown	include/ipmi/ipmb.hpp	/^  ipmb_error_unknown = 0, \/**< Unkno
 ipmb_get_cpu_temp	libs/ipmb/ipmb.cpp	/^void ipmb_get_cpu_temp(void) {$/;"	f
 ipmb_get_deviceid	libs/ipmb/ipmb.cpp	/^static void ipmb_get_deviceid(void) {$/;"	f	file:
 ipmb_handle	libs/ipmb/ipmb.cpp	/^static void ipmb_handle(int fd, unsigned char *request, unsigned char req_len,$/;"	f	file:
-ipmb_handler	KETI-Edge/khandler.cpp	/^void *ipmb_handler(void *bus_num) {$/;"	f
+ipmb_handler	KETI-Ibmc/khandler.cpp	/^void *ipmb_handler(void *bus_num) {$/;"	f
 ipmb_req_t	include/ipmi/ipmb.hpp	/^} ipmb_req_t;$/;"	t	typeref:struct:_ipmb_req_t
 ipmb_res_handle	libs/lightning/lightning_sensor.cpp	/^unsigned char ipmb_res_handle(unsigned char *response, unsigned char res_len) {$/;"	f
 ipmb_res_t	include/ipmi/ipmb.hpp	/^} ipmb_res_t;$/;"	t	typeref:struct:_ipmb_res_t
@@ -5547,10 +5547,10 @@ ipmiApplication	libs/apps/apps.cpp	/^Ipmiapplication ipmiApplication = Ipmiappli
 ipmiChannel	libs/apps/apps.cpp	/^Ipmichannel ipmiChannel[9] = {$/;"	v
 ipmiChassis	libs/apps/apps.cpp	/^Ipmichassis ipmiChassis = Ipmichassis();$/;"	v
 ipmiNetwork	libs/apps/apps.cpp	/^Ipminetwork ipmiNetwork[ETH_COUNT] = {Ipminetwork(1), Ipminetwork(6),$/;"	v
-ipmiSession	KETI-Edge/rmcp.cpp	/^Ipmisession ipmiSession[5];$/;"	v
+ipmiSession	KETI-Ibmc/rmcp.cpp	/^Ipmisession ipmiSession[5];$/;"	v
 ipmiSession	rmcp.cpp	/^Ipmisession ipmiSession[5];$/;"	v
 ipmiUser	libs/user/user.cpp	/^Ipmiuser ipmiUser[MAX_USER];$/;"	v
-ipmi_checksum	KETI-Edge/msg_session.cpp	/^uint8_t ipmi_checksum(void *buf, unsigned int buflen)$/;"	f
+ipmi_checksum	KETI-Ibmc/msg_session.cpp	/^uint8_t ipmi_checksum(void *buf, unsigned int buflen)$/;"	f
 ipmi_en	KETI-REST/rhandler.cpp	/^uint8_t sdr_en, fru_en, sel_en, ipmi_en, network_en, ntp_en, snmp_en, ssh_en,$/;"	v
 ipmi_enabled	include/redfish/resource.hpp	/^  bool ipmi_enabled;$/;"	m	class:NetworkProtocol
 ipmi_event_sensor_types	include/ipmi/event_string.hpp	/^struct ipmi_event_sensor_types {$/;"	s
@@ -5568,14 +5568,14 @@ ipmi_handle_rest	libs/apps/apps.cpp	/^void ipmi_handle_rest(rest_req_t *req, uin
 ipmi_handle_sensor	libs/apps/apps.cpp	/^static void ipmi_handle_sensor(ipmi_req_t *request, ipmi_res_t *response,$/;"	f	file:
 ipmi_handle_storage	libs/apps/apps.cpp	/^static void ipmi_handle_storage(ipmi_req_t *request, ipmi_res_t *response,$/;"	f	file:
 ipmi_handle_transport	libs/apps/apps.cpp	/^static void ipmi_handle_transport(ipmi_req_t *request, ipmi_res_t *response,$/;"	f	file:
-ipmi_inprogress	KETI-Edge/khandler.cpp	/^int ipmi_inprogress = 0;$/;"	v
+ipmi_inprogress	KETI-Ibmc/khandler.cpp	/^int ipmi_inprogress = 0;$/;"	v
 ipmi_msg	include/ipmi/ipmb.hpp	/^typedef struct ipmi_msg {$/;"	s
 ipmi_msg	include/ipmi/ipmb.hpp	/^} ipmi_msg;$/;"	t	typeref:struct:ipmi_msg
 ipmi_msg	include/ipmi/ipmi.hpp	/^  rest_req_t ipmi_msg;$/;"	m	struct:__anon24
 ipmi_msg_in	include/redfish/msg_session.hpp	/^} ipmi_msg_in;$/;"	t	typeref:struct:__anon72
 ipmi_msg_len	include/redfish/msg_session.hpp	/^	uint8_t ipmi_msg_len;$/;"	m	struct:__anon71
 ipmi_msg_out	include/redfish/msg_session.hpp	/^} ipmi_msg_out;$/;"	t	typeref:struct:__anon77
-ipmi_msg_process_packet	KETI-Edge/msg_session.cpp	/^std::vector<uint8_t> ipmi_msg_process_packet(std::vector<uint8_t> packet_in)$/;"	f
+ipmi_msg_process_packet	KETI-Ibmc/msg_session.cpp	/^std::vector<uint8_t> ipmi_msg_process_packet(std::vector<uint8_t> packet_in)$/;"	f
 ipmi_port	include/redfish/resource.hpp	/^  int ipmi_port;$/;"	m	class:NetworkProtocol
 ipmi_req_t	include/ipmi/ipmi.hpp	/^} ipmi_req_t;$/;"	t	typeref:struct:__anon19
 ipmi_res_t	include/ipmi/ipmi.hpp	/^} ipmi_res_t;$/;"	t	typeref:struct:__anon18
@@ -5583,20 +5583,20 @@ ipmi_rq	include/ipmi/ipmi.hpp	/^struct ipmi_rq {$/;"	s
 ipmi_sel_timestamp	libs/sel/sel.cpp	/^ipmi_sel_timestamp(time_t stamp)$/;"	f	file:
 ipmi_sel_timestamp_date	libs/sel/sel.cpp	/^ipmi_sel_timestamp_date(time_t timestamp)$/;"	f	file:
 ipmi_session_auth_t	include/redfish/msg_session.hpp	/^} ipmi_session_auth_t;$/;"	t	typeref:struct:__anon71
-ipmi_session_process_packet	KETI-Edge/msg_session.cpp	/^std::vector<uint8_t> ipmi_session_process_packet(std::vector<uint8_t> packet_in)$/;"	f
+ipmi_session_process_packet	KETI-Ibmc/msg_session.cpp	/^std::vector<uint8_t> ipmi_session_process_packet(std::vector<uint8_t> packet_in)$/;"	f
 ipmi_sol_param_str	include/ipmi/sol.hpp	/^  unordered_map<string, int8_t> ipmi_sol_param_str;$/;"	m	class:SerialOverLan
 ipmiv15_support	include/ipmi/apps.hpp	/^  uint8_t ipmiv15_support : 1; \/* channel supports IPMI v1.5 connections *\/$/;"	m	struct:__anon35
 ipmiv20_support	include/ipmi/apps.hpp	/^  uint8_t ipmiv20_support : 1; \/* channel supports IPMI v2.0 connections *\/$/;"	m	struct:__anon35
 ipv6_default_gateway	include/redfish/resource.hpp	/^  string ipv6_default_gateway;$/;"	m	class:EthernetInterfaces
 isNumber	libs/redfish/util.cpp	/^bool isNumber(const string str)$/;"	f
-is_init_resource	KETI-Edge/khandler.cpp	/^bool is_init_resource;$/;"	v
+is_init_resource	KETI-Ibmc/khandler.cpp	/^bool is_init_resource;$/;"	v
 is_predefined	include/redfish/resource.hpp	/^  bool is_predefined;$/;"	m	class:Role
 is_session_valid	libs/redfish/resource.cpp	/^bool is_session_valid(const string _token) {$/;"	f
 issuer	include/redfish/resource.hpp	/^  CertContent issuer;$/;"	m	class:Certificate
 join_string	include/util/iniparser.hpp	/^    static inline std::string join_string(const std::vector<std::string>& array, const std::string& sep)$/;"	f	namespace:INI
 jpeg_virt_addr	kvm/ast-video.c	/^unsigned char *jpeg_virt_addr;$/;"	v
 json_body	include/redfish/resource.hpp	/^  json::value json_body;$/;"	m	struct:_Payload
-kcs_handler	KETI-Edge/khandler.cpp	/^void *kcs_handler(void *data) {$/;"	f
+kcs_handler	KETI-Ibmc/khandler.cpp	/^void *kcs_handler(void *data) {$/;"	f
 keti_ipmi_checksum	libs/fru/fru.cpp	/^uint8_t keti_ipmi_checksum(unsigned char *d, int s)$/;"	f
 keyUsage	include/redfish/resource.hpp	/^  vector<string> keyUsage;$/;"	m	class:Certificate
 key_bit_length	include/redfish/resource.hpp	/^  int key_bit_length;$/;"	m	class:Certificate
@@ -5614,19 +5614,19 @@ kvm_proxy_port	include/ipmi/ipmi.hpp	/^  char kvm_proxy_port[6];$/;"	m	struct:ss
 kvm_service_t	include/ipmi/ipmi.hpp	/^struct kvm_service_t {$/;"	s
 kvmip_enabled	include/redfish/resource.hpp	/^  bool kvmip_enabled;$/;"	m	class:NetworkProtocol
 kvmip_port	include/redfish/resource.hpp	/^  int kvmip_port;$/;"	m	class:NetworkProtocol
-l_interrupt	KETI-Edge/rest_handler.cpp	/^static int l_interrupt=0;$/;"	v	file:
-l_running	KETI-Edge/rest_handler.cpp	/^unsigned char l_running = 0;$/;"	v
+l_interrupt	KETI-Ibmc/rest_handler.cpp	/^static int l_interrupt=0;$/;"	v	file:
+l_running	KETI-Ibmc/rest_handler.cpp	/^unsigned char l_running = 0;$/;"	v
 lanConfigChanged	include/ipmi/network.hpp	/^  std::map<uint8_t, uint8_t> lanConfigChanged;$/;"	m	class:Ipminetwork
 lanMonitorHandler	libs/network/network.cpp	/^void Ipminetwork::lanMonitorHandler() {$/;"	f	class:Ipminetwork
 lan_alert_config_t	libs/apps/apps.cpp	/^} lan_alert_config_t;$/;"	t	typeref:struct:__anon6	file:
-lan_check	KETI-Edge/rest_handler.cpp	/^unsigned char lan_check = 0;$/;"	v
+lan_check	KETI-Ibmc/rest_handler.cpp	/^unsigned char lan_check = 0;$/;"	v
 lan_data	include/ipmi/session.hpp	/^  } lan_data;$/;"	m	class:Ipmisession	typeref:struct:Ipmisession::__anon14
-lan_tid	KETI-Edge/rest_handler.cpp	/^pthread_t tid, tid2, tipmb, rest_tid, lan_tid, redfish_tid;$/;"	v
+lan_tid	KETI-Ibmc/rest_handler.cpp	/^pthread_t tid, tid2, tipmb, rest_tid, lan_tid, redfish_tid;$/;"	v
 language	include/redfish/resource.hpp	/^  string language; \/\/ required$/;"	m	class:MessageRegistry
-lanplus_handler	KETI-Edge/khandler.cpp	/^void *lanplus_handler(void *data) {$/;"	f
+lanplus_handler	KETI-Ibmc/khandler.cpp	/^void *lanplus_handler(void *data) {$/;"	f
 last_power_output_watts	include/redfish/resource.hpp	/^  double last_power_output_watts;$/;"	m	class:PowerSupply
-lb_flag	KETI-Edge/rest_handler.cpp	/^unsigned char lb_flag = 0;$/;"	v
-lc_flag	KETI-Edge/rest_handler.cpp	/^static int lc_flag=0;$/;"	v	file:
+lb_flag	KETI-Ibmc/rest_handler.cpp	/^unsigned char lb_flag = 0;$/;"	v
+lc_flag	KETI-Ibmc/rest_handler.cpp	/^static int lc_flag=0;$/;"	v	file:
 lc_high	include/ipmi/ipmi.hpp	/^  lc_high,$/;"	m	class:Theshold_type
 lc_low	include/ipmi/ipmi.hpp	/^  lc_low,$/;"	m	class:Theshold_type
 lc_thresh	include/ipmi/ipmi.hpp	/^  unsigned char lc_thresh;$/;"	m	struct:__anon20
@@ -5637,7 +5637,7 @@ ldap_service	include/redfish/resource.hpp	/^  LDAP_Service ldap_service;$/;"	m	s
 len	include/ipmi/ipmi.hpp	/^  uint8_t len;$/;"	m	class:Ipmisdr
 len	include/ipmi/lightning_sensor.hpp	/^  unsigned char len;$/;"	m	struct:__anon48
 len	libs/ipmb/ipmb.cpp	/^  uint8_t len;    \/\/ buffer size$/;"	m	struct:_seq_buf_t	file:
-length	KETI-Edge/rest_handler.hpp	/^  int length;          \/\/ length of array$/;"	m	struct:__anon10
+length	KETI-Ibmc/rest_handler.hpp	/^  int length;          \/\/ length of array$/;"	m	struct:__anon10
 lightning_sensor_read	libs/lightning/lightning_sensor.cpp	/^int lightning_sensor_read(uint8_t fru, uint8_t sensor_num, int *value) {$/;"	f
 limit	include/ipmi/user.hpp	/^        uint8_t limit;$/;"	m	class:Ipmiuser
 limit_exception	include/redfish/resource.hpp	/^  string limit_exception;$/;"	m	struct:_PowerLimit
@@ -5651,7 +5651,7 @@ linear2voltage	libs/util/pmbus.cpp	/^double linear2voltage(unsigned short word) 
 link_auth	include/ipmi/user.hpp	/^        uint8_t link_auth;$/;"	m	class:Ipmiuser
 link_auth	include/redfish/resource.hpp	/^  int link_auth;$/;"	m	class:Account
 link_status	include/redfish/resource.hpp	/^  string link_status;$/;"	m	class:EthernetInterfaces
-list	KETI-Edge/handler.hpp	/^    vector<string> list;$/;"	m	class:Handler
+list	KETI-Ibmc/handler.hpp	/^    vector<string> list;$/;"	m	class:Handler
 list	include/ipmi/efte.hpp	/^	struct desc_map list[128];$/;"	m	struct:bit_desc_map	typeref:struct:bit_desc_map::desc_map
 lnc_high	include/ipmi/ipmi.hpp	/^  lnc_high,$/;"	m	class:Theshold_type
 lnc_low	include/ipmi/ipmi.hpp	/^  lnc_low = 0,$/;"	m	class:Theshold_type
@@ -5707,9 +5707,9 @@ load_json	libs/redfish/resource.cpp	/^bool VirtualMedia::load_json(json::value &
 load_json	libs/redfish/resource.cpp	/^bool Voltage::load_json(json::value &j) {$/;"	f	class:Voltage
 load_json	libs/redfish/resource.cpp	/^bool Volume::load_json(json::value &j) {$/;"	f	class:Volume
 load_json_from_file	libs/redfish/resource.cpp	/^bool Resource::load_json_from_file(json::value &j) {$/;"	f	class:Resource
-location	KETI-Edge/lssdp.cpp	/^    char            location    [LSSDP_LOCATION_LEN];   \/\/ Location$/;"	m	struct:lssdp_packet	file:
-location	KETI-Edge/lssdp.hpp	/^        } location;$/;"	m	struct:lssdp_ctx::__anon12	typeref:struct:lssdp_ctx::__anon12::__anon13
-location	KETI-Edge/lssdp.hpp	/^    char            location    [LSSDP_LOCATION_LEN];       \/\/ URL or IP(:Port)$/;"	m	struct:lssdp_nbr
+location	KETI-Ibmc/lssdp.cpp	/^    char            location    [LSSDP_LOCATION_LEN];   \/\/ Location$/;"	m	struct:lssdp_packet	file:
+location	KETI-Ibmc/lssdp.hpp	/^        } location;$/;"	m	struct:lssdp_ctx::__anon12	typeref:struct:lssdp_ctx::__anon12::__anon13
+location	KETI-Ibmc/lssdp.hpp	/^    char            location    [LSSDP_LOCATION_LEN];       \/\/ URL or IP(:Port)$/;"	m	struct:lssdp_nbr
 location	include/redfish/resource.hpp	/^  Location location;$/;"	m	class:Chassis
 location_ordinal_value	include/redfish/resource.hpp	/^  int location_ordinal_value;$/;"	m	struct:_Part_Location
 location_type	include/redfish/resource.hpp	/^  string location_type; \/\/ Bay$/;"	m	struct:_Part_Location
@@ -5718,8 +5718,8 @@ lockFlag	include/ipmi/network.hpp	/^  bool lockFlag;$/;"	m	class:Ipminetwork
 locked	include/redfish/resource.hpp	/^  bool locked;$/;"	m	class:Account
 log	include/ipmi/ipmi.hpp	51;"	d
 log	include/redfish/stdafx.hpp	100;"	d
-log_callback	KETI-Edge/khandler.cpp	/^void log_callback(const char *file, const char *tag, int level, int line,$/;"	f
-log_callback	KETI-Edge/lssdp.cpp	/^    void (* log_callback)(const char * file, const char * tag, int level, int line, const char * func, const char * message);$/;"	m	struct:__anon11	file:
+log_callback	KETI-Ibmc/khandler.cpp	/^void log_callback(const char *file, const char *tag, int level, int line,$/;"	f
+log_callback	KETI-Ibmc/lssdp.cpp	/^    void (* log_callback)(const char * file, const char * tag, int level, int line, const char * func, const char * message);$/;"	m	struct:__anon11	file:
 log_entry_type	include/redfish/resource.hpp	/^  string log_entry_type;$/;"	m	class:LogService
 log_file_prefix	libs/ipmi/ipmi.cpp	/^static char log_file_prefix[64] = "bmc";$/;"	v	file:
 log_folder	libs/ipmi/ipmi.cpp	/^static char log_folder[1024] = "\/var\/log";$/;"	v	file:
@@ -5742,29 +5742,29 @@ lower_threshold_non_critical	include/redfish/resource.hpp	/^  double lower_thres
 lower_threshold_non_critical	include/redfish/resource.hpp	/^  double lower_threshold_non_critical;$/;"	m	class:Voltage
 lower_threshold_non_critical	include/redfish/resource.hpp	/^  int lower_threshold_non_critical;$/;"	m	class:Fan
 lowest_supported_version	include/redfish/resource.hpp	/^  string lowest_supported_version;$/;"	m	class:SoftwareInventory
-lssdp_ctx	KETI-Edge/lssdp.hpp	/^typedef struct lssdp_ctx {$/;"	s
-lssdp_ctx	KETI-Edge/lssdp.hpp	/^} lssdp_ctx;$/;"	t	typeref:struct:lssdp_ctx
-lssdp_debug	KETI-Edge/lssdp.cpp	23;"	d	file:
-lssdp_error	KETI-Edge/lssdp.cpp	26;"	d	file:
-lssdp_info	KETI-Edge/lssdp.cpp	24;"	d	file:
-lssdp_interface	KETI-Edge/lssdp.hpp	/^}lssdp_interface;$/;"	t	typeref:struct:_lssdp_interface
-lssdp_log	KETI-Edge/lssdp.cpp	/^static int lssdp_log(int level, int line, const char * func, const char * format, ...) {$/;"	f	file:
-lssdp_nbr	KETI-Edge/lssdp.hpp	/^typedef struct lssdp_nbr {$/;"	s
-lssdp_nbr	KETI-Edge/lssdp.hpp	/^} lssdp_nbr;$/;"	t	typeref:struct:lssdp_nbr
-lssdp_neighbor_check_timeout	KETI-Edge/lssdp.cpp	/^int lssdp_neighbor_check_timeout(lssdp_ctx * lssdp) {$/;"	f
-lssdp_neighbor_remove_all	KETI-Edge/lssdp.cpp	/^static int lssdp_neighbor_remove_all(lssdp_ctx * lssdp) {$/;"	f	file:
-lssdp_network_interface_update	KETI-Edge/lssdp.cpp	/^int lssdp_network_interface_update(lssdp_ctx * lssdp) {$/;"	f
-lssdp_packet	KETI-Edge/lssdp.cpp	/^typedef struct lssdp_packet {$/;"	s	file:
-lssdp_packet	KETI-Edge/lssdp.cpp	/^} lssdp_packet;$/;"	t	typeref:struct:lssdp_packet	file:
-lssdp_packet_parser	KETI-Edge/lssdp.cpp	/^static int lssdp_packet_parser(const char * data, size_t data_len, lssdp_packet * packet) {$/;"	f	file:
-lssdp_send_msearch	KETI-Edge/lssdp.cpp	/^int lssdp_send_msearch(lssdp_ctx * lssdp) {$/;"	f
-lssdp_send_notify	KETI-Edge/lssdp.cpp	/^int lssdp_send_notify(lssdp_ctx * lssdp) {$/;"	f
-lssdp_send_response	KETI-Edge/lssdp.cpp	/^static int lssdp_send_response(lssdp_ctx * lssdp, struct sockaddr_in address) {$/;"	f	file:
-lssdp_set_log_callback	KETI-Edge/lssdp.cpp	/^void lssdp_set_log_callback(void (* callback)(const char * file, const char * tag, int level, int line, const char * func, const char * message)) {$/;"	f
-lssdp_socket_close	KETI-Edge/lssdp.cpp	/^int lssdp_socket_close(lssdp_ctx * lssdp) {$/;"	f
-lssdp_socket_create	KETI-Edge/lssdp.cpp	/^int lssdp_socket_create(lssdp_ctx * lssdp) {$/;"	f
-lssdp_socket_read	KETI-Edge/lssdp.cpp	/^int lssdp_socket_read(lssdp_ctx * lssdp) {$/;"	f
-lssdp_warn	KETI-Edge/lssdp.cpp	25;"	d	file:
+lssdp_ctx	KETI-Ibmc/lssdp.hpp	/^typedef struct lssdp_ctx {$/;"	s
+lssdp_ctx	KETI-Ibmc/lssdp.hpp	/^} lssdp_ctx;$/;"	t	typeref:struct:lssdp_ctx
+lssdp_debug	KETI-Ibmc/lssdp.cpp	23;"	d	file:
+lssdp_error	KETI-Ibmc/lssdp.cpp	26;"	d	file:
+lssdp_info	KETI-Ibmc/lssdp.cpp	24;"	d	file:
+lssdp_interface	KETI-Ibmc/lssdp.hpp	/^}lssdp_interface;$/;"	t	typeref:struct:_lssdp_interface
+lssdp_log	KETI-Ibmc/lssdp.cpp	/^static int lssdp_log(int level, int line, const char * func, const char * format, ...) {$/;"	f	file:
+lssdp_nbr	KETI-Ibmc/lssdp.hpp	/^typedef struct lssdp_nbr {$/;"	s
+lssdp_nbr	KETI-Ibmc/lssdp.hpp	/^} lssdp_nbr;$/;"	t	typeref:struct:lssdp_nbr
+lssdp_neighbor_check_timeout	KETI-Ibmc/lssdp.cpp	/^int lssdp_neighbor_check_timeout(lssdp_ctx * lssdp) {$/;"	f
+lssdp_neighbor_remove_all	KETI-Ibmc/lssdp.cpp	/^static int lssdp_neighbor_remove_all(lssdp_ctx * lssdp) {$/;"	f	file:
+lssdp_network_interface_update	KETI-Ibmc/lssdp.cpp	/^int lssdp_network_interface_update(lssdp_ctx * lssdp) {$/;"	f
+lssdp_packet	KETI-Ibmc/lssdp.cpp	/^typedef struct lssdp_packet {$/;"	s	file:
+lssdp_packet	KETI-Ibmc/lssdp.cpp	/^} lssdp_packet;$/;"	t	typeref:struct:lssdp_packet	file:
+lssdp_packet_parser	KETI-Ibmc/lssdp.cpp	/^static int lssdp_packet_parser(const char * data, size_t data_len, lssdp_packet * packet) {$/;"	f	file:
+lssdp_send_msearch	KETI-Ibmc/lssdp.cpp	/^int lssdp_send_msearch(lssdp_ctx * lssdp) {$/;"	f
+lssdp_send_notify	KETI-Ibmc/lssdp.cpp	/^int lssdp_send_notify(lssdp_ctx * lssdp) {$/;"	f
+lssdp_send_response	KETI-Ibmc/lssdp.cpp	/^static int lssdp_send_response(lssdp_ctx * lssdp, struct sockaddr_in address) {$/;"	f	file:
+lssdp_set_log_callback	KETI-Ibmc/lssdp.cpp	/^void lssdp_set_log_callback(void (* callback)(const char * file, const char * tag, int level, int line, const char * func, const char * message)) {$/;"	f
+lssdp_socket_close	KETI-Ibmc/lssdp.cpp	/^int lssdp_socket_close(lssdp_ctx * lssdp) {$/;"	f
+lssdp_socket_create	KETI-Ibmc/lssdp.cpp	/^int lssdp_socket_create(lssdp_ctx * lssdp) {$/;"	f
+lssdp_socket_read	KETI-Ibmc/lssdp.cpp	/^int lssdp_socket_read(lssdp_ctx * lssdp) {$/;"	f
+lssdp_warn	KETI-Ibmc/lssdp.cpp	25;"	d	file:
 lt_read_mask	include/ipmi/ipmi.hpp	/^  unsigned char lt_read_mask[2];$/;"	m	struct:__anon20
 lt_read_mask	include/ipmi/lightning_sensor.hpp	/^  unsigned char lt_read_mask[2];$/;"	m	struct:__anon48
 ltrim	include/util/iniparser.hpp	/^    static inline std::string &ltrim(std::string &s) {$/;"	f	namespace:INI
@@ -5779,15 +5779,15 @@ m_OverlappedWrite	KETI-Serial/source/Serial.hpp	/^  OVERLAPPED m_OverlappedRead,
 m_app	libs/apps/apps.cpp	/^static pthread_mutex_t m_app;$/;"	v	file:
 m_bOpened	KETI-Serial/source/Serial.hpp	/^  BOOL m_bOpened;$/;"	m	class:CSerial
 m_chassis	libs/apps/apps.cpp	/^static pthread_mutex_t m_chassis;$/;"	v	file:
-m_count	KETI-Edge/rest_handler.cpp	/^int m_min, h_min, d_min, m_max, h_max, d_max, m_count, d_count, h_count = 0;$/;"	v
+m_count	KETI-Ibmc/rest_handler.cpp	/^int m_min, h_min, d_min, m_max, h_max, d_max, m_count, d_count, h_count = 0;$/;"	v
 m_dcmi	libs/dcmi/dcmi.cpp	/^static pthread_mutex_t m_dcmi;$/;"	v	file:
 m_hIDComDev	KETI-Serial/source/Serial.hpp	/^  HANDLE m_hIDComDev;$/;"	m	class:CSerial
-m_listener	KETI-Edge/handler.hpp	/^    http_listener m_listener;$/;"	m	class:Handler
+m_listener	KETI-Ibmc/handler.hpp	/^    http_listener m_listener;$/;"	m	class:Handler
 m_location	include/redfish/resource.hpp	/^  MemoryLocation m_location;$/;"	m	class:Memory
-m_max	KETI-Edge/rest_handler.cpp	/^int m_min, h_min, d_min, m_max, h_max, d_max, m_count, d_count, h_count = 0;$/;"	v
-m_min	KETI-Edge/rest_handler.cpp	/^int m_min, h_min, d_min, m_max, h_max, d_max, m_count, d_count, h_count = 0;$/;"	v
+m_max	KETI-Ibmc/rest_handler.cpp	/^int m_min, h_min, d_min, m_max, h_max, d_max, m_count, d_count, h_count = 0;$/;"	v
+m_min	KETI-Ibmc/rest_handler.cpp	/^int m_min, h_min, d_min, m_max, h_max, d_max, m_count, d_count, h_count = 0;$/;"	v
 m_oem	libs/apps/apps.cpp	/^static pthread_mutex_t m_oem;$/;"	v	file:
-m_sensor	KETI-Edge/rest_handler.cpp	/^pthread_mutex_t m_sensor;$/;"	v
+m_sensor	KETI-Ibmc/rest_handler.cpp	/^pthread_mutex_t m_sensor;$/;"	v
 m_sensor	libs/lightning/lightning_sensor.cpp	/^static pthread_mutex_t m_sensor;$/;"	v	file:
 m_storage	libs/apps/apps.cpp	/^static pthread_mutex_t m_storage;$/;"	v	file:
 m_tolerance	include/ipmi/ipmi.hpp	/^  unsigned char m_tolerance;$/;"	m	struct:__anon20
@@ -5804,7 +5804,7 @@ magic	include/ipmi/ipmi.hpp	/^  int magic;             \/\/\/ Magic number to ch
 magic	include/ipmi/ipmi.hpp	/^  int magic;            \/\/\/ Magic number to check validity$/;"	m	struct:sel_hdr
 main	CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^int main(int argc, char* argv[])$/;"	f
 main	CMakeFiles/feature_tests.cxx	/^int main(int argc, char** argv) { (void)argv; return features[argc]; }$/;"	f
-main	KETI-Edge/keti-edge.cpp	/^int main(void) {$/;"	f
+main	KETI-Ibmc/keti-Ibmc.cpp	/^int main(void) {$/;"	f
 main	KETI-REST/main.cpp	/^int main(void)$/;"	f
 main	KETI-Serial/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	/^int main(argc, argv) int argc; char *argv[];$/;"	f
 main	KETI-Serial/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	/^void main() {}$/;"	f
@@ -5827,12 +5827,12 @@ main	kvm/CMakeFiles/feature_tests.c	/^int main(int argc, char** argv) { (void)ar
 main	kvm/CMakeFiles/feature_tests.cxx	/^int main(int argc, char** argv) { (void)argv; return features[argc]; }$/;"	f
 main	kvm/ast-video.c	/^int main()$/;"	f
 main	libs/util/updatevoltage.cpp	/^int main(int argc, char *argv[]) {$/;"	f
-make_account	KETI-Edge/handler.cpp	/^void make_account(json::value _jv, http_response &_response) {$/;"	f
+make_account	KETI-Ibmc/handler.cpp	/^void make_account(json::value _jv, http_response &_response) {$/;"	f
 make_iptable_cmd	libs/redfish/resource.cpp	/^string make_iptable_cmd(string _op, string _pos, int _index, int _port,$/;"	f
 make_path	libs/redfish/util.cpp	/^string make_path(vector<string> _tokens)$/;"	f
 make_sensor	libs/redfish/resource.cpp	/^void make_sensor(SensorMake _sm, uint16_t _flag) {$/;"	f
-make_session	KETI-Edge/handler.cpp	/^void make_session(json::value _jv, http_response &_response) {$/;"	f
-make_subscription	KETI-Edge/handler.cpp	/^void make_subscription(json::value _jv, http_response &_response) {$/;"	f
+make_session	KETI-Ibmc/handler.cpp	/^void make_session(json::value _jv, http_response &_response) {$/;"	f
+make_subscription	KETI-Ibmc/handler.cpp	/^void make_subscription(json::value _jv, http_response &_response) {$/;"	f
 manager	include/redfish/resource.hpp	/^  Manager *manager;$/;"	m	class:ServiceRoot
 manager_monitor	libs/redfish/resource.cpp	/^void manager_monitor(void *data) {$/;"	f
 manager_type	include/redfish/resource.hpp	/^  string manager_type;$/;"	m	class:Manager
@@ -5884,7 +5884,7 @@ memory_controller	include/redfish/resource.hpp	/^  unsigned int memory_controlle
 memory_device_type	include/redfish/resource.hpp	/^  string memory_device_type;$/;"	m	class:Memory
 memory_media	include/redfish/resource.hpp	/^  vector<string> memory_media;$/;"	m	class:Memory
 memory_type	include/redfish/resource.hpp	/^  string memory_type;$/;"	m	class:Memory
-mesg	KETI-Edge/rest_handler.cpp	/^unsigned char mesg[1000];$/;"	v
+mesg	KETI-Ibmc/rest_handler.cpp	/^unsigned char mesg[1000];$/;"	v
 message	include/redfish/resource.hpp	/^  string message;$/;"	m	class:LogEntry
 message	include/redfish/resource.hpp	/^  string message;$/;"	m	struct:_Event_Info
 message	include/redfish/resource.hpp	/^  string message;$/;"	m	struct:_Message
@@ -5896,7 +5896,7 @@ message_id	include/redfish/resource.hpp	/^  string message_id;$/;"	m	class:LogEn
 message_id	include/redfish/resource.hpp	/^  string message_id;$/;"	m	struct:_Event_Info
 message_severity	include/redfish/resource.hpp	/^  string message_severity;$/;"	m	struct:_Event_Info
 messages	include/redfish/resource.hpp	/^  Messages messages; \/\/ 라는 object안에 Message구조체가 여러개들은 구조니깐$/;"	m	class:MessageRegistry
-method	KETI-Edge/lssdp.cpp	/^    char            method      [LSSDP_FIELD_LEN];      \/\/ M-SEARCH, NOTIFY, RESPONSE$/;"	m	struct:lssdp_packet	file:
+method	KETI-Ibmc/lssdp.cpp	/^    char            method      [LSSDP_FIELD_LEN];      \/\/ M-SEARCH, NOTIFY, RESPONSE$/;"	m	struct:lssdp_packet	file:
 method	include/redfish/stdafx.hpp	/^  int method;$/;"	m	struct:redfish_req_t
 metric_report_definition	include/redfish/resource.hpp	/^  bool metric_report_definition;$/;"	m	struct:_SSE_Filter_Properties_Supported
 mfg	include/ipmi/ipmi.hpp	/^  char *mfg[32];$/;"	m	struct:fru_board_info_t
@@ -5906,7 +5906,7 @@ mfg_date	include/ipmi/ipmi.hpp	/^  char *mfg_date[4];$/;"	m	struct:fru_board_inf
 mgntSessionId	include/ipmi/session.hpp	/^    std::vector<uint8_t> mgntSessionId; \/\/ Size 4$/;"	m	struct:Ipmisession::__anon15
 microcode_info	include/redfish/resource.hpp	/^  string microcode_info;$/;"	m	struct:_ProcessorId
 min_consumed_watts	include/redfish/resource.hpp	/^  double min_consumed_watts;$/;"	m	struct:_PowerMetrics
-min_cursor	KETI-Edge/psu_server.cpp	/^int min_cursor[2], hour_cursor[2], day_cursor[2] = {0};$/;"	v
+min_cursor	KETI-Ibmc/psu_server.cpp	/^int min_cursor[2], hour_cursor[2], day_cursor[2] = {0};$/;"	v
 min_password_length	include/redfish/resource.hpp	/^  unsigned int min_password_length;$/;"	m	class:AccountService
 min_power	libs/ipmi/ipmi.cpp	/^uint16_t min_power, max_power, avg_power;$/;"	v
 min_reading	include/ipmi/ipmi.hpp	/^  unsigned char min_reading;$/;"	m	struct:__anon20
@@ -5927,8 +5927,8 @@ model	include/redfish/resource.hpp	/^  string model;$/;"	m	class:Processors
 model	include/redfish/resource.hpp	/^  string model;$/;"	m	class:StorageControllers
 model	include/redfish/resource.hpp	/^  string model;$/;"	m	class:Systems
 model	include/redfish/resource.hpp	/^  string model;$/;"	m	struct:_Device_Info
-modify_account	KETI-Edge/handler.cpp	/^void modify_account(http_request _request, json::value _jv, string _uri,$/;"	f
-modify_role	KETI-Edge/handler.cpp	/^void modify_role(http_request _request, json::value _jv, string _uri,$/;"	f
+modify_account	KETI-Ibmc/handler.cpp	/^void modify_account(http_request _request, json::value _jv, string _uri,$/;"	f
+modify_role	KETI-Ibmc/handler.cpp	/^void modify_role(http_request _request, json::value _jv, string _uri,$/;"	f
 mold_usage	include/redfish/hwcontrol.hpp	/^    int mold_usage[MAX_CPU_NUM][3];$/;"	m	class:JSms
 month2Int	libs/apps/apps.cpp	/^} month2Int;$/;"	t	typeref:enum:__anon5	file:
 mount	include/redfish/hwcontrol.hpp	/^    char mount[MOUNT_STR_LEN]; \/\/마운트 디렉토리$/;"	m	struct:df
@@ -5945,7 +5945,7 @@ mtu_size	include/redfish/resource.hpp	/^  unsigned int mtu_size;$/;"	m	class:Eth
 multi	include/ipmi/ipmi.hpp	/^  uint8_t multi;$/;"	m	struct:fru_header_t
 mutex_destroy	libs/apps/apps.cpp	/^void mutex_destroy(void) {$/;"	f
 mutex_init	libs/apps/apps.cpp	/^void mutex_init(void) {$/;"	f
-name	KETI-Edge/lssdp.hpp	/^    char        name        [LSSDP_INTERFACE_NAME_LEN]; \/\/ name[16]$/;"	m	struct:_lssdp_interface
+name	KETI-Ibmc/lssdp.hpp	/^    char        name        [LSSDP_INTERFACE_NAME_LEN]; \/\/ name[16]$/;"	m	struct:_lssdp_interface
 name	include/ipmi/ipmi.hpp	/^  char *name[32];$/;"	m	struct:fru_product_info_t
 name	include/ipmi/user.hpp	/^        std::string name;$/;"	m	class:Ipmiuser
 name	include/redfish/resource.hpp	/^  string name;$/;"	m	class:Drive
@@ -5967,11 +5967,11 @@ nct7904_registers	libs/lightning/lightning_sensor.cpp	/^enum nct7904_registers {
 neg_hyst	include/ipmi/ipmi.hpp	/^  unsigned char neg_hyst;$/;"	m	struct:__anon20
 neg_hyst	include/ipmi/lightning_sensor.hpp	/^  unsigned char neg_hyst;$/;"	m	struct:__anon48
 negotiated_speed_Gbs	include/redfish/resource.hpp	/^  int negotiated_speed_Gbs;$/;"	m	class:Drive
-neighbor_list	KETI-Edge/lssdp.hpp	/^    lssdp_nbr *     neighbor_list;                          \/\/ SSDP neighbor list$/;"	m	struct:lssdp_ctx
-neighbor_list_add	KETI-Edge/lssdp.cpp	/^static int neighbor_list_add(lssdp_ctx * lssdp, const lssdp_packet packet) {$/;"	f	file:
-neighbor_list_changed_callback	KETI-Edge/lssdp.hpp	/^    int (* neighbor_list_changed_callback)     (struct lssdp_ctx * lssdp);$/;"	m	struct:lssdp_ctx
-neighbor_list_free	KETI-Edge/lssdp.cpp	/^static void neighbor_list_free(lssdp_nbr * list) {$/;"	f	file:
-neighbor_timeout	KETI-Edge/lssdp.hpp	/^    long            neighbor_timeout;                       \/\/ milliseconds$/;"	m	struct:lssdp_ctx
+neighbor_list	KETI-Ibmc/lssdp.hpp	/^    lssdp_nbr *     neighbor_list;                          \/\/ SSDP neighbor list$/;"	m	struct:lssdp_ctx
+neighbor_list_add	KETI-Ibmc/lssdp.cpp	/^static int neighbor_list_add(lssdp_ctx * lssdp, const lssdp_packet packet) {$/;"	f	file:
+neighbor_list_changed_callback	KETI-Ibmc/lssdp.hpp	/^    int (* neighbor_list_changed_callback)     (struct lssdp_ctx * lssdp);$/;"	m	struct:lssdp_ctx
+neighbor_list_free	KETI-Ibmc/lssdp.cpp	/^static void neighbor_list_free(lssdp_nbr * list) {$/;"	f	file:
+neighbor_timeout	KETI-Ibmc/lssdp.hpp	/^    long            neighbor_timeout;                       \/\/ milliseconds$/;"	m	struct:lssdp_ctx
 net_fn	include/redfish/msg_session.hpp	/^			unsigned char net_fn :6;$/;"	m	struct:__anon72::__anon73::__anon74
 net_fn	include/redfish/msg_session.hpp	/^			unsigned char net_fn :6;$/;"	m	struct:__anon77::__anon78::__anon79
 net_mask	include/ipmi/network.hpp	/^  std::vector<uint8_t> net_mask; \/\/ 4$/;"	m	class:Ipminetwork
@@ -5990,11 +5990,11 @@ netfn_rqlun	include/redfish/msg_session.hpp	/^		} netfn_rqlun;$/;"	m	union:__ano
 netfn_rqlun_raw	include/redfish/msg_session.hpp	/^		unsigned char netfn_rqlun_raw;$/;"	m	union:__anon77::__anon78
 netfn_rslun	include/redfish/msg_session.hpp	/^		} netfn_rslun;$/;"	m	union:__anon72::__anon73	typeref:struct:__anon72::__anon73::__anon74
 netfn_rslun_raw	include/redfish/msg_session.hpp	/^		unsigned char netfn_rslun_raw;$/;"	m	union:__anon72::__anon73
-netmask	KETI-Edge/lssdp.hpp	/^    uint32_t    netmask;                                \/\/ mask in network byte order$/;"	m	struct:_lssdp_interface
+netmask	KETI-Ibmc/lssdp.hpp	/^    uint32_t    netmask;                                \/\/ mask in network byte order$/;"	m	struct:_lssdp_interface
 network	include/redfish/resource.hpp	/^  NetworkProtocol *network;$/;"	m	class:Manager
 network_cv	include/ipmi/KETI_stdx.hpp	/^  static std::condition_variable network_cv;$/;"	m	class:KETI_define
 network_en	KETI-REST/rhandler.cpp	/^uint8_t sdr_en, fru_en, sel_en, ipmi_en, network_en, ntp_en, snmp_en, ssh_en,$/;"	v
-network_interface_changed_callback	KETI-Edge/lssdp.hpp	/^    int (* network_interface_changed_callback) (struct lssdp_ctx * lssdp);$/;"	m	struct:lssdp_ctx
+network_interface_changed_callback	KETI-Ibmc/lssdp.hpp	/^    int (* network_interface_changed_callback) (struct lssdp_ctx * lssdp);$/;"	m	struct:lssdp_ctx
 new_ipmi_user	libs/apps/apps.cpp	/^int new_ipmi_user(string user_name, string password, bool enabled) {$/;"	f
 new_log_entry	libs/redfish/resource.cpp	/^LogEntry *LogService::new_log_entry(IpmiLogEvent _ev) {$/;"	f	class:LogService
 new_log_service	libs/redfish/resource.cpp	/^void Chassis::new_log_service(string _service_id) {$/;"	f	class:Chassis
@@ -6003,7 +6003,7 @@ new_log_service	libs/redfish/resource.cpp	/^void Systems::new_log_service(string
 new_val	libs/util/updatevoltage.cpp	/^static unsigned short new_val(struct pm_list *p) {$/;"	f	file:
 new_voltage	libs/util/updatevoltage.cpp	/^static double new_voltage = 1.8;$/;"	v	file:
 newtio	KETI-Serial/KETI-Serial.cpp	/^struct termios oldtio, newtio;$/;"	v	typeref:struct:
-next	KETI-Edge/lssdp.hpp	/^    struct lssdp_nbr * next;$/;"	m	struct:lssdp_nbr	typeref:struct:lssdp_nbr::lssdp_nbr
+next	KETI-Ibmc/lssdp.hpp	/^    struct lssdp_nbr * next;$/;"	m	struct:lssdp_nbr	typeref:struct:lssdp_nbr::lssdp_nbr
 next	WDTBK/watchdog.hpp	/^  int next;$/;"	m	struct:__anon8
 next	include/ipmi/ipmi.hpp	/^  int next;$/;"	m	struct:__anon22
 nic_boot1	include/redfish/resource.hpp	/^  string nic_boot1;$/;"	m	struct:_Attribute
@@ -6035,7 +6035,7 @@ oem_aux_data	include/ipmi/apps.hpp	/^  uint8_t oem_aux_data; \/* Additional OEM 
 oem_id	include/ipmi/apps.hpp	/^  uint8_t oem_id[3];    \/* IANA enterprise number for auth type *\/$/;"	m	struct:__anon35
 offset	include/ipmi/event_string.hpp	/^	uint8_t	offset;$/;"	m	struct:ipmi_event_sensor_types
 oldtio	KETI-Serial/KETI-Serial.cpp	/^struct termios oldtio, newtio;$/;"	v	typeref:struct:termios
-open	KETI-Edge/handler.hpp	/^    pplx::task<void> open() { return m_listener.open(); }$/;"	f	class:Handler
+open	KETI-Ibmc/handler.hpp	/^    pplx::task<void> open() { return m_listener.open(); }$/;"	f	class:Handler
 operating_mode	include/redfish/resource.hpp	/^  string operating_mode;$/;"	m	struct:_DHCP_v6
 operator !=	include/util/iniparser.hpp	/^        bool operator!= (const Value& val) const { return !(*this == val);}$/;"	f	class:INI::RefCountPtr
 operator !=	include/util/iniparser.hpp	/^        bool operator!= (const Value& val) const { return !(*this == val);}$/;"	f	class:INI::Value
@@ -6074,15 +6074,15 @@ owner	include/ipmi/lightning_sensor.hpp	/^  unsigned char owner;$/;"	m	struct:__
 p_buf	libs/ipmb/ipmb.cpp	/^  uint8_t *p_buf; \/\/ pointer to buffer$/;"	m	struct:_seq_buf_t	file:
 p_id	include/redfish/resource.hpp	/^  ProcessorId p_id;$/;"	m	class:Processors
 packet	include/redfish/rmcp.hpp	/^        std::vector<uint8_t> packet;$/;"	m	class:Rmcppacket
-packet_in	KETI-Edge/rest_handler.cpp	/^protocol_data *packet_in;$/;"	v
-packet_out	KETI-Edge/rest_handler.cpp	/^protocol_data *packet_out;$/;"	v
-packet_received_callback	KETI-Edge/lssdp.hpp	/^    int (* packet_received_callback)           (struct lssdp_ctx * lssdp, const char * packet, size_t packet_len);$/;"	m	struct:lssdp_ctx
+packet_in	KETI-Ibmc/rest_handler.cpp	/^protocol_data *packet_in;$/;"	v
+packet_out	KETI-Ibmc/rest_handler.cpp	/^protocol_data *packet_out;$/;"	v
+packet_received_callback	KETI-Ibmc/lssdp.hpp	/^    int (* packet_received_callback)           (struct lssdp_ctx * lssdp, const char * packet, size_t packet_len);$/;"	m	struct:lssdp_ctx
 pad	include/ipmi/ipmi.hpp	/^  uint8_t pad;$/;"	m	struct:fru_header_t
 param_types	include/redfish/resource.hpp	/^  vector<string> param_types;$/;"	m	struct:_Message
 parameters	include/redfish/resource.hpp	/^  std::vector<Parameter> parameters;$/;"	m	struct:_Actions
 parse_ad_conf_file	libs/apps/apps.cpp	/^int parse_ad_conf_file(char *res) {$/;"	f
 parse_alert_num	libs/network/network.cpp	/^uint8_t parse_alert_num(uint8_t chan_dest) {$/;"	f
-parse_field_line	KETI-Edge/lssdp.cpp	/^static int parse_field_line(const char * data, size_t start, size_t end, lssdp_packet * packet) {$/;"	f	file:
+parse_field_line	KETI-Ibmc/lssdp.cpp	/^static int parse_field_line(const char * data, size_t start, size_t end, lssdp_packet * packet) {$/;"	f	file:
 parse_ldap_conf_file	libs/apps/apps.cpp	/^int parse_ldap_conf_file(char *res) {$/;"	f
 parse_ntp_conf_file	libs/apps/apps.cpp	/^int parse_ntp_conf_file(char *res) {$/;"	f
 parse_policy_set	libs/ipmi/ipmi.cpp	/^uint8_t parse_policy_set(uint8_t policy) {$/;"	f
@@ -6102,20 +6102,20 @@ password	include/ipmi/user.hpp	/^        std::string password;$/;"	m	class:Ipmiu
 password	include/redfish/resource.hpp	/^  string password;$/;"	m	class:Account
 password	include/redfish/resource.hpp	/^  string password;$/;"	m	class:VirtualMedia
 password	include/redfish/resource.hpp	/^  string password;$/;"	m	struct:_Authentication
-password_padded	KETI-Edge/rest_handler.cpp	/^static char* password_padded;$/;"	v	file:
+password_padded	KETI-Ibmc/rest_handler.cpp	/^static char* password_padded;$/;"	v	file:
 password_set	include/redfish/resource.hpp	/^  bool password_set;$/;"	m	struct:_LDAP
-patch_account_service	KETI-Edge/handler.cpp	/^bool patch_account_service(json::value _jv, string _record_uri) {$/;"	f
-patch_chassis	KETI-Edge/handler.cpp	/^bool patch_chassis(json::value _jv, string _record_uri) {$/;"	f
-patch_ethernet_interface	KETI-Edge/handler.cpp	/^bool patch_ethernet_interface(json::value _jv, string _record_uri, int _flag) {$/;"	f
-patch_event_service	KETI-Edge/handler.cpp	/^bool patch_event_service(json::value _jv, string _record_uri) {$/;"	f
-patch_fan_mode	KETI-Edge/handler.cpp	/^void patch_fan_mode(string _mode, string _record_uri) {$/;"	f
+patch_account_service	KETI-Ibmc/handler.cpp	/^bool patch_account_service(json::value _jv, string _record_uri) {$/;"	f
+patch_chassis	KETI-Ibmc/handler.cpp	/^bool patch_chassis(json::value _jv, string _record_uri) {$/;"	f
+patch_ethernet_interface	KETI-Ibmc/handler.cpp	/^bool patch_ethernet_interface(json::value _jv, string _record_uri, int _flag) {$/;"	f
+patch_event_service	KETI-Ibmc/handler.cpp	/^bool patch_event_service(json::value _jv, string _record_uri) {$/;"	f
+patch_fan_mode	KETI-Ibmc/handler.cpp	/^void patch_fan_mode(string _mode, string _record_uri) {$/;"	f
 patch_iptable	libs/redfish/resource.cpp	/^void patch_iptable(NetworkProtocol *_net) {$/;"	f
-patch_manager	KETI-Edge/handler.cpp	/^bool patch_manager(json::value _jv, string _record_uri) {$/;"	f
-patch_network_protocol	KETI-Edge/handler.cpp	/^bool patch_network_protocol(json::value _jv, string _record_uri) {$/;"	f
-patch_power_control	KETI-Edge/handler.cpp	/^bool patch_power_control(json::value _jv, string _record_uri) {$/;"	f
-patch_session_service	KETI-Edge/handler.cpp	/^bool patch_session_service(json::value _jv) {$/;"	f
-patch_subscription	KETI-Edge/handler.cpp	/^bool patch_subscription(json::value _jv, string _record_uri) {$/;"	f
-patch_system	KETI-Edge/handler.cpp	/^bool patch_system(json::value _jv, string _record_uri) {$/;"	f
+patch_manager	KETI-Ibmc/handler.cpp	/^bool patch_manager(json::value _jv, string _record_uri) {$/;"	f
+patch_network_protocol	KETI-Ibmc/handler.cpp	/^bool patch_network_protocol(json::value _jv, string _record_uri) {$/;"	f
+patch_power_control	KETI-Ibmc/handler.cpp	/^bool patch_power_control(json::value _jv, string _record_uri) {$/;"	f
+patch_session_service	KETI-Ibmc/handler.cpp	/^bool patch_session_service(json::value _jv) {$/;"	f
+patch_subscription	KETI-Ibmc/handler.cpp	/^bool patch_subscription(json::value _jv, string _record_uri) {$/;"	f
+patch_system	KETI-Ibmc/handler.cpp	/^bool patch_system(json::value _jv, string _record_uri) {$/;"	f
 path_is_absolute	include/util/iniparser.hpp	/^    static inline bool path_is_absolute(const std::string& path)$/;"	f	namespace:INI
 path_is_relative	include/util/iniparser.hpp	/^    static inline bool path_is_relative(const std::string& path) {return !path_is_absolute(path);}$/;"	f	namespace:INI
 pattern	include/redfish/resource.hpp	/^  string pattern; \/\/ id$/;"	m	struct:_Message
@@ -6207,7 +6207,7 @@ pmbus_write	libs/util/pmbus.cpp	/^void pmbus_write(int addr, int command, int le
 policy	include/ipmi/ipmi.hpp	/^  uint8_t policy;$/;"	m	struct:pef_policy_entry
 policy_number	include/ipmi/ipmi.hpp	/^  uint8_t policy_number;$/;"	m	struct:__anon30
 policy_table	libs/sel/pef_policy.cpp	/^static struct pef_policy_table policy_table[TBLSIZE];$/;"	v	typeref:struct:pef_policy_table	file:
-port	KETI-Edge/lssdp.hpp	/^    unsigned short  port;                                   \/\/ SSDP port (0x0000 ~ 0xFFFF)$/;"	m	struct:lssdp_ctx
+port	KETI-Ibmc/lssdp.hpp	/^    unsigned short  port;                                   \/\/ SSDP port (0x0000 ~ 0xFFFF)$/;"	m	struct:lssdp_ctx
 port	include/ipmi/apps.hpp	/^  char port[6];$/;"	m	struct:__anon45
 port	include/ipmi/apps.hpp	/^  unsigned char port[6];$/;"	m	struct:__anon46
 port	include/redfish/resource.hpp	/^  int port;$/;"	m	struct:_ActiveDirectory
@@ -6234,13 +6234,13 @@ power_state	include/redfish/resource.hpp	/^  string power_state;$/;"	m	class:Sys
 power_supplies	include/redfish/resource.hpp	/^  List *power_supplies;$/;"	m	class:Power
 power_supply_type	include/redfish/resource.hpp	/^  string power_supply_type;$/;"	m	class:PowerSupply
 power_usage_t	include/ipmi/ipmi.hpp	/^} power_usage_t;$/;"	t	typeref:struct:__anon27
-power_watt	KETI-Edge/psu_server.cpp	/^int power_watt[2] = {0};$/;"	v
+power_watt	KETI-Ibmc/psu_server.cpp	/^int power_watt[2] = {0};$/;"	v
 pre_timeout	WDTBK/watchdog.hpp	/^  unsigned char pre_timeout;$/;"	m	struct:__anon7
 pre_timeout	include/ipmi/ipmi.hpp	/^  unsigned char pre_timeout;$/;"	m	struct:__anon29
 precision	include/redfish/resource.hpp	/^  double precision; \/\/ reading값의 유효숫자인듯$/;"	m	class:Sensor
 precision	include/redfish/resource.hpp	/^  double precision;$/;"	m	struct:_SensorMake
 predicted_media_life_left_percent	include/redfish/resource.hpp	/^  int predicted_media_life_left_percent;$/;"	m	class:Drive
-prefix	KETI-Edge/lssdp.hpp	/^            char    prefix              [LSSDP_FIELD_LEN];  \/\/ Protocal: "https:\/\/" or "http:\/\/"$/;"	m	struct:lssdp_ctx::__anon12::__anon13
+prefix	KETI-Ibmc/lssdp.hpp	/^            char    prefix              [LSSDP_FIELD_LEN];  \/\/ Protocal: "https:\/\/" or "http:\/\/"$/;"	m	struct:lssdp_ctx::__anon12::__anon13
 prefix_length	include/redfish/resource.hpp	/^  int prefix_length;$/;"	m	struct:_IPv6_Address
 present_countdown_lsb	WDTBK/watchdog.hpp	/^  unsigned char present_countdown_lsb;$/;"	m	struct:__anon7
 present_countdown_lsb	include/ipmi/ipmi.hpp	/^  unsigned char present_countdown_lsb;$/;"	m	struct:__anon29
@@ -6274,10 +6274,10 @@ product_flag	include/ipmi/fru.hpp	/^  unsigned char chassis_flag, board_flag, pr
 product_total	include/ipmi/fru.hpp	/^  int chassis_total, board_total, product_total = {0};$/;"	m	class:Ipmifru
 protocol	include/redfish/resource.hpp	/^  string protocol;$/;"	m	class:Drive
 protocol	include/redfish/resource.hpp	/^  string protocol;$/;"	m	class:EventDestination
-protocol_data	KETI-Edge/rest_handler.hpp	/^} protocol_data;$/;"	t	typeref:struct:__anon10
+protocol_data	KETI-Ibmc/rest_handler.hpp	/^} protocol_data;$/;"	t	typeref:struct:__anon10
 protocol_type	include/ipmi/channel.hpp	/^  const uint8_t protocol_type;$/;"	m	class:Ipmichannel
-psu_delay	KETI-Edge/psu_server.cpp	/^void psu_delay(int milliseconds) {$/;"	f
-psu_handler	KETI-Edge/psu_server.cpp	/^void *psu_handler(void) {$/;"	f
+psu_delay	KETI-Ibmc/psu_server.cpp	/^void psu_delay(int milliseconds) {$/;"	f
+psu_handler	KETI-Ibmc/psu_server.cpp	/^void *psu_handler(void) {$/;"	f
 psu_nva_regs	include/ipmi/lightning_sensor.hpp	/^enum psu_nva_regs{$/;"	g
 pwd1	include/ipmi/apps.hpp	/^  char pwd1[24];$/;"	m	struct:__anon42
 pwd2	include/ipmi/apps.hpp	/^  char pwd2[24];$/;"	m	struct:__anon42
@@ -6352,14 +6352,14 @@ record_is_exist	libs/redfish/record.cpp	/^bool record_is_exist(const string _uri
 record_load_json	libs/redfish/record.cpp	/^bool record_load_json(void) {$/;"	f
 record_print	libs/redfish/record.cpp	/^void record_print(void) {$/;"	f
 record_save_json	libs/redfish/record.cpp	/^bool record_save_json(void) {$/;"	f
-redfish_handler	KETI-Edge/khandler.cpp	/^void *redfish_handler(void *data) {$/;"	f
+redfish_handler	KETI-Ibmc/khandler.cpp	/^void *redfish_handler(void *data) {$/;"	f
 redfish_m_cond	libs/ipmi/ipmi.cpp	/^std::condition_variable redfish_m_cond[5];$/;"	v
 redfish_m_mutex	libs/ipmi/ipmi.cpp	/^std::mutex redfish_m_mutex[5];$/;"	v
 redfish_power_ctrl	libs/ipmi/ipmi.cpp	/^int redfish_power_ctrl;$/;"	v
 redfish_req_t	include/redfish/stdafx.hpp	/^struct redfish_req_t {$/;"	s
 redfish_res_t	include/redfish/stdafx.hpp	/^struct redfish_res_t {$/;"	s
 redfish_seonsor_sync	libs/sdr/sdr.cpp	/^bool redfish_seonsor_sync(sensor_thresh_t *rec) {$/;"	f
-redfish_tid	KETI-Edge/rest_handler.cpp	/^pthread_t tid, tid2, tipmb, rest_tid, lan_tid, redfish_tid;$/;"	v
+redfish_tid	KETI-Ibmc/rest_handler.cpp	/^pthread_t tid, tid2, tipmb, rest_tid, lan_tid, redfish_tid;$/;"	v
 redfish_version	include/redfish/resource.hpp	/^  string redfish_version;$/;"	m	class:ServiceRoot
 refcont	include/util/iniparser.hpp	/^            refcont() :count(1) {}$/;"	f	struct:INI::RefCountPtr::refcont
 refcont	include/util/iniparser.hpp	/^            refcont(const T& pval) :val(pval), count(1) {}$/;"	f	struct:INI::RefCountPtr::refcont
@@ -6370,11 +6370,11 @@ registry_prefix	include/redfish/resource.hpp	/^  string registry_prefix;  \/\/ r
 registry_version	include/redfish/resource.hpp	/^  string registry_version; \/\/ required$/;"	m	class:MessageRegistry
 release_date	include/redfish/resource.hpp	/^  string release_date;$/;"	m	class:SoftwareInventory
 remote_account_service	include/redfish/resource.hpp	/^      *remote_account_service; \/\/ BMC의 계정정보를 관리하는 AccountService$/;"	m	class:Manager
-remove_account	KETI-Edge/handler.cpp	/^void remove_account(json::value _jv, string _uri, string _service_uri,$/;"	f
+remove_account	KETI-Ibmc/handler.cpp	/^void remove_account(json::value _jv, string _uri, string _service_uri,$/;"	f
 remove_if_exists	libs/redfish/util.cpp	/^void remove_if_exists(fs::path file)$/;"	f
-remove_session	KETI-Edge/handler.cpp	/^void remove_session(http_request _request, http_response &_response) {$/;"	f
-remove_subscription	KETI-Edge/handler.cpp	/^void remove_subscription(string _uri, string _service_uri,$/;"	f
-report_last_command	KETI-Edge/handler.cpp	/^void report_last_command(string _uri) {$/;"	f
+remove_session	KETI-Ibmc/handler.cpp	/^void remove_session(http_request _request, http_response &_response) {$/;"	f
+remove_subscription	KETI-Ibmc/handler.cpp	/^void remove_subscription(string _uri, string _service_uri,$/;"	f
+report_last_command	KETI-Ibmc/handler.cpp	/^void report_last_command(string _uri) {$/;"	f
 req_slave_addr	include/ipmi/ipmb.hpp	/^  uint8_t req_slave_addr;$/;"	m	struct:_ipmb_req_t
 req_slave_addr	include/ipmi/ipmb.hpp	/^  uint8_t req_slave_addr;$/;"	m	struct:_ipmb_res_t
 request_get_setting_service	KETI-REST/req.cpp	/^int request_get_setting_service(char *input, int *res_len) {$/;"	f
@@ -6399,7 +6399,7 @@ rest_get_power_status	libs/apps/apps.cpp	/^int rest_get_power_status(unsigned ch
 rest_get_sensor_config	libs/sdr/sdr.cpp	/^int rest_get_sensor_config(char *res) {$/;"	f
 rest_get_smtp_json	libs/apps/apps.cpp	/^int rest_get_smtp_json(char *res, int flag) {$/;"	f
 rest_get_sysinfo_config	libs/apps/apps.cpp	/^int rest_get_sysinfo_config(char *res) {$/;"	f
-rest_handler	KETI-Edge/rest_handler.cpp	/^void *rest_handler(void *data)$/;"	f
+rest_handler	KETI-Ibmc/rest_handler.cpp	/^void *rest_handler(void *data)$/;"	f
 rest_make_user_json	libs/user/user.cpp	/^int rest_make_user_json(char* res) {$/;"	f
 rest_req_t	include/ipmi/ipmi.hpp	/^struct rest_req_t {$/;"	s
 rest_sel_write_raw	libs/sel/sel.cpp	/^int rest_sel_write_raw()$/;"	f
@@ -6408,7 +6408,7 @@ rest_set_fru_chassis	libs/fru/fru.cpp	/^void rest_set_fru_chassis(int id, char f
 rest_set_fru_header	libs/fru/fru.cpp	/^void rest_set_fru_header(int id, char h_board, char h_chassis, char h_product){$/;"	f
 rest_set_fru_product	libs/fru/fru.cpp	/^void rest_set_fru_product(int id, char f_name[LEN_NAME], char f_mfg[LEN_MFG], char f_version[LEN_VERSION],$/;"	f
 rest_show_main	libs/apps/apps.cpp	/^int rest_show_main(int menu, char *ret) {$/;"	f
-rest_tid	KETI-Edge/rest_handler.cpp	/^pthread_t tid, tid2, tipmb, rest_tid, lan_tid, redfish_tid;$/;"	v
+rest_tid	KETI-Ibmc/rest_handler.cpp	/^pthread_t tid, tid2, tipmb, rest_tid, lan_tid, redfish_tid;$/;"	v
 restart_cause	include/ipmi/chassis.hpp	/^  uint8_t restart_cause;$/;"	m	class:Ipmichassis
 restart_policy	include/ipmi/chassis.hpp	/^  uint8_t restart_policy;$/;"	m	class:Ipmichassis
 restful_init	KETI-REST/rhandler.cpp	/^void restful_init(void) {$/;"	f
@@ -6421,12 +6421,12 @@ rh_count_2	libs/apps/apps.cpp	/^int rm_count_1, rm_count_2, rh_count_1, rh_count
 rm_count_1	libs/apps/apps.cpp	/^int rm_count_1, rm_count_2, rh_count_1, rh_count_2, rd_count_1, rd_count_2,$/;"	v
 rm_count_2	libs/apps/apps.cpp	/^int rm_count_1, rm_count_2, rh_count_1, rh_count_2, rd_count_1, rd_count_2,$/;"	v
 rmcpData	include/ipmi/session.hpp	/^  } rmcpData;$/;"	m	class:Ipmisession	typeref:struct:Ipmisession::__anon15
-rmcpInPacket	KETI-Edge/khandler.cpp	/^Rmcppacket rmcpInPacket; \/\/ RMCP 클래스 생성$/;"	v
-rmcpSolPacket	KETI-Edge/khandler.cpp	/^Rmcppacket rmcpSolPacket;$/;"	m	namespace:SOL	file:
+rmcpInPacket	KETI-Ibmc/khandler.cpp	/^Rmcppacket rmcpInPacket; \/\/ RMCP 클래스 생성$/;"	v
+rmcpSolPacket	KETI-Ibmc/khandler.cpp	/^Rmcppacket rmcpSolPacket;$/;"	m	namespace:SOL	file:
 rmcpUsername	include/ipmi/session.hpp	/^    std::vector<uint8_t> rmcpUsername;  \/\/ Size 17$/;"	m	struct:Ipmisession::__anon15
-rmcp_process_packet	KETI-Edge/rmcp.cpp	/^std::vector<uint8_t> Rmcppacket::rmcp_process_packet()$/;"	f	class:Rmcppacket
+rmcp_process_packet	KETI-Ibmc/rmcp.cpp	/^std::vector<uint8_t> Rmcppacket::rmcp_process_packet()$/;"	f	class:Rmcppacket
 rmcp_process_packet	rmcp.cpp	/^std::vector<uint8_t> Rmcppacket::rmcp_process_packet() {$/;"	f	class:Rmcppacket
-rmcp_sockfd	KETI-Edge/rest_handler.cpp	/^int rmcp_sockfd = 0;$/;"	v
+rmcp_sockfd	KETI-Ibmc/rest_handler.cpp	/^int rmcp_sockfd = 0;$/;"	v
 role	include/redfish/resource.hpp	/^  Role *role;$/;"	m	class:Account
 role_collection	include/redfish/resource.hpp	/^  Collection *role_collection;$/;"	m	class:AccountService
 role_id	include/redfish/resource.hpp	/^  string role_id;$/;"	m	class:Account
@@ -6448,10 +6448,10 @@ rs_lun	include/redfish/msg_session.hpp	/^			unsigned char rs_lun :2;$/;"	m	struc
 rs_sa	include/redfish/msg_session.hpp	/^	unsigned char rs_sa;$/;"	m	struct:__anon72
 rs_sa	include/redfish/msg_session.hpp	/^	unsigned char rs_sa;$/;"	m	struct:__anon77
 rst_tol_offset	libs/gpio/gpio.cpp	/^  unsigned int rst_tol_offset;$/;"	m	struct:ast_gpio_bank	file:
-rsvd	KETI-Edge/khandler.cpp	/^      event : 1, rsvd : 1;$/;"	m	struct:__anon9	file:
+rsvd	KETI-Ibmc/khandler.cpp	/^      event : 1, rsvd : 1;$/;"	m	struct:__anon9	file:
 rsvd	include/ipmi/lightning_sensor.hpp	/^  unsigned char rsvd[2];$/;"	m	struct:__anon48
 rtrim	include/util/iniparser.hpp	/^    static inline std::string &rtrim(std::string &s) {$/;"	f	namespace:INI
-run_ipmi_handle_rest	KETI-Edge/rest_handler.cpp	/^void *run_ipmi_handle_rest(void *void_msq_req)$/;"	f
+run_ipmi_handle_rest	KETI-Ibmc/rest_handler.cpp	/^void *run_ipmi_handle_rest(void *void_msq_req)$/;"	f
 rx_buf	libs/ipmb/ipmb.cpp	/^uint8_t rx_buf[MAX_BYTES] = {0};$/;"	v
 rx_done	libs/ipmb/ipmb.cpp	/^uint8_t rx_done = 0;$/;"	v
 rx_len	libs/ipmb/ipmb.cpp	/^uint8_t rx_len;$/;"	v
@@ -6480,7 +6480,7 @@ sdr_sensor_read	libs/sdr/sdr.cpp	/^uint8_t Ipmisdr::sdr_sensor_read() { return t
 sdr_sensor_read	libs/sdr/sdr.cpp	/^unsigned char sdr_sensor_read(int sensor_num) {$/;"	f
 sdr_thresh_write	libs/sdr/sdr.cpp	/^int Ipmisdr::sdr_thresh_write(uint8_t param, uint8_t *data) {$/;"	f	class:Ipmisdr
 search_settings	include/redfish/resource.hpp	/^  SearchSetting search_settings;$/;"	m	struct:_LDAP_Service
-search_target	KETI-Edge/lssdp.hpp	/^        char        search_target       [LSSDP_FIELD_LEN];  \/\/ Search Target$/;"	m	struct:lssdp_ctx::__anon12
+search_target	KETI-Ibmc/lssdp.hpp	/^        char        search_target       [LSSDP_FIELD_LEN];  \/\/ Search Target$/;"	m	struct:lssdp_ctx::__anon12
 sec_rmcp_port	include/ipmi/network.hpp	/^  std::vector<uint8_t> sec_rmcp_port; \/\/ 2$/;"	m	class:Ipminetwork
 second_port	include/redfish/resource.hpp	/^  int second_port;$/;"	m	struct:_Value_About_HA
 secret	include/ipmi/apps.hpp	/^  unsigned char secret[32];$/;"	m	struct:__anon46
@@ -6488,15 +6488,15 @@ secret_name	include/ipmi/apps.hpp	/^  char secret_name[64]; \/\/ binddn$/;"	m	st
 secret_pwd	include/ipmi/apps.hpp	/^  char secret_pwd[32];  \/\/ bindpw$/;"	m	struct:__anon44
 secs_from_1970_1996	include/ipmi/ipmi.hpp	88;"	d
 sections_iter	include/util/iniparser.hpp	/^        typedef SectionMap::iterator          sections_iter;$/;"	t	class:INI::File
-sel_device	KETI-Edge/rest_handler.cpp	/^pthread_t sel_device;$/;"	v
+sel_device	KETI-Ibmc/rest_handler.cpp	/^pthread_t sel_device;$/;"	v
 sel_en	KETI-REST/rhandler.cpp	/^uint8_t sdr_en, fru_en, sel_en, ipmi_en, network_en, ntp_en, snmp_en, ssh_en,$/;"	v
 sel_erase_stat_t	include/ipmi/ipmi.hpp	/^} sel_erase_stat_t;$/;"	t	typeref:enum:__anon33
-sel_generater	KETI-Edge/khandler.cpp	/^void sel_generater(void) {$/;"	f
+sel_generater	KETI-Ibmc/khandler.cpp	/^void sel_generater(void) {$/;"	f
 sel_hdr	include/ipmi/ipmi.hpp	/^struct sel_hdr {$/;"	s
 sel_hdr_t	include/ipmi/ipmi.hpp	/^} sel_hdr_t;$/;"	t	typeref:struct:__anon31
 sel_msg_t	include/ipmi/ipmi.hpp	/^struct sel_msg_t {$/;"	s
 send_alert_snmp	libs/network/network.cpp	/^int Ipminetwork::send_alert_snmp(struct pef_policy_entry entry,$/;"	f	class:Ipminetwork
-send_multicast_data	KETI-Edge/lssdp.cpp	/^static int send_multicast_data(const char * data, const lssdp_interface interface, unsigned short ssdp_port) {$/;"	f	file:
+send_multicast_data	KETI-Ibmc/lssdp.cpp	/^static int send_multicast_data(const char * data, const lssdp_interface interface, unsigned short ssdp_port) {$/;"	f	file:
 send_result_message	KETI-REST/rhandler.cpp	/^static void send_result_message(struct mg_connection *nc, uint8_t flag) {$/;"	f	file:
 send_to_kvm	KETI-REST/helper.cpp	/^int send_to_kvm() {$/;"	f
 sender	include/ipmi/apps.hpp	/^  char sender[32];$/;"	m	struct:__anon42
@@ -6584,13 +6584,13 @@ sessions_monitor	libs/redfish/resource.cpp	/^void sessions_monitor(void *data) {
 setActiveSessionCount	libs/session/session.cpp	/^uint8_t Ipmisession::setActiveSessionCount(uint8_t _count) {$/;"	f	class:Ipmisession
 setChannelAccess	libs/channel/channel.cpp	/^void Ipmichannel::setChannelAccess(ipmi_req_t *request)$/;"	f	class:Ipmichannel
 setChannelParams	libs/channel/channel.cpp	/^bool Ipmichannel::setChannelParams(uint8_t flag, uint8_t data)$/;"	f	class:Ipmichannel
-setRmcpAuthentication	KETI-Edge/rmcp.cpp	/^bool Rmcppacket::setRmcpAuthentication(uint8_t _auth, uint8_t _integrity, uint8_t _confidential)$/;"	f	class:Rmcppacket
+setRmcpAuthentication	KETI-Ibmc/rmcp.cpp	/^bool Rmcppacket::setRmcpAuthentication(uint8_t _auth, uint8_t _integrity, uint8_t _confidential)$/;"	f	class:Rmcppacket
 setRmcpAuthentication	rmcp.cpp	/^bool Rmcppacket::setRmcpAuthentication(uint8_t _auth, uint8_t _integrity,$/;"	f	class:Rmcppacket
 setRmcpData	libs/session/session.cpp	/^bool Ipmisession::setRmcpData(std::vector<uint8_t> _mgntId,$/;"	f	class:Ipmisession
-setRmcpInformation	KETI-Edge/rmcp.cpp	/^bool Rmcppacket::setRmcpInformation(std::vector<uint8_t> _InPacket, struct sockaddr_in _cliAddress)$/;"	f	class:Rmcppacket
+setRmcpInformation	KETI-Ibmc/rmcp.cpp	/^bool Rmcppacket::setRmcpInformation(std::vector<uint8_t> _InPacket, struct sockaddr_in _cliAddress)$/;"	f	class:Rmcppacket
 setRmcpInformation	rmcp.cpp	/^bool Rmcppacket::setRmcpInformation(std::vector<uint8_t> _InPacket,$/;"	f	class:Rmcppacket
 setRmcpLanData	libs/session/session.cpp	/^bool Ipmisession::setRmcpLanData(std::vector<uint8_t> _ip,$/;"	f	class:Ipmisession
-setRmcpSessionId	KETI-Edge/rmcp.cpp	/^bool Rmcppacket::setRmcpSessionId(std::vector<uint8_t> _clientId, std::vector<uint8_t> _managedId)$/;"	f	class:Rmcppacket
+setRmcpSessionId	KETI-Ibmc/rmcp.cpp	/^bool Rmcppacket::setRmcpSessionId(std::vector<uint8_t> _clientId, std::vector<uint8_t> _managedId)$/;"	f	class:Rmcppacket
 setRmcpSessionId	rmcp.cpp	/^bool Rmcppacket::setRmcpSessionId(std::vector<uint8_t> _clientId,$/;"	f	class:Rmcppacket
 setSessionActive	libs/session/session.cpp	/^bool Ipmisession::setSessionActive(uint8_t _id) {$/;"	f	class:Ipmisession
 setSessionAesKey	libs/session/session.cpp	/^bool Ipmisession::setSessionAesKey(uint8_t *_k1, uint8_t *_aes) {$/;"	f	class:Ipmisession
@@ -6723,10 +6723,10 @@ severity	include/ipmi/ipmi.hpp	/^  uint8_t severity;$/;"	m	struct:__anon30
 severity	include/redfish/resource.hpp	/^  string severity;$/;"	m	class:LogEntry
 severity	include/redfish/resource.hpp	/^  string severity;$/;"	m	struct:_Message
 severity_name	libs/sel/efte.cpp	/^struct bit_desc_map severity_name = {{{"Unspecified", 0x00},$/;"	v	typeref:struct:bit_desc_map
-show_interface_list_and_rebind_socket	KETI-Edge/khandler.cpp	/^int show_interface_list_and_rebind_socket(lssdp_ctx *lssdp) {$/;"	f
+show_interface_list_and_rebind_socket	KETI-Ibmc/khandler.cpp	/^int show_interface_list_and_rebind_socket(lssdp_ctx *lssdp) {$/;"	f
 show_main	KETI-REST/req.cpp	/^int show_main(uint8_t index, unsigned char *input, int *res_len) {$/;"	f
-show_neighbor_list	KETI-Edge/khandler.cpp	/^int show_neighbor_list(lssdp_ctx *lssdp) {$/;"	f
-show_ssdp_packet	KETI-Edge/khandler.cpp	/^int show_ssdp_packet(struct lssdp_ctx *lssdp, const char *packet,$/;"	f
+show_neighbor_list	KETI-Ibmc/khandler.cpp	/^int show_neighbor_list(lssdp_ctx *lssdp) {$/;"	f
+show_ssdp_packet	KETI-Ibmc/khandler.cpp	/^int show_ssdp_packet(struct lssdp_ctx *lssdp, const char *packet,$/;"	f
 signalHandler	KETI-REST/helper.cpp	/^void signalHandler(int signo)$/;"	f
 signextend32	libs/lightning/lightning_sensor.cpp	/^int32_t signextend32(uint32_t val, int idx) {$/;"	f
 simple_storage	include/redfish/resource.hpp	/^  Collection *simple_storage; \/\/ resource SimpleStorage$/;"	m	class:Systems
@@ -6737,9 +6737,9 @@ size_lsb	include/ipmi/ipmi.hpp	/^  uint8_t size_lsb;$/;"	m	struct:ipmi_fruid_inf
 size_msb	include/ipmi/ipmi.hpp	/^  uint8_t size_msb;$/;"	m	struct:ipmi_fruid_info_t
 sku	include/redfish/resource.hpp	/^  string sku;$/;"	m	class:Drive
 slot	include/redfish/resource.hpp	/^  unsigned int slot;$/;"	m	struct:_MemoryLocation
-sm_id	KETI-Edge/lssdp.cpp	/^    char            sm_id       [LSSDP_FIELD_LEN];$/;"	m	struct:lssdp_packet	file:
-sm_id	KETI-Edge/lssdp.hpp	/^        char        sm_id       [LSSDP_FIELD_LEN];$/;"	m	struct:lssdp_ctx::__anon12
-sm_id	KETI-Edge/lssdp.hpp	/^    char            sm_id       [LSSDP_FIELD_LEN];$/;"	m	struct:lssdp_nbr
+sm_id	KETI-Ibmc/lssdp.cpp	/^    char            sm_id       [LSSDP_FIELD_LEN];$/;"	m	struct:lssdp_packet	file:
+sm_id	KETI-Ibmc/lssdp.hpp	/^        char        sm_id       [LSSDP_FIELD_LEN];$/;"	m	struct:lssdp_ctx::__anon12
+sm_id	KETI-Ibmc/lssdp.hpp	/^    char            sm_id       [LSSDP_FIELD_LEN];$/;"	m	struct:lssdp_nbr
 smbus_pec	libs/util/pmbus.cpp	/^static unsigned char smbus_pec(unsigned char crc, const unsigned char *p,$/;"	f	file:
 smltr_data_t	include/ipmi/ipmi.hpp	/^} smltr_data_t;$/;"	t	typeref:struct:__anon17
 smtp	include/redfish/resource.hpp	/^  SMTP smtp;$/;"	m	class:EventService
@@ -6753,7 +6753,7 @@ smtp_username	include/redfish/resource.hpp	/^  string smtp_username;$/;"	m	struc
 snmp_en	KETI-REST/rhandler.cpp	/^uint8_t sdr_en, fru_en, sel_en, ipmi_en, network_en, ntp_en, snmp_en, ssh_en,$/;"	v
 snmp_enabled	include/redfish/resource.hpp	/^  bool snmp_enabled;$/;"	m	class:NetworkProtocol
 snmp_port	include/redfish/resource.hpp	/^  int snmp_port;$/;"	m	class:NetworkProtocol
-sock	KETI-Edge/lssdp.hpp	/^    int             sock;                                   \/\/ SSDP socket$/;"	m	struct:lssdp_ctx
+sock	KETI-Ibmc/lssdp.hpp	/^    int             sock;                                   \/\/ SSDP socket$/;"	m	struct:lssdp_ctx
 socket	include/redfish/resource.hpp	/^  string socket;$/;"	m	class:Processors
 socket	include/redfish/resource.hpp	/^  unsigned int socket;$/;"	m	struct:_MemoryLocation
 socketbuffer	kvm/ast-video.c	/^unsigned char *socketbuffer;$/;"	v
@@ -6771,22 +6771,22 @@ sol_rdcnt	include/ipmi/sol.hpp	/^  int sol_rdcnt;$/;"	m	class:SerialOverLan
 sol_struct	include/ipmi/sol.hpp	/^  sol_struct_t sol_struct;$/;"	m	class:SerialOverLan
 sol_struct_t	include/ipmi/sol.hpp	/^struct sol_struct_t {$/;"	s
 sol_write_buf	include/ipmi/sol.hpp	/^  unsigned char sol_write_buf[255];$/;"	m	class:SerialOverLan
-sol_write_fd	KETI-Edge/khandler.cpp	/^int sol_write_fd = 0;$/;"	m	namespace:SOL	file:
-sol_write_fd	KETI-Edge/rest_handler.cpp	/^int sol_write_fd = 0;$/;"	v
+sol_write_fd	KETI-Ibmc/khandler.cpp	/^int sol_write_fd = 0;$/;"	m	namespace:SOL	file:
+sol_write_fd	KETI-Ibmc/rest_handler.cpp	/^int sol_write_fd = 0;$/;"	v
 spare_part_number	include/redfish/resource.hpp	/^  string spare_part_number;$/;"	m	class:PowerSupply
 speed_Mbps	include/redfish/resource.hpp	/^  unsigned int speed_Mbps;$/;"	m	class:EthernetInterfaces
 speed_gbps	include/redfish/resource.hpp	/^  double speed_gbps;$/;"	m	class:StorageControllers
 split_string	include/util/iniparser.hpp	/^    static inline std::vector<std::string> split_string(const std::string& str, const std::string& sep)$/;"	f	namespace:INI
 spool	WDTBK/watchdog.cpp	/^static int spool(char *line, int *i, int offset) {$/;"	f	file:
 spool	libs/apps/apps.cpp	/^static int spool(char *line, int *i, int offset) {$/;"	f	file:
-sqlite_run	KETI-Edge/psu_server.cpp	/^int sqlite_run(char *in_query, sqlite3_stmt *statement, sqlite3 *db) {$/;"	f
+sqlite_run	KETI-Ibmc/psu_server.cpp	/^int sqlite_run(char *in_query, sqlite3_stmt *statement, sqlite3 *db) {$/;"	f
 src_LUN	include/ipmi/ipmb.hpp	/^  uint8_t src_LUN;         \/**< Source LUN (Logical Unit Number) *\/$/;"	m	struct:ipmi_msg
 src_LUN	include/ipmi/ipmb.hpp	/^  uint8_t src_LUN;$/;"	m	struct:_ipmb_req_t
 src_addr	include/ipmi/ipmb.hpp	/^  uint8_t src_addr;        \/**< Source slave address *\/$/;"	m	struct:ipmi_msg
 src_x	kvm/video.h	/^	unsigned short	src_x;$/;"	m	struct:ast_mode_detection
 src_y	kvm/video.h	/^	unsigned short	src_y;$/;"	m	struct:ast_mode_detection
 ss_t	include/ipmi/ipmi.hpp	/^struct ss_t {$/;"	s
-ssdp_handler	KETI-Edge/khandler.cpp	/^void *ssdp_handler(void) {$/;"	f
+ssdp_handler	KETI-Ibmc/khandler.cpp	/^void *ssdp_handler(void) {$/;"	f
 sse	include/redfish/resource.hpp	/^  SSE_filter sse;$/;"	m	class:EventService
 ssh_en	KETI-REST/rhandler.cpp	/^uint8_t sdr_en, fru_en, sel_en, ipmi_en, network_en, ntp_en, snmp_en, ssh_en,$/;"	v
 ssh_enabled	include/redfish/resource.hpp	/^  bool ssh_enabled;$/;"	m	class:NetworkProtocol
@@ -6798,11 +6798,11 @@ ssh_port	include/redfish/resource.hpp	/^  int ssh_port;$/;"	m	class:NetworkProto
 ssh_service_t	include/ipmi/ipmi.hpp	/^struct ssh_service_t {$/;"	s
 ssl	include/ipmi/apps.hpp	/^  int ssl;$/;"	m	struct:__anon45
 ssl_config_t	include/ipmi/apps.hpp	/^} ssl_config_t;$/;"	t	typeref:struct:__anon43
-st	KETI-Edge/lssdp.cpp	/^    char            st          [LSSDP_FIELD_LEN];      \/\/ Search Target$/;"	m	struct:lssdp_packet	file:
+st	KETI-Ibmc/lssdp.cpp	/^    char            st          [LSSDP_FIELD_LEN];      \/\/ Search Target$/;"	m	struct:lssdp_packet	file:
 start	libs/redfish/resource.cpp	/^pplx::task<void> Session::start(void) {$/;"	f	class:Session
-start_server	KETI-Edge/khandler.cpp	/^void start_server(utility::string_t &_url, http_listener_config _config,$/;"	f
+start_server	KETI-Ibmc/khandler.cpp	/^void start_server(utility::string_t &_url, http_listener_config _config,$/;"	f
 start_time	include/redfish/resource.hpp	/^  string start_time;$/;"	m	class:Task
-state	KETI-Edge/khandler.cpp	/^  unsigned char state : 3,$/;"	m	struct:__anon9	file:
+state	KETI-Ibmc/khandler.cpp	/^  unsigned char state : 3,$/;"	m	struct:__anon9	file:
 state	include/redfish/resource.hpp	/^  string state;$/;"	m	struct:_CertContent
 state	include/redfish/resource.hpp	/^  string state;$/;"	m	struct:_Status
 state_province	include/ipmi/apps.hpp	/^  unsigned char state_province[16];$/;"	m	struct:__anon43
@@ -6875,8 +6875,8 @@ subnet_mask	include/redfish/resource.hpp	/^  string subnet_mask;$/;"	m	struct:_I
 subordinate_resources	include/redfish/resource.hpp	/^  bool subordinate_resources;$/;"	m	struct:_SSE_Filter_Properties_Supported
 subscription_type	include/redfish/resource.hpp	/^  string subscription_type;$/;"	m	class:EventDestination
 subscriptions	include/redfish/resource.hpp	/^  Collection *subscriptions;$/;"	m	class:EventService
-success_reply	KETI-Edge/handler.cpp	/^void success_reply(json::value _jv, status_code _status,$/;"	f
-suffix	KETI-Edge/lssdp.hpp	/^            char    suffix              [LSSDP_FIELD_LEN];  \/\/ URI or Port: "\/index.html" or ":80"$/;"	m	struct:lssdp_ctx::__anon12::__anon13
+success_reply	KETI-Ibmc/handler.cpp	/^void success_reply(json::value _jv, status_code _status,$/;"	f
+suffix	KETI-Ibmc/lssdp.hpp	/^            char    suffix              [LSSDP_FIELD_LEN];  \/\/ URI or Port: "\/index.html" or ":80"$/;"	m	struct:lssdp_ctx::__anon12::__anon13
 support_controller_protocols	include/redfish/resource.hpp	/^  vector<string> support_controller_protocols;$/;"	m	class:StorageControllers
 support_device_protocols	include/redfish/resource.hpp	/^  vector<string> support_device_protocols;$/;"	m	class:StorageControllers
 svc_part_scan	include/ipmi/chassis.hpp	/^  uint8_t svc_part_scan;$/;"	m	struct:__anon63
@@ -6893,7 +6893,7 @@ systems_monitor	libs/redfish/resource.cpp	/^void systems_monitor(void *data) {$/
 t_lanMonitor	libs/apps/apps.cpp	/^std::thread t_lanMonitor[ETH_COUNT];$/;"	v
 t_to_string	include/util/iniparser.hpp	/^    template<> inline std::string t_to_string<std::string>(const std::string& i)$/;"	f	namespace:INI
 t_to_string	include/util/iniparser.hpp	/^    template<class T> std::string t_to_string(const T& i)$/;"	f	namespace:INI
-table_check	KETI-Edge/psu_server.cpp	/^int table_check = 0; \/* 테이블 체크한번수행*\/$/;"	v
+table_check	KETI-Ibmc/psu_server.cpp	/^int table_check = 0; \/* 테이블 체크한번수행*\/$/;"	v
 tacho_data	libs/lightning/lightning_sensor.cpp	/^int tacho_data[16];$/;"	v
 target	include/redfish/resource.hpp	/^  string target;$/;"	m	struct:_Actions
 target_cmd	include/ipmi/ipmi.hpp	/^    uint8_t target_cmd;$/;"	m	struct:ipmi_rq::__anon21
@@ -6911,37 +6911,37 @@ temperatures	include/redfish/resource.hpp	/^  List *temperatures;$/;"	m	class:Th
 territory	include/redfish/resource.hpp	/^  string territory;$/;"	m	struct:_PostalAddress
 test	include/ipmi/sol.hpp	/^  void test() { cout << "test" << endl; }$/;"	f	class:SerialOverLan
 test_ipmi	libs/ipmi/ipmi.cpp	/^void test_ipmi(void) { printf("tset ipmi \\n\\n\\n\\n\\n"); }$/;"	f
-test_send_event	KETI-Edge/handler.cpp	/^void test_send_event(Event _event) {$/;"	f
+test_send_event	KETI-Ibmc/handler.cpp	/^void test_send_event(Event _event) {$/;"	f
 test_sendrecv	KETI-REST/helper.cpp	/^char* test_sendrecv(struct ipmi_rq *req, unsigned char *input, int *res_length) {$/;"	f
 thermal	include/redfish/resource.hpp	/^  Thermal *thermal;$/;"	m	class:Chassis
 thread	include/redfish/resource.hpp	/^  bool thread;$/;"	m	class:Temperature
-threads	KETI-Edge/rest_handler.cpp	/^pthread_t threads[MAX_THREADS] = {$/;"	v
+threads	KETI-Ibmc/rest_handler.cpp	/^pthread_t threads[MAX_THREADS] = {$/;"	v
 thresh	include/redfish/resource.hpp	/^  Thresholds thresh;$/;"	m	class:Sensor
 thresh	include/redfish/resource.hpp	/^  Thresholds thresh;$/;"	m	struct:_SensorMake
-tid	KETI-Edge/rest_handler.cpp	/^pthread_t tid, tid2, tipmb, rest_tid, lan_tid, redfish_tid;$/;"	v
-tid2	KETI-Edge/rest_handler.cpp	/^pthread_t tid, tid2, tipmb, rest_tid, lan_tid, redfish_tid;$/;"	v
-time_function	KETI-Edge/psu_server.cpp	/^void time_function(uint8_t t_year, uint8_t t_mon, uint8_t t_days,$/;"	f
+tid	KETI-Ibmc/rest_handler.cpp	/^pthread_t tid, tid2, tipmb, rest_tid, lan_tid, redfish_tid;$/;"	v
+tid2	KETI-Ibmc/rest_handler.cpp	/^pthread_t tid, tid2, tipmb, rest_tid, lan_tid, redfish_tid;$/;"	v
+time_function	KETI-Ibmc/psu_server.cpp	/^void time_function(uint8_t t_year, uint8_t t_mon, uint8_t t_days,$/;"	f
 time_stamp_fill	libs/ipmi/ipmi.cpp	/^void time_stamp_fill(uint8_t *ts) {$/;"	f
 time_stamp_set	libs/sel/sel.cpp	/^int time_stamp_set(unsigned char *ts)$/;"	f
 time_stamp_t	include/ipmi/ipmi.hpp	/^} time_stamp_t;$/;"	t	typeref:struct:__anon28
 timelimit	include/ipmi/apps.hpp	/^  int timelimit;$/;"	m	struct:__anon45
 timer	libs/redfish/util.cpp	/^void timer(boost::asio::deadline_timer *_timer, unsigned int *_remain_expires_time)$/;"	f
-timer_1second	KETI-Edge/rest_handler.cpp	/^timer_t timer_60second, timer_3second, timer_250msecond, timer_500msecond, timer_5second, timer_1second;$/;"	v
-timer_250msecond	KETI-Edge/rest_handler.cpp	/^timer_t timer_60second, timer_3second, timer_250msecond, timer_500msecond, timer_5second, timer_1second;$/;"	v
-timer_3second	KETI-Edge/rest_handler.cpp	/^timer_t timer_60second, timer_3second, timer_250msecond, timer_500msecond, timer_5second, timer_1second;$/;"	v
-timer_500msecond	KETI-Edge/rest_handler.cpp	/^timer_t timer_60second, timer_3second, timer_250msecond, timer_500msecond, timer_5second, timer_1second;$/;"	v
-timer_5second	KETI-Edge/rest_handler.cpp	/^timer_t timer_60second, timer_3second, timer_250msecond, timer_500msecond, timer_5second, timer_1second;$/;"	v
-timer_60second	KETI-Edge/rest_handler.cpp	/^timer_t timer_60second, timer_3second, timer_250msecond, timer_500msecond, timer_5second, timer_1second;$/;"	v
+timer_1second	KETI-Ibmc/rest_handler.cpp	/^timer_t timer_60second, timer_3second, timer_250msecond, timer_500msecond, timer_5second, timer_1second;$/;"	v
+timer_250msecond	KETI-Ibmc/rest_handler.cpp	/^timer_t timer_60second, timer_3second, timer_250msecond, timer_500msecond, timer_5second, timer_1second;$/;"	v
+timer_3second	KETI-Ibmc/rest_handler.cpp	/^timer_t timer_60second, timer_3second, timer_250msecond, timer_500msecond, timer_5second, timer_1second;$/;"	v
+timer_500msecond	KETI-Ibmc/rest_handler.cpp	/^timer_t timer_60second, timer_3second, timer_250msecond, timer_500msecond, timer_5second, timer_1second;$/;"	v
+timer_5second	KETI-Ibmc/rest_handler.cpp	/^timer_t timer_60second, timer_3second, timer_250msecond, timer_500msecond, timer_5second, timer_1second;$/;"	v
+timer_60second	KETI-Ibmc/rest_handler.cpp	/^timer_t timer_60second, timer_3second, timer_250msecond, timer_500msecond, timer_5second, timer_1second;$/;"	v
 timer_actions	WDTBK/watchdog.hpp	/^  unsigned char timer_actions;$/;"	m	struct:__anon7
 timer_actions	include/ipmi/ipmi.hpp	/^  unsigned char timer_actions;$/;"	m	struct:__anon29
-timer_handler	KETI-Edge/khandler.cpp	/^void *timer_handler(void) {$/;"	f
-timer_stop_flag	KETI-Edge/rest_handler.cpp	/^int timer_stop_flag = 0;$/;"	v
+timer_handler	KETI-Ibmc/khandler.cpp	/^void *timer_handler(void) {$/;"	f
+timer_stop_flag	KETI-Ibmc/rest_handler.cpp	/^int timer_stop_flag = 0;$/;"	v
 timer_use	WDTBK/watchdog.hpp	/^  unsigned char timer_use;$/;"	m	struct:__anon7
 timer_use	include/ipmi/ipmi.hpp	/^  unsigned char timer_use;$/;"	m	struct:__anon29
 timer_use_exp	WDTBK/watchdog.hpp	/^  unsigned char timer_use_exp;$/;"	m	struct:__anon7
 timer_use_exp	include/ipmi/ipmi.hpp	/^  unsigned char timer_use_exp;$/;"	m	struct:__anon29
 timing_negotiation	libs/lightning/lightning_sensor.cpp	/^struct timing_negotiation {$/;"	s	file:
-tipmb	KETI-Edge/rest_handler.cpp	/^pthread_t tid, tid2, tipmb, rest_tid, lan_tid, redfish_tid;$/;"	v
+tipmb	KETI-Ibmc/rest_handler.cpp	/^pthread_t tid, tid2, tipmb, rest_tid, lan_tid, redfish_tid;$/;"	v
 tmp75_nva_sensors	include/ipmi/lightning_sensor.hpp	/^enum tmp75_nva_sensors {$/;"	g
 tmp75_pdpb_KTNF_sensors	include/ipmi/lightning_sensor.hpp	/^enum tmp75_pdpb_KTNF_sensors{$/;"	g
 tmp75_pdpb_sensors	include/ipmi/lightning_sensor.hpp	/^enum tmp75_pdpb_sensors {$/;"	g
@@ -6953,11 +6953,11 @@ total_size	kvm/video.h	/^	unsigned long	total_size;					\/\/get$/;"	m	struct:ast
 total_threads	include/redfish/resource.hpp	/^  int total_threads;$/;"	m	class:Processors
 transport_get_sol_config_params	libs/sol/sol.cpp	/^void SerialOverLan::transport_get_sol_config_params(ipmi_req_t *request,$/;"	f	class:SerialOverLan
 transport_set_sol_config_params	libs/sol/sol.cpp	/^void SerialOverLan::transport_set_sol_config_params(ipmi_req_t *request,$/;"	f	class:SerialOverLan
-treat_delete	KETI-Edge/handler.cpp	/^void treat_delete(http_request _request, json::value _jv,$/;"	f
-treat_patch	KETI-Edge/handler.cpp	/^void treat_patch(http_request _request, json::value _jv,$/;"	f
-treat_post	KETI-Edge/handler.cpp	/^void treat_post(http_request _request, json::value _jv,$/;"	f
+treat_delete	KETI-Ibmc/handler.cpp	/^void treat_delete(http_request _request, json::value _jv,$/;"	f
+treat_patch	KETI-Ibmc/handler.cpp	/^void treat_patch(http_request _request, json::value _jv,$/;"	f
+treat_post	KETI-Ibmc/handler.cpp	/^void treat_post(http_request _request, json::value _jv,$/;"	f
 trim	include/util/iniparser.hpp	/^    static inline std::string &trim(std::string &s) {$/;"	f	namespace:INI
-trim_spaces	KETI-Edge/lssdp.cpp	/^static int trim_spaces(const char * string, size_t * start, size_t * end) {$/;"	f	file:
+trim_spaces	KETI-Ibmc/lssdp.cpp	/^static int trim_spaces(const char * string, size_t * start, size_t * end) {$/;"	f	file:
 try_login	KETI-REST/req.cpp	/^int try_login(char* username, char* pwd, unsigned char *input, int *res_len) {$/;"	f
 ts	include/ipmi/ipmi.hpp	/^  unsigned char ts[4];$/;"	m	struct:__anon28
 ts_add	include/ipmi/ipmi.hpp	/^  std::time_t ts_add;   \/\/\/ last addition time stamp$/;"	m	struct:sel_hdr
@@ -7002,7 +7002,7 @@ uni_netfn_rqlun	include/redfish/msg_session.hpp	/^	} uni_netfn_rqlun;$/;"	m	stru
 uni_netfn_rslun	include/redfish/msg_session.hpp	/^	} uni_netfn_rslun;$/;"	m	struct:__anon72	typeref:union:__anon72::__anon73
 uni_rqseq_rqlun	include/redfish/msg_session.hpp	/^	} uni_rqseq_rqlun;$/;"	m	struct:__anon72	typeref:union:__anon72::__anon75
 uni_rqseq_rslun	include/redfish/msg_session.hpp	/^	} uni_rqseq_rslun;$/;"	m	struct:__anon77	typeref:union:__anon77::__anon80
-unique_service_name	KETI-Edge/lssdp.hpp	/^        char        unique_service_name [LSSDP_FIELD_LEN];  \/\/ Unique Service Name: MAC or User Name$/;"	m	struct:lssdp_ctx::__anon12
+unique_service_name	KETI-Ibmc/lssdp.hpp	/^        char        unique_service_name [LSSDP_FIELD_LEN];  \/\/ Unique Service Name: MAC or User Name$/;"	m	struct:lssdp_ctx::__anon12
 units	include/util/pmbus.hpp	/^  char *units;$/;"	m	struct:pm_list
 units	libs/util/updatevoltage.cpp	/^  char *units;$/;"	m	struct:pm_list	file:
 unr_high	include/ipmi/ipmi.hpp	/^  unr_high,$/;"	m	class:Theshold_type
@@ -7014,8 +7014,8 @@ update_cert_with_pem	libs/redfish/resource.cpp	/^void update_cert_with_pem(fs::p
 update_req	KETI-REST/rhandler.cpp	/^uint8_t upload_req, update_req = 0;$/;"	v
 update_sensor_reading	libs/sdr/sdr.cpp	/^void update_sensor_reading() {$/;"	f
 update_service	include/redfish/resource.hpp	/^  UpdateService *update_service;$/;"	m	class:ServiceRoot
-update_time	KETI-Edge/lssdp.cpp	/^    long long       update_time;$/;"	m	struct:lssdp_packet	file:
-update_time	KETI-Edge/lssdp.hpp	/^    long long       update_time;$/;"	m	struct:lssdp_nbr
+update_time	KETI-Ibmc/lssdp.cpp	/^    long long       update_time;$/;"	m	struct:lssdp_packet	file:
+update_time	KETI-Ibmc/lssdp.hpp	/^    long long       update_time;$/;"	m	struct:lssdp_nbr
 upload_req	KETI-REST/rhandler.cpp	/^uint8_t upload_req, update_req = 0;$/;"	v
 upper	libs/apps/apps.cpp	/^float upper = 0;$/;"	v
 upper_caution	include/redfish/resource.hpp	/^  Info_Threshold upper_caution;$/;"	m	struct:_Thresholds
@@ -7053,8 +7053,8 @@ user_name	include/redfish/resource.hpp	/^  string user_name;$/;"	m	class:Virtual
 user_name_attribute	include/redfish/resource.hpp	/^  string user_name_attribute;$/;"	m	struct:_SearchSetting
 usercount	include/ipmi/user.hpp	/^static int usercount = 0;$/;"	v
 username	include/redfish/resource.hpp	/^  string username;$/;"	m	struct:_Authentication
-usn	KETI-Edge/lssdp.cpp	/^    char            usn         [LSSDP_FIELD_LEN];      \/\/ Unique Service Name$/;"	m	struct:lssdp_packet	file:
-usn	KETI-Edge/lssdp.hpp	/^    char            usn         [LSSDP_FIELD_LEN];          \/\/ Unique Service Name (Device Name or MAC)$/;"	m	struct:lssdp_nbr
+usn	KETI-Ibmc/lssdp.cpp	/^    char            usn         [LSSDP_FIELD_LEN];      \/\/ Unique Service Name$/;"	m	struct:lssdp_packet	file:
+usn	KETI-Ibmc/lssdp.hpp	/^    char            usn         [LSSDP_FIELD_LEN];          \/\/ Unique Service Name (Device Name or MAC)$/;"	m	struct:lssdp_nbr
 ut_read_mask	include/ipmi/ipmi.hpp	/^  unsigned char ut_read_mask[2];$/;"	m	struct:__anon20
 ut_read_mask	include/ipmi/lightning_sensor.hpp	/^  unsigned char ut_read_mask[2];$/;"	m	struct:__anon48
 uuid	include/redfish/resource.hpp	/^  string uuid;$/;"	m	class:Manager
@@ -7149,7 +7149,7 @@ y	kvm/video.h	/^	unsigned short	y;$/;"	m	struct:fbinfo
 ~EventService	include/redfish/resource.hpp	/^  ~EventService() { g_record.erase(this->odata.id); };$/;"	f	class:EventService
 ~Fan	include/redfish/resource.hpp	/^  ~Fan() { g_record.erase(this->odata.id); }$/;"	f	class:Fan
 ~File	include/util/iniparser.hpp	/^        virtual ~File() {Unload();}$/;"	f	class:INI::File
-~Handler	KETI-Edge/handler.hpp	/^    ~Handler(){};$/;"	f	class:Handler
+~Handler	KETI-Ibmc/handler.hpp	/^    ~Handler(){};$/;"	f	class:Handler
 ~Ipmifru	include/ipmi/fru.hpp	/^  ~Ipmifru(){};$/;"	f	class:Ipmifru
 ~Ipmisession	include/ipmi/session.hpp	/^  ~Ipmisession() {$/;"	f	class:Ipmisession
 ~KETI_Watchdog	WDTBK/watchdog.hpp	/^  ~KETI_Watchdog(){};$/;"	f	class:KETI_Watchdog

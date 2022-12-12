@@ -8,7 +8,7 @@
             "name": "(gdb) 시작",
             "type": "cppdbg",
             "request": "launch",
-            "program": "/home/keti/BMC_SDK/source/AST2600_BMC/output/bin/KETI-Edge",
+            "program": "/home/keti/BMC_SDK/source/AST2600_BMC/output/bin/KETI-Ibmc",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${fileDirname}",

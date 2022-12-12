@@ -51,17 +51,17 @@
 #define GPIO_INPUT_MODE 0
 #define GPIO_OUTPUT_MODE 1
 
-#define GPIO_RISING_EDGE 1
-#define GPIO_FALLING_EDGE 0
+#define GPIO_RISING_Ibmc 1
+#define GPIO_FALLING_Ibmc 0
 
 #define GPIO_LEVEL_HIGH 1
 #define GPIO_LEVEL_LOW 1
 
-#define GPIO_EDGE_MODE 0
+#define GPIO_Ibmc_MODE 0
 #define GPIO_LEVEL_MODE 1
 
-#define GPIO_EDGE_LEVEL_MODE 0
-#define GPIO_DUAL_EDGE_MODE 1
+#define GPIO_Ibmc_LEVEL_MODE 0
+#define GPIO_DUAL_Ibmc_MODE 1
 
 #define GPIO_NO_DEBOUNCE 0
 #define GPIO_DEBOUNCE_TIMER0 2 // GPIO 50 as debounce timer

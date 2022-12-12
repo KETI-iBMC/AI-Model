@@ -82,13 +82,13 @@ namespace freedesktop {
 namespace keti {
 namespace bmc {
 
-class edge_proxy
+class Ibmc_proxy
 : public ::DBus::InterfaceProxy
 {
 public:
 
-    edge_proxy()
-    : ::DBus::InterfaceProxy("org.freedesktop.keti.bmc.edge")
+    Ibmc_proxy()
+    : ::DBus::InterfaceProxy("org.freedesktop.keti.bmc.Ibmc")
     {
     }
 

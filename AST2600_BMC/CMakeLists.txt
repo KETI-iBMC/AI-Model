@@ -5,7 +5,7 @@ cmake_minimum_required(
 
 # Project information
 project(
-    KETI-Edge 
+    KETI-Ibmc 
     LANGUAGES CXX
     VERSION 1.0.0
 )
@@ -16,7 +16,7 @@ set(PROJECT_DIR ${ROOT_DIR}/source/AST2600_BMC)
 set(Buildroot_INCLUDE_DIR ${ROOT_DIR}/output/host/usr/arm-buildroot-linux-gnueabihf/sysroot/usr/include)
 set(Buildroot_LIBRARY_DIR ${ROOT_DIR}/output/host/usr/arm-buldroot-linux-gnueabihf/sysroot/usr/lib)
 set(LIB_DIR ${ROOT_DIR}/libs)
-set(EDGE_DIR ${PROJECT_DIR}/KETI-Edge)
+set(Ibmc_DIR ${PROJECT_DIR}/KETI-Ibmc)
 set(INC_DIR ${PROJECT_DIR}/include)
 set(STATIC_LIBS_DIR ${PROJECT_DIR}/libs)
 set(DBus_INCLUDE_DIR ${ROOT_DIR}/output/build/dbus-cpp-0.9.0/include)
@@ -58,5 +58,5 @@ link_directories(
 
 # Target setting
 add_subdirectory(${STATIC_LIBS_DIR})
-add_subdirectory(${EDGE_DIR})
+add_subdirectory(${Ibmc_DIR})
 # add_subdirectory(KETI-REST)

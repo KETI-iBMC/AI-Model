@@ -1137,7 +1137,7 @@ void Ipmiweb_GET::Get_Ssl_Info(json::value &response_json){
     // 그 cert에서 읽어오는 값들로 temporary를 갱신하고 그걸로 get 보여주기
     // set하나도 안되니까 다시 해놔야함
     json::value jv_ssl, jv_basic, jv_issued_from, jv_issued_to, jv_validity;
-    fs::path certFile("/conf/ssl/edge_server.crt");
+    fs::path certFile("/conf/ssl/Ibmc_server.crt");
 
     if(!fs::exists(certFile))
     {

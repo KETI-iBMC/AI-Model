@@ -14,8 +14,8 @@
       <arg type="i" name="value" direction="out"/>
     </method>   
   </interface>
-  <!-- edge interface -->
-  <interface name="org.freedesktop.keti.bmc.edge">
+  <!-- Ibmc interface -->
+  <interface name="org.freedesktop.keti.bmc.Ibmc">
   </interface>
   <!-- FAN interface -->
   <interface name="org.freedesktop.keti.bmc.FAN">

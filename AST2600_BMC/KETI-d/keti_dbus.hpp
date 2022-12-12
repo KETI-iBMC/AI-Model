@@ -235,7 +235,7 @@ extern size_t nva_sensor_cnt;
 
 class KETI_Dbus
   : public org::freedesktop::keti::bmc::ADC_adaptor, 
-   public org::freedesktop::keti::bmc::edge_adaptor,
+   public org::freedesktop::keti::bmc::Ibmc_adaptor,
    public org::freedesktop::keti::bmc::FAN_adaptor,
    public org::freedesktop::keti::bmc::PSU_adaptor,
   public DBus::IntrospectableAdaptor,

@@ -121,38 +121,38 @@ namespace freedesktop {
 namespace keti {
 namespace bmc {
 
-class edge_adaptor
+class Ibmc_adaptor
 : public ::DBus::InterfaceAdaptor
 {
 public:
 
-    edge_adaptor()
-    : ::DBus::InterfaceAdaptor("org.freedesktop.keti.bmc.edge")
+    Ibmc_adaptor()
+    : ::DBus::InterfaceAdaptor("org.freedesktop.keti.bmc.Ibmc")
     {
     }
 
     ::DBus::IntrospectedInterface *introspect() const 
     {
-        static ::DBus::IntrospectedMethod edge_adaptor_methods[] = 
+        static ::DBus::IntrospectedMethod Ibmc_adaptor_methods[] = 
         {
             { 0, 0 }
         };
-        static ::DBus::IntrospectedMethod edge_adaptor_signals[] = 
+        static ::DBus::IntrospectedMethod Ibmc_adaptor_signals[] = 
         {
             { 0, 0 }
         };
-        static ::DBus::IntrospectedProperty edge_adaptor_properties[] = 
+        static ::DBus::IntrospectedProperty Ibmc_adaptor_properties[] = 
         {
             { 0, 0, 0, 0 }
         };
-        static ::DBus::IntrospectedInterface edge_adaptor_interface = 
+        static ::DBus::IntrospectedInterface Ibmc_adaptor_interface = 
         {
-            "org.freedesktop.keti.bmc.edge",
-            edge_adaptor_methods,
-            edge_adaptor_signals,
-            edge_adaptor_properties
+            "org.freedesktop.keti.bmc.Ibmc",
+            Ibmc_adaptor_methods,
+            Ibmc_adaptor_signals,
+            Ibmc_adaptor_properties
         };
-        return &edge_adaptor_interface;
+        return &Ibmc_adaptor_interface;
     }
 
 public:

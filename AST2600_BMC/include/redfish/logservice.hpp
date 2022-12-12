@@ -4,7 +4,7 @@
 #include <redfish/stdafx.hpp>
 #include <redfish/resource.hpp>
 #include <redfish/eventservice.hpp>
-#include "../KETI-Edge/handler.hpp"
+#include "../KETI-Ibmc/handler.hpp"
 #include <sqlite3.h>
 
 // #define LOG_DB "/conf/database/log.db"

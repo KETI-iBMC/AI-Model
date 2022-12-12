@@ -9,10 +9,10 @@ path=/firmware
 #ssh-keyscan -t rsa $ip >>~/.ssh/known_hosts
 
 
-edge=output/bin/KETI-Edge
+Ibmc=output/bin/KETI-Ibmc
 kvm=video_old/KETI-KVM
 
-#edge build
+#Ibmc build
 cmake CMakeLists.txt
 make -j 30 
 
@@ -36,7 +36,7 @@ echo " overlay copy ..."
 cp -f ./output/bin/* ../target_sys/firmware/
 echo "scp ..."
 
-# sshpass -p $password scp $edge $rest $kvm $smltr $id@$ip:$path
-#sshpass -p $password scp $edge $kvm $smltr $id@$ip:$path
-#sshpass -p $password scp $edge $id@$ip:$path
+# sshpass -p $password scp $Ibmc $rest $kvm $smltr $id@$ip:$path
+#sshpass -p $password scp $Ibmc $kvm $smltr $id@$ip:$path
+#sshpass -p $password scp $Ibmc $id@$ip:$path
 

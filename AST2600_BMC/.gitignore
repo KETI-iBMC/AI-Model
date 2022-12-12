@@ -76,8 +76,8 @@ CMakeCache.txt
 **/Makefile
 
 KETI-REST/KETI-REST
-KETI-Edge/KETI-REST
-KETI-Edge/KETI-Edge
+KETI-Ibmc/KETI-REST
+KETI-Ibmc/KETI-Ibmc
 
 # Chutzpah Test files
 _Chutzpah*

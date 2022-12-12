@@ -204,7 +204,7 @@ mkdir -p ./output/host/usr/arm-buildroot-linux-gnueabi/sysroot/usr/lib > /dev/nu
 mkdir -p ./output/host/usr/arm-buildroot-linux-gnueabi/sysroot/lib > /dev/null 2>&1
 
 #테스트 기간 임시 제거
-#echo "\033[34mKETI-Edge build ....\033[0m"
+#echo "\033[34mKETI-Ibmc build ....\033[0m"
 #./source/AST2600_BMC/ast2600_bmc_build.sh
 
 

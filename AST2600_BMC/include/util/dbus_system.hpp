@@ -14,7 +14,7 @@
 static const char *SERVER_NAME_1 = "org.freedesktop.keti.bmc.dbus";
 static const char *SERVER_PATH_1 = "/org/freedesktop/keti/bmc/dbus";
 class DBus_Sensor
-  : public org::freedesktop::keti::bmc::edge_proxy,
+  : public org::freedesktop::keti::bmc::Ibmc_proxy,
   public org::freedesktop::keti::bmc::ADC_proxy,
   public org::freedesktop::keti::bmc::FAN_proxy,
   public org::freedesktop::keti::bmc::PSU_proxy,

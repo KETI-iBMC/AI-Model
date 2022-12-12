@@ -714,10 +714,10 @@ void Ipmiweb_POST::Set_Ssl(json::value request_json){
   //     set_ssl_2(organization_unit.c_str(), common_name.c_str(), email_address.c_str());
 
     // [테스트] ssl 변경 및 임시적용
-    fs::path keyFile("/conf/ssl/edge_server.key");
-    fs::path configFile("/conf/ssl/edge_server.conf");
-    fs::path csrFile("/conf/ssl/edge_server.csr");
-    fs::path certFile("/conf/ssl/edge_server.crt");
+    fs::path keyFile("/conf/ssl/Ibmc_server.key");
+    fs::path configFile("/conf/ssl/Ibmc_server.conf");
+    fs::path csrFile("/conf/ssl/Ibmc_server.csr");
+    fs::path certFile("/conf/ssl/Ibmc_server.crt");
 
     string country, state, city, organization, organizationUnit, keyLength, commonName, email, validDays;
 
@@ -1133,7 +1133,7 @@ void Ipmiweb_POST::Set_Upload(http_request request,string fwname){
     sleep(1);
     string cmd_update = "";
     // 여기까진 파일 저장이고
-    // 이 아래로는 파일이 KETI-Edge 파일이라고 생각하고 해당파일로 교체후 reboot하는 과정
+    // 이 아래로는 파일이 KETI-Ibmc 파일이라고 생각하고 해당파일로 교체후 reboot하는 과정
     fwname=uri_tokens[uri_tokens.size()-1];
     cout<<"firmware ="<<fwname<<endl;
     if(fwname =="all")
