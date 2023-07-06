@@ -1,0 +1,3 @@
+[console_scripts]
+imgtool = imgtool.main:imgtool
+
