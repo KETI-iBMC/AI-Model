@@ -1,1 +1,4 @@
 
+{
+    "cmake.sourceDirectory": "/root/zephyrproject/bootloader/mcuboot/boot/bootutil"
+}
