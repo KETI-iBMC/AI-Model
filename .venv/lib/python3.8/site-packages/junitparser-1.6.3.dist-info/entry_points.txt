@@ -1,0 +1,3 @@
+[console_scripts]
+junitparser = junitparser.cli:main
+

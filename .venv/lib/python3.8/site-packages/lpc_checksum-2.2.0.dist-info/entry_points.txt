@@ -1,0 +1,3 @@
+[console_scripts]
+lpc_checksum = lpc_checksum:run
+

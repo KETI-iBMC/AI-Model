@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: junit2html
+Version: 30.1.3
+Summary: Generate HTML reports from Junit results
+Home-page: https://gitlab.com/inorton/junit2html
+Author: Ian Norton
+Author-email: inorton@gmail.com
+License: License :: OSI Approved :: MIT License
+Platform: any
+Requires-Dist: jinja2 (>=3.0)
+
+Genearate a single file HTML report from a Junit or XUnit XML results file
+
+
