@@ -1,0 +1,27 @@
+# Available runners configured by board.cmake.
+runners:
+- jlink
+
+# Default flash runner if --runner is not given.
+flash-runner: jlink
+
+# Default debug runner if --runner is not given.
+debug-runner: jlink
+
+# Common runner configuration values.
+config:
+  board_dir: /root/zephyrproject/zephyr/boards/arm/ast2600_evb
+  # Build outputs:
+  elf_file: zephyr.elf
+  bin_file: zephyr.bin
+  # Host tools:
+  gdb: /root/zephyr-sdk-0.16.1/arm-zephyr-eabi/bin/arm-zephyr-eabi-gdb
+  openocd: /root/zephyr-sdk-0.16.1/sysroots/x86_64-pokysdk-linux/usr/bin/openocd
+  openocd_search: /root/zephyr-sdk-0.16.1/sysroots/x86_64-pokysdk-linux/usr/share/openocd/scripts
+
+# Runner specific arguments
+args:
+  jlink:
+    - --dt-flash=y
+    - --device=Cortex-M3
+    - --gdbserver=JLinkGDBServerCLExe
