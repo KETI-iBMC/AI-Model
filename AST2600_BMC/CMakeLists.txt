@@ -1,0 +1,62 @@
+# CMake version
+cmake_minimum_required(
+    VERSION 3.2
+)
+
+# Project information
+project(
+    KETI-Ibmc 
+    LANGUAGES CXX
+    VERSION 1.0.0
+)
+
+# Directory setting
+set(ROOT_DIR /home/keti/BMC_SDK)
+set(PROJECT_DIR ${ROOT_DIR}/source/AST2600_BMC)
+set(Buildroot_INCLUDE_DIR ${ROOT_DIR}/output/host/usr/arm-buildroot-linux-gnueabihf/sysroot/usr/include)
+set(Buildroot_LIBRARY_DIR ${ROOT_DIR}/output/host/usr/arm-buldroot-linux-gnueabihf/sysroot/usr/lib)
+set(LIB_DIR ${ROOT_DIR}/libs)
+set(Ibmc_DIR ${PROJECT_DIR}/KETI-Ibmc)
+set(INC_DIR ${PROJECT_DIR}/include)
+set(STATIC_LIBS_DIR ${PROJECT_DIR}/libs)
+set(DBus_INCLUDE_DIR ${ROOT_DIR}/output/build/dbus-cpp-0.9.0/include)
+set(DBus_LIBRARY_DIR ${ROOT_DIR}/output/build/dbus-cpp-0.9.0/src/libs)
+
+# Compiler setting
+set(CMAKE_SYSTEM_NAME Linux)
+set(CMAKE_SYSTEM_PROCESSOR arm)
+set(CROSS_COMPILE ${ROOT_DIR}/output/host/usr/bin/arm-linux-)
+set(GCC ${CROSS_COMPILE}gcc)
+set(GPP ${CROSS_COMPILE}g++)
+set(CMAKE_C_COMPILER ${GCC})
+set(CMAKE_CXX_COMPILER ${GPP})
+set(CMAKE_CXX_FLAGS " -Wall -w -DBOOST_LOG_DYN_LINK -Wno-psabi -fpermissive -DMG_ENABLE_SSL -DMG_ENABLE_THREADS -DMG_ENABLE_HTTP_WEBSOCKET=0 -DMG_ENABLE_HTTP_STREAMING_MULTIPART -pthread -std=c++11") 
+set(CMAKE_CXX_FLAGS_DEBUG "-O3 -g")
+message(STATUS "Compiler")
+message(STATUS " - ID       \t: ${CMAKE_CXX_COMPILER_ID}")
+message(STATUS " - Version  \t: ${CMAKE_CXX_COMPILER_VERSION}")
+message(STATUS " - Path     \t: ${CMAKE_CXX_COMPILER}")
+
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_DIR}/output/bin)
+set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${PROJECT_DIR}/output/libs)
+set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${PROJECT_DIR}/output/libs)
+
+# Linkinking
+## Header
+include_directories(
+    ${Buildroot_INCLUDE_DIR} 
+    ${DBus_INCLUDE_DIR} 
+
+)
+
+## Source
+link_directories(
+    ${Buildroot_LIBRARY_DIR}
+    ${DBus_LIBRARY_DIR}
+
+)
+
+# Target setting
+add_subdirectory(${STATIC_LIBS_DIR})
+add_subdirectory(${Ibmc_DIR})
+# add_subdirectory(KETI-REST)

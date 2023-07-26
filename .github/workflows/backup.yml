@@ -1,0 +1,14 @@
+name: Backup
+on:
+  push:
+    branches: [ main ]	
+jobs:
+  build:
+    runs-on: backup
+    steps:
+    - uses: actions/checkout@v3
+    - name: pullAll
+      run: |
+          git fetch --all
+          git reset --hard origin/main
+          git pull origin main
