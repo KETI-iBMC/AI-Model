@@ -1,0 +1,2 @@
+"DTS_ROOT":"/root/zephyrproject/modules/hal/stm32"
+"DTS_ROOT":"/root/zephyrproject/modules/hal/nxp"

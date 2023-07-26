@@ -1,0 +1,4 @@
+name: tensorflow
+build:
+  cmake-ext: True
+  kconfig-ext: True

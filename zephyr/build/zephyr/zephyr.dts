@@ -1,0 +1,734 @@
+/dts-v1/;
+
+/ {
+	#address-cells = < 0x1 >;
+	#size-cells = < 0x1 >;
+	model = "Aspeed AST2600 Evaluation board";
+	compatible = "aspeed,bmc-ast2600", "aspeed,ast2600";
+	chosen {
+		zephyr,console = &uart11;
+		zephyr,shell-uart = &uart11;
+		zephyr,sram = &sdram0;
+		zephyr,flash = &flash0;
+	};
+	aliases {
+	};
+	soc {
+		#address-cells = < 0x1 >;
+		#size-cells = < 0x1 >;
+		compatible = "simple-bus";
+		interrupt-parent = < &nvic >;
+		ranges;
+		nvic: interrupt-controller@e000e100 {
+			compatible = "arm,v7m-nvic";
+			reg = < 0xe000e100 0xc00 >;
+			interrupt-controller;
+			#interrupt-cells = < 0x2 >;
+			arm,num-irq-priority-bits = < 0x3 >;
+			phandle = < 0x1 >;
+		};
+		systick: timer@e000e010 {
+			compatible = "arm,armv7m-systick";
+			reg = < 0xe000e010 0x10 >;
+		};
+		syscon: syscon@7e6e2000 {
+			reg = < 0x7e6e2000 0x1000 >;
+			sysclk: sysclk {
+				compatible = "aspeed,ast26xx-clk";
+				#clock-cells = < 0x1 >;
+				label = "SYSCLK";
+				phandle = < 0x2 >;
+			};
+			sysrst: sysrst {
+				compatible = "aspeed,aspeed-rst";
+				#reset-cells = < 0x1 >;
+				label = "SYSRST";
+				phandle = < 0x6 >;
+			};
+			pinmux: pinmux {
+				compatible = "aspeed,pinmux";
+				label = "PINMUX";
+				pinctrl_adc0_default: adc0_default {
+				};
+				pinctrl_adc1_default: adc1_default {
+				};
+				pinctrl_adc2_default: adc2_default {
+				};
+				pinctrl_adc3_default: adc3_default {
+				};
+				pinctrl_adc4_default: adc4_default {
+				};
+				pinctrl_adc5_default: adc5_default {
+				};
+				pinctrl_adc6_default: adc6_default {
+				};
+				pinctrl_adc7_default: adc7_default {
+				};
+				pinctrl_adc8_default: adc8_default {
+				};
+				pinctrl_adc9_default: adc9_default {
+				};
+				pinctrl_adc10_default: adc10_default {
+				};
+				pinctrl_adc11_default: adc11_default {
+				};
+				pinctrl_adc12_default: adc12_default {
+				};
+				pinctrl_adc13_default: adc13_default {
+				};
+				pinctrl_adc14_default: adc14_default {
+				};
+				pinctrl_adc15_default: adc15_default {
+				};
+				pinctrl_i2c0_default: i2c0_default {
+				};
+				pinctrl_i2c1_default: i2c1_default {
+				};
+				pinctrl_i2c2_default: i2c2_default {
+				};
+				pinctrl_i2c3_default: i2c3_default {
+				};
+				pinctrl_i2c4_default: i2c4_default {
+				};
+				pinctrl_i2c5_default: i2c5_default {
+				};
+				pinctrl_i2c6_default: i2c6_default {
+				};
+				pinctrl_i2c7_default: i2c7_default {
+				};
+				pinctrl_i2c8_default: i2c8_default {
+				};
+				pinctrl_i2c9_default: i2c9_default {
+				};
+				pinctrl_i2c10_default: i2c10_default {
+				};
+				pinctrl_i2c11_default: i2c11_default {
+				};
+				pinctrl_i2c12_default: i2c12_default {
+				};
+				pinctrl_i2c13_default: i2c13_default {
+				};
+				pinctrl_i2c14_default: i2c14_default {
+				};
+				pinctrl_i2c15_default: i2c15_default {
+				};
+				pinctrl_i3c0_default: i3c0_default {
+					phandle = < 0x7 >;
+				};
+				pinctrl_i3c1_default: i3c1_default {
+					phandle = < 0x8 >;
+				};
+				pinctrl_i3c2_default: i3c2_default {
+				};
+				pinctrl_i3c3_default: i3c3_default {
+				};
+				pinctrl_hvi3c2_default: hvi3c2_default {
+				};
+				pinctrl_hvi3c3_default: hvi3c3_default {
+				};
+				pinctrl_hvi3c4_default: hvi3c4_default {
+					phandle = < 0x9 >;
+				};
+				pinctrl_hvi3c5_default: hvi3c5_default {
+					phandle = < 0xa >;
+				};
+				pinctrl_arm_ice_default: arm_ice_default {
+				};
+				pinctrl_jtagm0_default: jtagm0_default {
+				};
+				pinctrl_jtagm1_default: jtagm1_default {
+				};
+				pinctrl_pwm0_default: pwm0_default {
+				};
+				pinctrl_pwm1_default: pwm1_default {
+				};
+				pinctrl_pwm2_default: pwm2_default {
+				};
+				pinctrl_pwm3_default: pwm3_default {
+				};
+				pinctrl_pwm4_default: pwm4_default {
+				};
+				pinctrl_pwm5_default: pwm5_default {
+				};
+				pinctrl_pwm6_default: pwm6_default {
+				};
+				pinctrl_pwm7_default: pwm7_default {
+				};
+				pinctrl_pwm8_default: pwm8_default {
+				};
+				pinctrl_pwm9_default: pwm9_default {
+				};
+				pinctrl_pwm10_default: pwm10_default {
+				};
+				pinctrl_pwm11_default: pwm11_default {
+				};
+				pinctrl_pwm12_default: pwm12_default {
+				};
+				pinctrl_pwm13_default: pwm13_default {
+				};
+				pinctrl_pwm14_default: pwm14_default {
+				};
+				pinctrl_pwm15_default: pwm15_default {
+				};
+				pinctrl_sgpiom0_default: sgpiom0_default {
+					phandle = < 0x3 >;
+				};
+				pinctrl_sgpiom1_default: sgpiom1_default {
+					phandle = < 0x4 >;
+				};
+				pinctrl_tach0_default: tach0_default {
+				};
+				pinctrl_tach1_default: tach1_default {
+				};
+				pinctrl_tach2_default: tach2_default {
+				};
+				pinctrl_tach3_default: tach3_default {
+				};
+				pinctrl_tach4_default: tach4_default {
+				};
+				pinctrl_tach5_default: tach5_default {
+				};
+				pinctrl_tach6_default: tach6_default {
+				};
+				pinctrl_tach7_default: tach7_default {
+				};
+				pinctrl_tach8_default: tach8_default {
+				};
+				pinctrl_tach9_default: tach9_default {
+				};
+				pinctrl_tach10_default: tach10_default {
+				};
+				pinctrl_tach11_default: tach11_default {
+				};
+				pinctrl_tach12_default: tach12_default {
+				};
+				pinctrl_tach13_default: tach13_default {
+				};
+				pinctrl_tach14_default: tach14_default {
+				};
+				pinctrl_tach15_default: tach15_default {
+				};
+				pinctrl_uart11_default: uart11_default {
+					phandle = < 0x5 >;
+				};
+			};
+		};
+		ipc: ipc@7e6c0000 {
+			compatible = "aspeed,ast2600-ipc";
+			reg = < 0x7e6c0000 0x100 >;
+			interrupts = < 0xb6 0x1 >, < 0xb7 0x1 >, < 0xb8 0x1 >, < 0xb9 0x1 >, < 0xba 0x1 >, < 0xbb 0x1 >, < 0xbc 0x1 >, < 0xbd 0x1 >, < 0xbe 0x1 >, < 0xbf 0x1 >, < 0xc0 0x1 >, < 0xc1 0x1 >, < 0xc2 0x1 >, < 0xc3 0x1 >, < 0xc4 0x1 >;
+			label = "IPC";
+		};
+		gpio0: gpio@7e780000 {
+			compatible = "aspeed,gpio";
+			reg = < 0x7e780000 0x400 >;
+			interrupts = < 0x48 0x1 >;
+			clocks = < &sysclk 0x42 >;
+			gpio0_a_d: gpio0_a_d {
+				#gpio-cells = < 0x2 >;
+				gpio-controller;
+				ngpios = < 0x20 >;
+				interrupt-controller;
+				#interrupt-cells = < 0x2 >;
+				aspeed,cmd-src = < 0x2 >;
+				label = "GPIO0_A_D";
+				pin-offset = < 0x0 >;
+			};
+			gpio0_e_h: gpio0_e_h {
+				#gpio-cells = < 0x2 >;
+				gpio-controller;
+				ngpios = < 0x20 >;
+				interrupt-controller;
+				#interrupt-cells = < 0x2 >;
+				aspeed,cmd-src = < 0x2 >;
+				label = "GPIO0_E_H";
+				pin-offset = < 0x20 >;
+			};
+			gpio0_i_l: gpio0_i_l {
+				#gpio-cells = < 0x2 >;
+				gpio-controller;
+				ngpios = < 0x20 >;
+				interrupt-controller;
+				#interrupt-cells = < 0x2 >;
+				aspeed,cmd-src = < 0x2 >;
+				label = "GPIO0_I_L";
+				pin-offset = < 0x40 >;
+			};
+			gpio0_m_p: gpio0_m_p {
+				#gpio-cells = < 0x2 >;
+				gpio-controller;
+				ngpios = < 0x20 >;
+				interrupt-controller;
+				#interrupt-cells = < 0x2 >;
+				aspeed,cmd-src = < 0x2 >;
+				label = "GPIO0_M_P";
+				pin-offset = < 0x60 >;
+			};
+			gpio0_q_t: gpio0_q_t {
+				#gpio-cells = < 0x2 >;
+				gpio-controller;
+				ngpios = < 0x20 >;
+				aspeed,cmd-src = < 0x2 >;
+				interrupt-controller;
+				#interrupt-cells = < 0x2 >;
+				label = "GPIO0_Q_T";
+				pin-offset = < 0x80 >;
+			};
+			gpio0_u_x: gpio0_u_x {
+				#gpio-cells = < 0x2 >;
+				gpio-controller;
+				ngpios = < 0x20 >;
+				interrupt-controller;
+				#interrupt-cells = < 0x2 >;
+				aspeed,cmd-src = < 0x2 >;
+				label = "GPIO0_U_X";
+				pin-offset = < 0xa0 >;
+			};
+			gpio0_y_z: gpio0_y_z {
+				#gpio-cells = < 0x2 >;
+				gpio-controller;
+				ngpios = < 0x10 >;
+				interrupt-controller;
+				#interrupt-cells = < 0x2 >;
+				aspeed,cmd-src = < 0x2 >;
+				label = "GPIO0_Y_Z";
+				pin-offset = < 0xc0 >;
+			};
+		};
+		sgpiom0: sgpiom@7e780500 {
+			compatible = "aspeed,sgpiom";
+			reg = < 0x7e780500 0x100 >;
+			interrupts = < 0x33 0x1 >;
+			clocks = < &sysclk 0x42 >;
+			pinctrl-0 = < &pinctrl_sgpiom0_default >;
+			ngpios = < 0x80 >;
+			status = "disabled";
+			sgpiom0_a_d: sgpiom0_a_d {
+				#gpio-cells = < 0x2 >;
+				gpio-controller;
+				ngpios = < 0x20 >;
+				interrupt-controller;
+				#interrupt-cells = < 0x2 >;
+				label = "SGPIOM0_A_D";
+				pin-offset = < 0x0 >;
+			};
+			sgpiom0_e_h: sgpiom0_e_h {
+				#gpio-cells = < 0x2 >;
+				gpio-controller;
+				ngpios = < 0x20 >;
+				interrupt-controller;
+				#interrupt-cells = < 0x2 >;
+				label = "SGPIOM0_E_H";
+				pin-offset = < 0x20 >;
+			};
+			sgpiom0_i_l: sgpiom0_i_l {
+				#gpio-cells = < 0x2 >;
+				gpio-controller;
+				ngpios = < 0x20 >;
+				interrupt-controller;
+				#interrupt-cells = < 0x2 >;
+				label = "SGPIOM0_I_L";
+				pin-offset = < 0x40 >;
+			};
+			sgpiom0_m_p: sgpiom0_m_p {
+				#gpio-cells = < 0x2 >;
+				gpio-controller;
+				ngpios = < 0x20 >;
+				interrupt-controller;
+				#interrupt-cells = < 0x2 >;
+				label = "SGPIOM0_M_P";
+				pin-offset = < 0x60 >;
+			};
+		};
+		sgpiom1: sgpiom@7e780600 {
+			compatible = "aspeed,sgpiom";
+			reg = < 0x7e780600 0x100 >;
+			interrupts = < 0x46 0x1 >;
+			clocks = < &sysclk 0x42 >;
+			pinctrl-0 = < &pinctrl_sgpiom1_default >;
+			ngpios = < 0x50 >;
+			status = "disabled";
+			sgpiom1_a_d: sgpiom0_a_d {
+				#gpio-cells = < 0x2 >;
+				gpio-controller;
+				ngpios = < 0x20 >;
+				interrupt-controller;
+				#interrupt-cells = < 0x2 >;
+				label = "SGPIOM1_A_D";
+				pin-offset = < 0x0 >;
+			};
+			sgpiom1_e_h: sgpiom0_e_h {
+				#gpio-cells = < 0x2 >;
+				gpio-controller;
+				ngpios = < 0x20 >;
+				interrupt-controller;
+				#interrupt-cells = < 0x2 >;
+				label = "SGPIOM1_E_H";
+				pin-offset = < 0x20 >;
+			};
+			sgpiom1_i_l: sgpiom0_i_l {
+				#gpio-cells = < 0x2 >;
+				gpio-controller;
+				ngpios = < 0x10 >;
+				interrupt-controller;
+				#interrupt-cells = < 0x2 >;
+				label = "SGPIOM1_I_L";
+				pin-offset = < 0x40 >;
+			};
+		};
+		uart11: serial@7e790500 {
+			compatible = "aspeed,uart";
+			reg = < 0x7e790500 0x100 >;
+			interrupts = < 0x3e 0x1 >;
+			clocks = < &sysclk 0x3b >;
+			status = "okay";
+			pinctrl-0 = < &pinctrl_uart11_default >;
+			label = "UART_11";
+			clock-frequency = < 0x1c2b89 >;
+			current-speed = < 0x1c200 >;
+		};
+		udma: udma@7e79e000 {
+			compatible = "aspeed,udma";
+			interrupts = < 0x38 0x1 >;
+			reg = < 0x7e79e000 0x1000 >;
+		};
+		i2c_gr: i2c-global-regs@7e78a000 {
+			compatible = "aspeed,i2c-global";
+			#address-cells = < 0x1 >;
+			#size-cells = < 0x0 >;
+			reg = < 0x7e78a000 0x20 >;
+			clocks = < &sysclk 0x42 >;
+			resets = < &sysrst 0x505402 >;
+			label = "I2C_GLOBAL";
+		};
+		i2c0: i2c@7e78a080 {
+			compatible = "aspeed,i2c";
+			clock-frequency = < 0x61a80 >;
+			#address-cells = < 0x1 >;
+			#size-cells = < 0x0 >;
+			reg = < 0x7e78a080 0x80 >;
+			interrupts = < 0x6e 0x1 >;
+			clocks = < &sysclk 0x42 >;
+			status = "disabled";
+			label = "I2C_0";
+		};
+		i2c1: i2c@7e78a100 {
+			compatible = "aspeed,i2c";
+			clock-frequency = < 0x61a80 >;
+			#address-cells = < 0x1 >;
+			#size-cells = < 0x0 >;
+			reg = < 0x7e78a100 0x80 >;
+			interrupts = < 0x6f 0x1 >;
+			clocks = < &sysclk 0x42 >;
+			status = "disabled";
+			label = "I2C_1";
+		};
+		i2c2: i2c@7e78a180 {
+			compatible = "aspeed,i2c";
+			clock-frequency = < 0x61a80 >;
+			#address-cells = < 0x1 >;
+			#size-cells = < 0x0 >;
+			reg = < 0x7e78a180 0x80 >;
+			interrupts = < 0x70 0x1 >;
+			clocks = < &sysclk 0x42 >;
+			status = "disabled";
+			label = "I2C_2";
+		};
+		i2c3: i2c@7e78a200 {
+			compatible = "aspeed,i2c";
+			clock-frequency = < 0x61a80 >;
+			#address-cells = < 0x1 >;
+			#size-cells = < 0x0 >;
+			reg = < 0x7e78a200 0x80 >;
+			interrupts = < 0x71 0x1 >;
+			clocks = < &sysclk 0x42 >;
+			status = "disabled";
+			label = "I2C_3";
+		};
+		i2c4: i2c@7e78a280 {
+			compatible = "aspeed,i2c";
+			clock-frequency = < 0x61a80 >;
+			#address-cells = < 0x1 >;
+			#size-cells = < 0x0 >;
+			reg = < 0x7e78a280 0x80 >;
+			interrupts = < 0x72 0x1 >;
+			clocks = < &sysclk 0x42 >;
+			status = "disabled";
+			label = "I2C_4";
+		};
+		i2c5: i2c@7e78a300 {
+			compatible = "aspeed,i2c";
+			clock-frequency = < 0x61a80 >;
+			#address-cells = < 0x1 >;
+			#size-cells = < 0x0 >;
+			reg = < 0x7e78a300 0x80 >;
+			interrupts = < 0x73 0x1 >;
+			clocks = < &sysclk 0x42 >;
+			status = "disabled";
+			label = "I2C_5";
+		};
+		i2c6: i2c@7e78a380 {
+			compatible = "aspeed,i2c";
+			clock-frequency = < 0x61a80 >;
+			#address-cells = < 0x1 >;
+			#size-cells = < 0x0 >;
+			reg = < 0x7e78a380 0x80 >;
+			interrupts = < 0x74 0x1 >;
+			clocks = < &sysclk 0x42 >;
+			status = "disabled";
+			label = "I2C_6";
+		};
+		i2c7: i2c@7e78a400 {
+			compatible = "aspeed,i2c";
+			clock-frequency = < 0x61a80 >;
+			#address-cells = < 0x1 >;
+			#size-cells = < 0x0 >;
+			reg = < 0x7e78a400 0x80 >;
+			interrupts = < 0x75 0x1 >;
+			clocks = < &sysclk 0x42 >;
+			status = "disabled";
+			label = "I2C_7";
+		};
+		i2c8: i2c@7e78a480 {
+			compatible = "aspeed,i2c";
+			clock-frequency = < 0x61a80 >;
+			#address-cells = < 0x1 >;
+			#size-cells = < 0x0 >;
+			reg = < 0x7e78a480 0x80 >;
+			interrupts = < 0x76 0x1 >;
+			clocks = < &sysclk 0x42 >;
+			status = "disabled";
+			label = "I2C_8";
+		};
+		i2c9: i2c@7e78a500 {
+			compatible = "aspeed,i2c";
+			clock-frequency = < 0x61a80 >;
+			#address-cells = < 0x1 >;
+			#size-cells = < 0x0 >;
+			reg = < 0x7e78a500 0x80 >;
+			interrupts = < 0x77 0x1 >;
+			clocks = < &sysclk 0x42 >;
+			status = "disabled";
+			label = "I2C_9";
+		};
+		i2c10: i2c@7e78a580 {
+			compatible = "aspeed,i2c";
+			clock-frequency = < 0x61a80 >;
+			#address-cells = < 0x1 >;
+			#size-cells = < 0x0 >;
+			reg = < 0x7e78a580 0x80 >;
+			interrupts = < 0x78 0x1 >;
+			clocks = < &sysclk 0x42 >;
+			status = "disabled";
+			label = "I2C_10";
+		};
+		i2c11: i2c@7e78a600 {
+			compatible = "aspeed,i2c";
+			clock-frequency = < 0x61a80 >;
+			#address-cells = < 0x1 >;
+			#size-cells = < 0x0 >;
+			reg = < 0x7e78a600 0x80 >;
+			interrupts = < 0x79 0x1 >;
+			clocks = < &sysclk 0x42 >;
+			status = "disabled";
+			label = "I2C_11";
+		};
+		i2c12: i2c@7e78a680 {
+			compatible = "aspeed,i2c";
+			clock-frequency = < 0x61a80 >;
+			#address-cells = < 0x1 >;
+			#size-cells = < 0x0 >;
+			reg = < 0x7e78a680 0x80 >;
+			interrupts = < 0x7a 0x1 >;
+			clocks = < &sysclk 0x42 >;
+			status = "disabled";
+			label = "I2C_12";
+		};
+		i2c13: i2c@7e78a700 {
+			compatible = "aspeed,i2c";
+			clock-frequency = < 0x61a80 >;
+			#address-cells = < 0x1 >;
+			#size-cells = < 0x0 >;
+			reg = < 0x7e78a700 0x80 >;
+			interrupts = < 0x7b 0x1 >;
+			clocks = < &sysclk 0x42 >;
+			status = "disabled";
+			label = "I2C_13";
+		};
+		i2c14: i2c@7e78a780 {
+			compatible = "aspeed,i2c";
+			clock-frequency = < 0x61a80 >;
+			#address-cells = < 0x1 >;
+			#size-cells = < 0x0 >;
+			reg = < 0x7e78a780 0x80 >;
+			interrupts = < 0x7c 0x1 >;
+			clocks = < &sysclk 0x42 >;
+			status = "disabled";
+			label = "I2C_14";
+		};
+		i2c15: i2c@7e78a800 {
+			compatible = "aspeed,i2c";
+			clock-frequency = < 0x61a80 >;
+			#address-cells = < 0x1 >;
+			#size-cells = < 0x0 >;
+			reg = < 0x7e78a800 0x80 >;
+			interrupts = < 0x7d 0x1 >;
+			clocks = < &sysclk 0x42 >;
+			status = "disabled";
+			label = "I2C_15";
+		};
+		i3c: bus@7e7a0000 {
+			compatible = "simple-bus";
+			#address-cells = < 0x1 >;
+			#size-cells = < 0x1 >;
+			ranges = < 0x0 0x7e7a0000 0x8000 >;
+			i3c_gr: i3c-global-regs@0 {
+				compatible = "aspeed,i3c-global";
+				#address-cells = < 0x1 >;
+				#size-cells = < 0x0 >;
+				reg = < 0x0 0x100 >;
+				resets = < &sysrst 0x505407 >;
+				ni3cs = < 0x6 >;
+				status = "disabled";
+			};
+			i3c0: i3c0@2000 {
+				compatible = "aspeed,i3c";
+				#address-cells = < 0x1 >;
+				#size-cells = < 0x0 >;
+				reg = < 0x2000 0x1000 >;
+				interrupts = < 0x66 0x0 >;
+				resets = < &sysrst 0x505408 >;
+				clocks = < &sysclk 0x28 >;
+				i2c-scl-hz = < 0xf4240 >;
+				i3c-scl-hz = < 0xbebc20 >;
+				i3c-pp-scl-hi-period-ns = < 0x28 >;
+				i3c-pp-scl-lo-period-ns = < 0x28 >;
+				i3c-od-scl-hi-period-ns = < 0x17c >;
+				i3c-od-scl-lo-period-ns = < 0x26c >;
+				sda-tx-hold-ns = < 0xa >;
+				instance-id = < 0x0 >;
+				pinctrl-0 = < &pinctrl_i3c0_default >;
+				status = "disabled";
+				label = "I3C_0";
+			};
+			i3c1: i3c1@3000 {
+				compatible = "aspeed,i3c";
+				#address-cells = < 0x1 >;
+				#size-cells = < 0x0 >;
+				reg = < 0x3000 0x1000 >;
+				interrupts = < 0x67 0x0 >;
+				resets = < &sysrst 0x505409 >;
+				clocks = < &sysclk 0x29 >;
+				i2c-scl-hz = < 0xf4240 >;
+				i3c-scl-hz = < 0xbebc20 >;
+				i3c-pp-scl-hi-period-ns = < 0x28 >;
+				i3c-pp-scl-lo-period-ns = < 0x28 >;
+				i3c-od-scl-hi-period-ns = < 0x17c >;
+				i3c-od-scl-lo-period-ns = < 0x26c >;
+				sda-tx-hold-ns = < 0xa >;
+				instance-id = < 0x1 >;
+				pinctrl-0 = < &pinctrl_i3c1_default >;
+				status = "disabled";
+				label = "I3C_1";
+			};
+			i3c2: i3c2@4000 {
+				compatible = "aspeed,i3c";
+				#address-cells = < 0x1 >;
+				#size-cells = < 0x0 >;
+				reg = < 0x4000 0x1000 >;
+				interrupts = < 0x68 0x0 >;
+				resets = < &sysrst 0x50540a >;
+				clocks = < &sysclk 0x2a >;
+				i2c-scl-hz = < 0xf4240 >;
+				i3c-scl-hz = < 0xbebc20 >;
+				i3c-pp-scl-hi-period-ns = < 0x28 >;
+				i3c-pp-scl-lo-period-ns = < 0x28 >;
+				i3c-od-scl-hi-period-ns = < 0x17c >;
+				i3c-od-scl-lo-period-ns = < 0x26c >;
+				sda-tx-hold-ns = < 0xa >;
+				instance-id = < 0x2 >;
+				status = "disabled";
+				label = "I3C_2";
+			};
+			i3c3: i3c3@5000 {
+				compatible = "aspeed,i3c";
+				#address-cells = < 0x1 >;
+				#size-cells = < 0x0 >;
+				reg = < 0x5000 0x1000 >;
+				interrupts = < 0x69 0x0 >;
+				resets = < &sysrst 0x50540b >;
+				clocks = < &sysclk 0x2b >;
+				i2c-scl-hz = < 0xf4240 >;
+				i3c-scl-hz = < 0xbebc20 >;
+				i3c-pp-scl-hi-period-ns = < 0x28 >;
+				i3c-pp-scl-lo-period-ns = < 0x28 >;
+				i3c-od-scl-hi-period-ns = < 0x17c >;
+				i3c-od-scl-lo-period-ns = < 0x26c >;
+				sda-tx-hold-ns = < 0xa >;
+				instance-id = < 0x3 >;
+				status = "disabled";
+				label = "I3C_3";
+			};
+			i3c4: i3c4@6000 {
+				compatible = "aspeed,i3c";
+				#address-cells = < 0x1 >;
+				#size-cells = < 0x0 >;
+				reg = < 0x6000 0x1000 >;
+				interrupts = < 0x6a 0x0 >;
+				resets = < &sysrst 0x50540c >;
+				clocks = < &sysclk 0x2c >;
+				i2c-scl-hz = < 0xf4240 >;
+				i3c-scl-hz = < 0xbebc20 >;
+				i3c-pp-scl-hi-period-ns = < 0x28 >;
+				i3c-pp-scl-lo-period-ns = < 0x28 >;
+				i3c-od-scl-hi-period-ns = < 0x17c >;
+				i3c-od-scl-lo-period-ns = < 0x26c >;
+				sda-tx-hold-ns = < 0xa >;
+				instance-id = < 0x4 >;
+				pinctrl-0 = < &pinctrl_hvi3c4_default >;
+				status = "disabled";
+				label = "I3C_4";
+			};
+			i3c5: i3c5@7000 {
+				compatible = "aspeed,i3c";
+				#address-cells = < 0x1 >;
+				#size-cells = < 0x0 >;
+				reg = < 0x7000 0x1000 >;
+				interrupts = < 0x6b 0x0 >;
+				resets = < &sysrst 0x50540d >;
+				clocks = < &sysclk 0x2d >;
+				i2c-scl-hz = < 0xf4240 >;
+				i3c-scl-hz = < 0xbebc20 >;
+				i3c-pp-scl-hi-period-ns = < 0x28 >;
+				i3c-pp-scl-lo-period-ns = < 0x28 >;
+				i3c-od-scl-hi-period-ns = < 0x17c >;
+				i3c-od-scl-lo-period-ns = < 0x26c >;
+				sda-tx-hold-ns = < 0xa >;
+				instance-id = < 0x5 >;
+				pinctrl-0 = < &pinctrl_hvi3c5_default >;
+				status = "disabled";
+				label = "I3C_5";
+			};
+		};
+	};
+	cpus {
+		#address-cells = < 0x1 >;
+		#size-cells = < 0x0 >;
+		cpu@0 {
+			device_type = "cpu";
+			compatible = "arm,cortex-m3";
+			reg = < 0x0 >;
+		};
+	};
+	sdram0: memory@0 {
+		device_type = "memory";
+		reg = < 0x0 0x1000000 >, < 0x1000000 0x1000000 >;
+	};
+	flash0: flash@20000000 {
+		compatible = "serial-flash";
+		label = "FLASH_ASPEED";
+		erase-block-size = < 0x1000 >;
+		write-block-size = < 0x1 >;
+		reg = < 0x20000000 0x80000 >;
+	};
+};

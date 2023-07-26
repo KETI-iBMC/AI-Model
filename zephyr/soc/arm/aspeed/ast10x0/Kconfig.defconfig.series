@@ -1,0 +1,29 @@
+# SPDX-License-Identifier: Apache-2.0
+#
+# Copyright (c) 2021 ASPEED Technology Inc.
+
+if SOC_SERIES_AST10X0
+
+source "soc/arm/aspeed/ast10x0/Kconfig.defconfig.ast10*0"
+
+config SOC_SERIES
+	default "ast10x0"
+
+config CPU_HAS_CUSTOM_FIXED_SOC_MPU_REGIONS
+	depends on ARM_MPU
+	default y
+
+config ICACHE_LINE_SIZE
+	default 32
+
+config DCACHE_LINE_SIZE
+	default 32
+
+choice CACHE_TYPE
+	default HAS_EXTERNAL_CACHE
+endchoice
+
+config SYS_CLOCK_HW_CYCLES_PER_SEC
+	default 200000000
+
+endif # SOC_SERIES_AST10X0
