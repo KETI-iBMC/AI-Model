@@ -74,12 +74,37 @@ int main(int argc, char *argv[])
 
     volatile int* address = (int*)0x70000000; // Create a pointer to the memory address
 
-    // *address = 13;  // Write the value 1 to the memory address
+    *address = 14;  // Write the value 1 to the memory address
     // *address2 = 20;
 
     printf("!Value at memory address 0x01000000: %x\n", &address);
     printf("Value at memory address 0x01000000: %x\n", *address);
     printf("Value at memory address 0x01000000: %x\n", address);
+
+    // Define the address where you want to save the file
+    uint32_t* file_address = (uint32_t*)0x70000000;
+
+    // The text to be saved in the file
+    const char* text = "Cortec M3 Sending Sample FIle\n";
+
+    // Open the file using direct memory access
+    FILE* file = fmemopen(file_address, strlen(text), "wb");
+    if (file == NULL) {
+        perror("Error opening the file");
+        return 1;
+    }
+
+    // Write the text to the file using fwrite
+    if (fwrite(text, sizeof(char), strlen(text), file) != strlen(text)) {
+        perror("Error writing to the file");
+        fclose(file);
+        return 1;
+    }
+
+    // Close the file
+    fclose(file);
+
+    printf("Text written successfully at address 0x70000000.\n");
 
 
     return 0;
