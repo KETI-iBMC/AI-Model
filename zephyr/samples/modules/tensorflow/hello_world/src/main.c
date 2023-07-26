@@ -72,8 +72,7 @@ int main(int argc, char *argv[])
    
 
 
-    volatile int* address = (int*)0x70000000;  
-    volatile int* address2 = (int*)0x60000000;// Create a pointer to the memory address
+    volatile int* address = (int*)0x70000000; // Create a pointer to the memory address
 
     // *address = 13;  // Write the value 1 to the memory address
     // *address2 = 20;
@@ -81,9 +80,7 @@ int main(int argc, char *argv[])
     printf("!Value at memory address 0x01000000: %x\n", &address);
     printf("Value at memory address 0x01000000: %x\n", *address);
     printf("Value at memory address 0x01000000: %x\n", address);
-    printf("Value at memory address2 0x01000004: %x\n", &address2);
-    printf("Value at memory address2 0x01000004: %x\n", *address2);
-    printf("Value at memory address2 0x01000004: %x\n", address2);
+
 
     return 0;
 
