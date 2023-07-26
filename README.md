@@ -1,7 +1,7 @@
 # AI-Model
 
 
-setup.sh 실행
+start setup.sh 
 
 
 source ~/zephyrproject/.venv/bin/activate
